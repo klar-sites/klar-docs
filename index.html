@@ -2021,18 +2021,42 @@
           <article class="klar-article" id="klarArticle">
             <!-- ═══ PAGE: GETTING STARTED ═══ -->
             <div class="klar-page is-active" id="page-getting-started">
-              <div class="klar-article__header klar-animate">
-                <div class="klar-article__breadcrumb">
+              <div class="klar-article__header klar-animate" data-klar-blocks><div class="klar-article__breadcrumb">
                   <a href="#">Docs</a>
                   <span>›</span>
                   <span>Getting Started</span>
                 </div>
-                <h1>Introduction</h1>
-                <p class="klar-article__description">
+<h1>Introduction</h1>
+<p class="klar-article__description">
                   Klar is a visual CMS for static websites. Edit text, images, links, and icons directly on your live
-                  webpage, then save the changes back to GitHub.
-                </p>
-              </div>
+                  webpage, then save the changes back to GitHub.</p>
+<ul><li>Item 1</li><li>Item 2</li><li class="klar-empty"></li></ul>
+<p>Go to <strong>klar.website</strong>, sign in with Google, and connect your GitHub repository. Klar
+                  loads your page in a live preview. Click on any element to start editing. When you're done, hit Save —
+                  your changes are committed directly to your repo as clean HTML.</p>
+<div class="klar-code-block klar-animate klar-animate--d2">
+                  <div class="klar-code-block__header">
+                    <span class="klar-code-block__lang">HTML</span>
+                    <button class="klar-code-block__copy" data-copy="">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                      </svg>
+                      Copy
+                    </button>
+                  </div>
+                  <pre><code><span class="hljs-comment">&lt;!-- Your original HTML --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcomse to My Site<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is these description.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  
+  <span class="hljs-comment">&lt;!-- After editing with Klar — still clean! --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcome to My Updated Site<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>A better description here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+                </div></div>
 
               <div class="klar-features klar-animate klar-animate--d1">
                 <div class="klar-feature-card">
