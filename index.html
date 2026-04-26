@@ -2097,11 +2097,10 @@
                   </div>
                 </div>
               </div>
-              <div data-klar-test>
-                <h2 id="what-you-can-do">
+              <div data-klar-test data-klar-blocks><h2 id="what-you-can-do">
                   What You Can Do<a href="#what-you-can-do" class="klar-heading-anchor">#</a>
                 </h2>
-                <ul>
+<ul>
                   <li><strong>Click-to-edit</strong> — hover to highlight, click to edit any text, heading, button,
                     or link</li>
                   <li><strong>Structured panel</strong> — edit text, attributes (href, src, alt, class, style), and
@@ -2131,15 +2130,41 @@
                     commit</li>
                   <li><strong>Responsive preview</strong> — test your page at desktop, tablet, and phone sizes</li>
                 </ul>
-
-                <h2 id="how-it-works">
+<div class="klar-table-wrap">
+                <table class="klar-table">
+                  <thead>
+                    <tr>
+                      <th>Field</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Website URL</strong></td>
+                      <td>The live URL of your site (used to load your page and resolve relative paths)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>GitHub Repository</strong></td>
+                      <td>In <code>owner/repo</code> format, e.g. <code>myname/mysite</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>GitHub Token</strong></td>
+                      <td>Your personal access token for reading and writing files</td>
+                    </tr>
+                    <tr>
+                      <td><strong>HTML File</strong></td>
+                      <td>Path to the HTML file in your repo, e.g. <code>index.html</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+<h2 id="how-it-works">
                   How It Works<a href="#how-it-works" class="klar-heading-anchor">#</a>
                 </h2>
-                <p>Go to <strong>klar.website</strong>, sign in with Google, and connect your GitHub repository. Klar
+<p>Go to <strong>klar.website</strong>, sign in with Google, and connect your GitHub repository. Klar
                   loads your page in a live preview. Click on any element to start editing. When you're done, hit Save —
                   your changes are committed directly to your repo as clean HTML.<br></p>
-
-                <div class="klar-code-block klar-animate klar-animate--d2">
+<div class="klar-code-block klar-animate klar-animate--d2">
                   <div class="klar-code-block__header">
                     <span class="klar-code-block__lang">HTML</span>
                     <button class="klar-code-block__copy" data-copy="">
@@ -2162,8 +2187,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>A better description here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
                 </div>
-
-                <div class="klar-callout klar-callout--success">
+<div class="klar-callout klar-callout--success">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
@@ -2173,8 +2197,7 @@
                       &amp;
                       Login</a> guide to connect your GitHub repository.
                   </div>
-                </div>
-              </div>
+                </div></div>
               <div class="klar-article-nav">
                 <div></div>
                 <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-setup">
