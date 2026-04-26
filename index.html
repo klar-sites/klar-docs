@@ -1977,7 +1977,7 @@
           <div class="klar-sidebar__links">
             <a href="#" class="klar-sidebar__link is-active" data-nav="page-getting-started">Introduction</a>
             <a href="#" class="klar-sidebar__link" data-nav="page-setup">Setup &amp; Login</a>
-            <a href="#" class="klar-sidebar__link" data-nav="page-quick-start">Quick Start</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-quick-start">Quick Start</a><a href="#" class="klar-sidebar__link" data-nav="page-quick-start-2">Testing</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
@@ -2021,18 +2021,41 @@
           <article class="klar-article" id="klarArticle">
             <!-- ═══ PAGE: GETTING STARTED ═══ -->
             <div class="klar-page is-active" id="page-getting-started">
-              <div class="klar-article__header klar-animate">
-                <div class="klar-article__breadcrumb">
+              <div class="klar-article__header klar-animate" data-klar-blocks><div class="klar-article__breadcrumb">
                   <a href="#">Docs</a>
                   <span>›</span>
                   <span>Getting Started</span>
                 </div>
-                <h1>Introduction</h1>
-                <p class="klar-article__description">
+<h1>Introduction</h1>
+<p class="klar-article__description" style="">
                   Klar is a visual CMS for static websites. Edit text, images, links, and icons directly on your live
                   webpage, then save the changes back to GitHub.
                 </p>
-              </div>
+<div class="klar-table-wrap">
+                <table class="klar-table">
+                  <thead>
+                    <tr><th>Header 1</th><th>Header 2</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Website URL</strong></td>
+                      <td>The live URL of your site (used to load your page and resolve relative paths)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>GitHub Repository</strong></td>
+                      <td>In <code>owner/repo</code> format, e.g. <code>myname/mysite</code></td>
+                    </tr>
+                    <tr>
+                      <td><strong>GitHub Token</strong></td>
+                      <td>Your personal access token for reading and writing files</td>
+                    </tr>
+                    <tr>
+                      <td><strong>HTML File</strong></td>
+                      <td>Path to the HTML file in your repo, e.g. <code>index.html</code></td>
+                    </tr><tr><td><strong>Gabriel Lantz</strong></td><td>fdsfasdf sdfasdf asd adsf</td></tr>
+                  </tbody>
+                </table>
+              </div></div>
 
               <div class="klar-features klar-animate klar-animate--d1"><div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
@@ -2108,7 +2131,7 @@
                     the browser.
                   </div>
                 </div></div>
-              <div data-klar-test>
+              <div data-klar-test data-klar-blocks>
                 <h2 id="what-you-can-do">
                   What You Can Do<a href="#what-you-can-do" class="klar-heading-anchor">#</a>
                 </h2>
@@ -2197,7 +2220,7 @@
 
             <!-- ═══ PAGE: SETUP & LOGIN ═══ -->
             <div class="klar-page" id="page-setup">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a>
                   <span>›</span>
@@ -2210,7 +2233,7 @@
                   Sign in to Klar, connect your GitHub repository, and create your first project.
                 </p>
               </div>
-              <div data-klar-test>
+              <div data-klar-test data-klar-blocks>
               <h2 id="sign-in">
                 Sign In<a href="#sign-in" class="klar-heading-anchor">#</a>
               </h2>
@@ -2304,7 +2327,7 @@
 
             <!-- ═══ PAGE: QUICK START ═══ -->
             <div class="klar-page" id="page-quick-start">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a>
                   <span>›</span>
@@ -2317,7 +2340,107 @@
                   Go from sign-in to your first edit in under a minute.
                 </p>
               </div>
-              <div data-klar-test>
+              <div data-klar-test data-klar-blocks>
+                <h2 id="step-1">
+                  1. Sign In &amp; Create a Project<a href="#step-1" class="klar-heading-anchor">#</a>
+                </h2>
+                <p>
+                  Go to <strong>klar.website</strong>, sign in with Google, and create a new project with your GitHub
+                  repository details (repo, token, and HTML file path).
+                </p>
+
+                <h2 id="step-2">
+                  2. Start Editing<a href="#step-2" class="klar-heading-anchor">#</a>
+                </h2>
+                <p>
+                  Klar loads your page in a live preview. Hover over any element to see it highlighted with a blue
+                  outline. Click to select it — text elements become editable right on the page, while images and
+                  SVGs open the structured panel on the right.
+                </p>
+                <p>
+                  Use the <strong>sections panel</strong> on the left to navigate between page sections like header,
+                  content areas, and footer. Click a section name to scroll directly to it.
+                </p>
+
+                <h2 id="step-3">
+                  3. Make Changes<a href="#step-3" class="klar-heading-anchor">#</a>
+                </h2>
+                <p>
+                  Edit text by typing directly in the preview. Use the structured panel to change attributes like links,
+                  image sources, alt text, CSS classes, and styles. You can also open the code editor for direct HTML,
+                  CSS, and JavaScript editing, or use the AI assistant to make changes with natural language.
+                </p>
+                <p>
+                  The toolbar shows a badge with your pending edit count. Each change is tracked and can be individually
+                  reverted from the structured panel.
+                </p>
+
+                <h2 id="step-4">
+                  4. Save &amp; Publish<a href="#step-4" class="klar-heading-anchor">#</a>
+                </h2>
+                <p>
+                  Press <kbd>Cmd+S</kbd> (or click Save) to commit your changes to GitHub. Your HTML stays clean —
+                  no wrappers or data attributes are injected.
+                </p>
+                <p>
+                  Press <kbd>Cmd+P</kbd> (or click Publish) to also deploy your site to GitHub Pages. Klar creates a
+                  dedicated publish branch and enables Pages automatically.
+                </p>
+              </div>
+
+              <div class="klar-callout klar-callout--success">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                  <strong>That's it!</strong> You're now editing your website visually and saving changes directly to
+                  GitHub. Explore the <a href="#" data-nav="page-visual-editing">Visual Editing</a> guide to learn about
+                  all
+                  the editing capabilities.
+                </div>
+              </div>
+
+              <div class="klar-article-nav">
+                <a href="#" class="klar-article-nav__link" data-nav="page-setup">
+                  <span class="klar-article-nav__label">Previous</span>
+                  <span class="klar-article-nav__title">← Setup &amp; Login</span>
+                </a>
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-visual-editing">
+                  <span class="klar-article-nav__label">Next</span>
+                  <span class="klar-article-nav__title">Visual Editing →</span>
+                </a>
+              </div>
+            </div><div class="klar-page" id="page-quick-start-2">
+              <div class="klar-article__header" data-klar-blocks><div class="klar-article__breadcrumb">
+                  <a href="#">Docs</a>
+                  <span>›</span>
+                  <a href="#" data-nav="page-getting-started">Getting Started</a>
+                  <span>›</span>
+                  <span>testing</span>
+                </div>
+<h1>Testing</h1>
+<p class="klar-article__description">Go to <strong>klar.website</strong>, sign in with Google, and connect your GitHub repository. Klar
+                  loads your page in a live preview. Click on any element to start editing. When you're done, hit Save —
+                  your changes are committed directly to your repo as clean HTML.</p>
+<ul><li><strong>Click-to-edit</strong> — hover to highlight, click to edit any text, heading, button,
+                    or link</li>
+<li><strong>Structured panel</strong> — edit text, attributes (href, src, alt, class, style), and
+                    raw HTML in a sidebar form</li>
+<li><strong>Image and media management</strong> — upload, browse, and swap images from your
+                    GitHub-backed media library</li><li class="klar-empty"></li></ul>
+<div class="klar-callout klar-callout--success">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <div>
+                    <strong>Ready to get started?</strong> Head over to the <a href="#" data-nav="papge-setup">Setup
+                      &amp;
+                      Login</a> guide to connect your GitHub repository.
+                  </div>
+                </div></div>
+              <div data-klar-test data-klar-blocks>
                 <h2 id="step-1">
                   1. Sign In &amp; Create a Project<a href="#step-1" class="klar-heading-anchor">#</a>
                 </h2>
@@ -2392,7 +2515,7 @@
 
             <!-- ═══ PAGE: VISUAL EDITING ═══ -->
             <div class="klar-page" id="page-visual-editing">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Visual Editing</span>
                 </div>
@@ -2400,7 +2523,7 @@
                 <p class="klar-article__description">Click directly on your page to edit text, images, links, icons, and
                   more.</p>
               </div>
-              <div data-klar-test>
+              <div data-klar-test data-klar-blocks>
               <h2 id="how-editing-works">How It Works<a href="#how-editing-works" class="klar-heading-anchor">#</a></h2>
               <p>Your website loads in a live preview inside the editor. Hover over any element to see it highlighted
                 with a blue outline. Click to select it — the element becomes editable directly on the page.</p>
@@ -2467,7 +2590,7 @@
 
             <!-- ═══ PAGE: STRUCTURED PANEL ═══ -->
             <div class="klar-page" id="page-structured-panel">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Structured Panel</span>
                 </div>
@@ -2572,7 +2695,7 @@
 
             <!-- ═══ PAGE: CODE EDITOR ═══ -->
             <div class="klar-page" id="page-code-editor">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Code Editor</span>
                 </div>
@@ -2619,7 +2742,7 @@
 
             <!-- ═══ PAGE: AI ASSISTANT ═══ -->
             <div class="klar-page" id="page-ai-assistant">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>AI Assistant</span>
                 </div>
@@ -2670,7 +2793,7 @@
 
             <!-- ═══ PAGE: MEDIA MANAGEMENT ═══ -->
             <div class="klar-page" id="page-media-management">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Media &amp; Icons</span>
                 </div>
@@ -2728,7 +2851,7 @@
 
             <!-- ═══ PAGE: PAGE MANAGEMENT ═══ -->
             <div class="klar-page" id="page-page-management">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Page Management</span>
                 </div>
@@ -2767,7 +2890,7 @@
 
             <!-- ═══ PAGE: SHARED SECTIONS ═══ -->
             <div class="klar-page" id="page-shared-sections">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Shared Sections</span>
                 </div>
@@ -2815,7 +2938,7 @@
 
             <!-- ═══ PAGE: SAVE & PUBLISH ═══ -->
             <div class="klar-page" id="page-save-publish">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Save &amp; Publish</span>
                 </div>
@@ -2870,7 +2993,7 @@
 
             <!-- ═══ PAGE: VERSION HISTORY ═══ -->
             <div class="klar-page" id="page-version-history">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Version History</span>
                 </div>
@@ -2908,7 +3031,7 @@
 
             <!-- ═══ PAGE: PROJECT SETTINGS ═══ -->
             <div class="klar-page" id="page-project-settings">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Project
                     Settings</span>
@@ -3028,7 +3151,7 @@
 
             <!-- ═══ PAGE: CUSTOM SELECTORS ═══ -->
             <div class="klar-page" id="page-selectors">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Custom
                     Selectors</span>
@@ -3115,7 +3238,7 @@
 
             <!-- ═══ PAGE: KEYBOARD SHORTCUTS ═══ -->
             <div class="klar-page" id="page-keyboard-shortcuts">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Keyboard Shortcuts</span>
                 </div>
@@ -3208,7 +3331,7 @@
 
             <!-- ═══ PAGE: VIEWPORT & PREVIEW ═══ -->
             <div class="klar-page" id="page-viewport-preview">
-              <div class="klar-article__header">
+              <div class="klar-article__header" data-klar-blocks>
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Viewport &amp;
                     Preview</span>
