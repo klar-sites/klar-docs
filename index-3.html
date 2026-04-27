@@ -824,6 +824,9 @@
          Callouts
          ─────────────────────────────────────────────── */
       .klar-callout {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
         margin: 16px 0 24px;
         padding: 14px 16px;
         background: var(--callout-info-bg);
@@ -834,6 +837,17 @@
         font-size: 14px;
         line-height: 1.55;
       }
+      .klar-callout > svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        color: var(--fg);
+      }
+      .klar-callout > div {
+        flex: 1;
+        min-width: 0;
+      }
       .klar-callout p {
         margin: 0;
         color: inherit;
@@ -841,17 +855,26 @@
       .klar-callout p + p {
         margin-top: 8px;
       }
+      .klar-callout a {
+        color: inherit;
+      }
       .klar-callout strong {
         color: var(--fg);
       }
       .klar-callout--info {
         border-left-color: var(--fg);
       }
+      .klar-callout--info > svg {
+        color: var(--fg);
+      }
       .klar-callout--success {
         background: var(--callout-success-bg);
         border-color: var(--callout-success-bd);
         border-left-color: #16a34a;
         color: var(--callout-success-fg);
+      }
+      .klar-callout--success > svg {
+        color: #16a34a;
       }
       .klar-callout--success strong {
         color: inherit;
