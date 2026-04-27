@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <style>
       /* ───────────────────────────────────────────────
          Ollama-inspired theme tokens
@@ -141,6 +140,7 @@
       *::after {
         box-sizing: border-box;
       }
+
       html {
         -webkit-text-size-adjust: 100%;
         -webkit-font-smoothing: antialiased;
@@ -148,6 +148,7 @@
         scroll-behavior: smooth;
         scroll-padding-top: calc(var(--nav-h) + 24px);
       }
+
       body {
         margin: 0;
         font-family: var(--font-sans);
@@ -160,18 +161,22 @@
           background-color var(--dur) var(--ease),
           color var(--dur) var(--ease);
       }
+
       a {
         color: var(--link);
         text-decoration: none;
       }
+
       a:hover {
         color: var(--link-hover);
       }
+
       img,
       svg {
         display: block;
         max-width: 100%;
       }
+
       button {
         font: inherit;
         color: inherit;
@@ -205,6 +210,7 @@
         gap: 16px;
         z-index: 100;
       }
+
       .klar-nav__menu-btn {
         display: none;
         width: 36px;
@@ -214,10 +220,12 @@
         justify-content: center;
         color: var(--fg-muted);
       }
+
       .klar-nav__menu-btn:hover {
         background: var(--bg-hover);
         color: var(--fg);
       }
+
       .klar-nav__logo {
         display: inline-flex;
         align-items: center;
@@ -230,9 +238,11 @@
         padding-right: 8px;
         min-width: calc(var(--sidebar-w) - 24px);
       }
+
       .klar-nav__logo:hover {
         color: var(--fg);
       }
+
       .klar-nav__logo-mark {
         display: inline-flex;
         width: 22px;
@@ -241,10 +251,12 @@
         justify-content: center;
         color: var(--fg);
       }
+
       .klar-nav__logo-mark svg {
         width: 22px;
         height: 22px;
       }
+
       .klar-nav__version {
         font-size: 11px;
         font-weight: 500;
@@ -254,10 +266,12 @@
         border-radius: 999px;
         margin-left: 6px;
       }
+
       .klar-nav__center {
         flex: 1;
         max-width: 560px;
       }
+
       .klar-nav__search {
         position: relative;
         display: flex;
@@ -272,10 +286,12 @@
           background-color var(--dur) var(--ease),
           border-color var(--dur) var(--ease);
       }
+
       .klar-nav__search:hover {
         background: var(--bg-hover);
         border-color: var(--border-strong);
       }
+
       .klar-nav__search-icon {
         width: 14px;
         height: 14px;
@@ -283,6 +299,7 @@
         flex-shrink: 0;
         margin-right: 8px;
       }
+
       .klar-nav__search-input {
         flex: 1;
         background: transparent;
@@ -293,9 +310,11 @@
         font-size: 13px;
         cursor: pointer;
       }
+
       .klar-nav__search-input::placeholder {
         color: var(--fg-faded);
       }
+
       .klar-nav__search-kbd {
         display: inline-flex;
         align-items: center;
@@ -309,11 +328,13 @@
         border: 1px solid var(--kbd-border);
         border-radius: 4px;
       }
+
       .klar-nav__actions {
         display: flex;
         align-items: center;
         gap: 4px;
       }
+
       .klar-nav__btn {
         display: inline-flex;
         width: 36px;
@@ -326,14 +347,17 @@
           background-color var(--dur) var(--ease),
           color var(--dur) var(--ease);
       }
+
       .klar-nav__btn:hover {
         background: var(--bg-hover);
         color: var(--fg);
       }
+
       .klar-nav__btn svg {
         width: 18px;
         height: 18px;
       }
+
       .klar-theme-toggle {
         display: inline-flex;
         width: 36px;
@@ -346,21 +370,26 @@
           background-color var(--dur) var(--ease),
           color var(--dur) var(--ease);
       }
+
       .klar-theme-toggle:hover {
         background: var(--bg-hover);
         color: var(--fg);
       }
+
       .klar-theme-toggle svg {
         width: 18px;
         height: 18px;
       }
+
       .klar-icon-sun,
       .klar-icon-moon {
         transition: opacity var(--dur) var(--ease);
       }
+
       [data-theme="light"] .klar-icon-sun {
         display: none;
       }
+
       [data-theme="dark"] .klar-icon-moon {
         display: none;
       }
@@ -390,22 +419,28 @@
         z-index: 50;
         scrollbar-width: thin;
       }
+
       .klar-sidebar::-webkit-scrollbar {
         width: 8px;
       }
+
       .klar-sidebar::-webkit-scrollbar-track {
         background: transparent;
       }
+
       .klar-sidebar::-webkit-scrollbar-thumb {
         background: var(--border-strong);
         border-radius: 999px;
       }
+
       .klar-sidebar__section {
         margin-bottom: 24px;
       }
+
       .klar-sidebar__section:last-child {
         margin-bottom: 0;
       }
+
       .klar-sidebar__heading {
         font-size: 13px;
         font-weight: 600;
@@ -414,11 +449,13 @@
         padding: 6px 12px;
         margin-bottom: 4px;
       }
+
       .klar-sidebar__links {
         display: flex;
         flex-direction: column;
         gap: 1px;
       }
+
       .klar-sidebar__link {
         display: flex;
         align-items: center;
@@ -432,15 +469,18 @@
           background-color var(--dur) var(--ease),
           color var(--dur) var(--ease);
       }
+
       .klar-sidebar__link:hover {
         color: var(--fg);
         background: var(--bg-hover);
       }
+
       .klar-sidebar__link.is-active {
         color: var(--fg);
         font-weight: 600;
         background: var(--bg-active);
       }
+
       .klar-sidebar-overlay {
         display: none;
         position: fixed;
@@ -451,6 +491,7 @@
         pointer-events: none;
         transition: opacity var(--dur) var(--ease);
       }
+
       .klar-sidebar-overlay.is-visible {
         opacity: 1;
         pointer-events: auto;
@@ -464,21 +505,25 @@
         margin-left: var(--sidebar-w);
         min-width: 0;
       }
+
       .klar-content {
         display: flex;
         gap: 64px;
         padding: 48px 64px 96px;
         max-width: 100%;
       }
+
       .klar-article {
         flex: 1;
         min-width: 0;
         max-width: var(--content-max);
         margin: 0 auto;
       }
+
       .klar-page {
         display: none;
       }
+
       .klar-page.is-active {
         display: block;
       }
@@ -487,6 +532,7 @@
       .klar-article__header {
         margin-bottom: 32px;
       }
+
       .klar-article__breadcrumb {
         display: flex;
         align-items: center;
@@ -495,12 +541,15 @@
         color: var(--fg-faded);
         margin-bottom: 16px;
       }
+
       .klar-article__breadcrumb a {
         color: var(--fg-faded);
       }
+
       .klar-article__breadcrumb a:hover {
         color: var(--fg);
       }
+
       .klar-article h1 {
         font-size: 36px;
         line-height: 1.15;
@@ -509,6 +558,7 @@
         margin: 0 0 16px;
         color: var(--fg);
       }
+
       .klar-article__description {
         font-size: 17px;
         line-height: 1.55;
@@ -526,6 +576,7 @@
         color: var(--fg);
         scroll-margin-top: calc(var(--nav-h) + 24px);
       }
+
       .klar-article h3 {
         font-size: 17px;
         font-weight: 600;
@@ -535,27 +586,33 @@
         color: var(--fg);
         scroll-margin-top: calc(var(--nav-h) + 24px);
       }
+
       .klar-article p {
         margin: 0 0 16px;
         color: var(--fg-muted);
       }
+
       .klar-article p strong,
       .klar-article li strong {
         color: var(--fg);
         font-weight: 600;
       }
+
       .klar-article ul,
       .klar-article ol {
         margin: 0 0 16px;
         padding-left: 22px;
         color: var(--fg-muted);
       }
+
       .klar-article li {
         margin: 4px 0;
       }
+
       .klar-article li::marker {
         color: var(--fg-faded);
       }
+
       .klar-article a {
         color: var(--fg);
         text-decoration: underline;
@@ -563,9 +620,11 @@
         text-underline-offset: 3px;
         transition: text-decoration-color var(--dur) var(--ease);
       }
+
       .klar-article a:hover {
         text-decoration-color: var(--fg);
       }
+
       .klar-article hr {
         border: 0;
         height: 1px;
@@ -574,7 +633,7 @@
       }
 
       /* Inline code */
-      .klar-article :not(pre) > code,
+      .klar-article :not(pre)>code,
       .klar-article p code,
       .klar-article li code,
       .klar-article td code {
@@ -597,10 +656,12 @@
         text-decoration: none !important;
         transition: opacity var(--dur) var(--ease);
       }
+
       h2:hover .klar-heading-anchor,
       h3:hover .klar-heading-anchor {
         opacity: 1;
       }
+
       .klar-heading-anchor:hover {
         color: var(--fg) !important;
       }
@@ -614,6 +675,7 @@
         gap: 12px;
         margin: 32px 0;
       }
+
       .klar-feature-card {
         padding: 20px;
         background: var(--bg);
@@ -623,10 +685,12 @@
           border-color var(--dur) var(--ease),
           background-color var(--dur) var(--ease);
       }
+
       .klar-feature-card:hover {
         border-color: var(--border-strong);
         background: var(--bg-soft);
       }
+
       .klar-feature-card__icon {
         width: 32px;
         height: 32px;
@@ -638,16 +702,19 @@
         color: var(--fg);
         margin-bottom: 12px;
       }
+
       .klar-feature-card__icon svg {
         width: 18px;
         height: 18px;
       }
+
       .klar-feature-card__title {
         font-size: 14.5px;
         font-weight: 600;
         color: var(--fg);
         margin-bottom: 4px;
       }
+
       .klar-feature-card__desc {
         font-size: 13.5px;
         line-height: 1.5;
@@ -664,6 +731,7 @@
         border: 1px solid var(--border);
         overflow: hidden;
       }
+
       .klar-code-block__header {
         display: flex;
         align-items: center;
@@ -672,6 +740,7 @@
         background: var(--code-header-bg);
         border-bottom: 1px solid var(--code-border);
       }
+
       .klar-code-block__lang {
         font-family: var(--font-mono);
         font-size: 11.5px;
@@ -680,6 +749,7 @@
         letter-spacing: 0.02em;
         text-transform: lowercase;
       }
+
       .klar-code-block__copy {
         display: inline-flex;
         align-items: center;
@@ -697,19 +767,23 @@
           color var(--dur) var(--ease),
           border-color var(--dur) var(--ease);
       }
+
       .klar-code-block__copy:hover {
         background: rgba(255, 255, 255, 0.05);
         color: #f5f5f5;
         border-color: rgba(255, 255, 255, 0.16);
       }
+
       .klar-code-block__copy.is-copied {
         color: #86efac;
         border-color: rgba(134, 239, 172, 0.3);
       }
+
       .klar-code-block__copy svg {
         width: 12px;
         height: 12px;
       }
+
       .klar-code-block pre {
         margin: 0;
         padding: 16px 18px;
@@ -720,6 +794,7 @@
         font-size: 13px;
         line-height: 1.65;
       }
+
       .klar-code-block pre code {
         font-family: inherit;
         font-size: inherit;
@@ -729,6 +804,7 @@
         color: inherit;
         white-space: pre;
       }
+
       .klar-hl-comment {
         color: var(--syntax-comment);
         font-style: italic;
@@ -740,11 +816,13 @@
         color: var(--code-fg) !important;
         padding: 0 !important;
       }
+
       .hljs-comment,
       .hljs-quote {
         color: var(--syntax-comment);
         font-style: italic;
       }
+
       .hljs-keyword,
       .hljs-selector-tag,
       .hljs-literal,
@@ -752,6 +830,7 @@
       .hljs-name {
         color: #f9a8d4;
       }
+
       .hljs-string,
       .hljs-attr,
       .hljs-symbol,
@@ -759,30 +838,37 @@
       .hljs-meta {
         color: #86efac;
       }
+
       .hljs-tag,
       .hljs-tag .hljs-name {
         color: #f9a8d4;
       }
+
       .hljs-tag .hljs-attr {
         color: #fcd34d;
       }
+
       .hljs-number,
       .hljs-link,
       .hljs-built_in,
       .hljs-type {
         color: #fcd34d;
       }
+
       .hljs-title,
       .hljs-class .hljs-title {
         color: #93c5fd;
       }
+
       .hljs-variable,
       .hljs-template-variable {
         color: #fbcfe8;
       }
+
       .hljs-emphasis {
         font-style: italic;
       }
+
       .hljs-strong {
         font-weight: 700;
       }
@@ -796,11 +882,13 @@
         border: 1px solid var(--border);
         border-radius: var(--radius-lg);
       }
+
       .klar-table {
         width: 100%;
         border-collapse: collapse;
         font-size: 13.5px;
       }
+
       .klar-table th,
       .klar-table td {
         padding: 10px 14px;
@@ -808,15 +896,18 @@
         border-bottom: 1px solid var(--border);
         vertical-align: top;
       }
+
       .klar-table th {
         background: var(--bg-soft);
         color: var(--fg);
         font-weight: 600;
         font-size: 12.5px;
       }
+
       .klar-table td {
         color: var(--fg-muted);
       }
+
       .klar-table tr:last-child td {
         border-bottom: 0;
       }
@@ -838,45 +929,56 @@
         font-size: 14px;
         line-height: 1.55;
       }
-      .klar-callout > svg {
+
+      .klar-callout>svg {
         width: 18px;
         height: 18px;
         flex-shrink: 0;
         margin-top: 2px;
         color: var(--fg);
       }
-      .klar-callout > div {
+
+      .klar-callout>div {
         flex: 1;
         min-width: 0;
       }
+
       .klar-callout p {
         margin: 0;
         color: inherit;
       }
-      .klar-callout p + p {
+
+      .klar-callout p+p {
         margin-top: 8px;
       }
+
       .klar-callout a {
         color: inherit;
       }
+
       .klar-callout strong {
         color: var(--fg);
       }
+
       .klar-callout--info {
         border-left-color: var(--fg);
       }
-      .klar-callout--info > svg {
+
+      .klar-callout--info>svg {
         color: var(--fg);
       }
+
       .klar-callout--success {
         background: var(--callout-success-bg);
         border-color: var(--callout-success-bd);
         border-left-color: #16a34a;
         color: var(--callout-success-fg);
       }
-      .klar-callout--success > svg {
+
+      .klar-callout--success>svg {
         color: #16a34a;
       }
+
       .klar-callout--success strong {
         color: inherit;
       }
@@ -907,6 +1009,7 @@
         padding-top: 28px;
         border-top: 1px solid var(--border);
       }
+
       .klar-article-nav__link {
         display: flex;
         flex-direction: column;
@@ -919,14 +1022,17 @@
           border-color var(--dur) var(--ease),
           background-color var(--dur) var(--ease);
       }
+
       .klar-article-nav__link:hover {
         border-color: var(--border-strong);
         background: var(--bg-soft);
       }
+
       .klar-article-nav__link--next {
         align-items: flex-end;
         text-align: right;
       }
+
       .klar-article-nav__label {
         font-size: 11.5px;
         font-weight: 500;
@@ -934,6 +1040,7 @@
         letter-spacing: 0.04em;
         color: var(--fg-faded);
       }
+
       .klar-article-nav__title {
         font-size: 14px;
         font-weight: 600;
@@ -952,6 +1059,7 @@
         max-height: calc(100vh - var(--nav-h) - 64px);
         overflow-y: auto;
       }
+
       .klar-toc__title {
         font-size: 12px;
         font-weight: 600;
@@ -960,15 +1068,18 @@
         letter-spacing: 0.04em;
         margin-bottom: 12px;
       }
+
       .klar-toc__list {
         list-style: none;
         padding: 0;
         margin: 0;
         border-left: 1px solid var(--border);
       }
+
       .klar-toc__list li {
         margin: 0;
       }
+
       .klar-toc__link {
         display: block;
         padding: 5px 14px;
@@ -980,13 +1091,16 @@
         margin-left: -1px;
         transition: color var(--dur) var(--ease);
       }
+
       .klar-toc__link[data-level="3"] {
         padding-left: 28px;
         font-size: 12.5px;
       }
+
       .klar-toc__link:hover {
         color: var(--fg);
       }
+
       .klar-toc__link.is-active {
         color: var(--fg);
         border-left-color: var(--fg);
@@ -1005,9 +1119,11 @@
         justify-content: center;
         padding-top: 12vh;
       }
+
       .klar-search-modal.is-open {
         display: flex;
       }
+
       .klar-search-modal__backdrop {
         position: absolute;
         inset: 0;
@@ -1015,6 +1131,7 @@
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
       }
+
       .klar-search-modal__container {
         position: relative;
         width: 100%;
@@ -1026,12 +1143,14 @@
         box-shadow: var(--shadow-lg);
         overflow: hidden;
       }
+
       .klar-search-modal__input-wrap {
         display: flex;
         align-items: center;
         padding: 14px 18px;
         border-bottom: 1px solid var(--border);
       }
+
       .klar-search-modal__input-wrap svg {
         width: 16px;
         height: 16px;
@@ -1039,6 +1158,7 @@
         flex-shrink: 0;
         margin-right: 12px;
       }
+
       .klar-search-modal__input {
         flex: 1;
         background: transparent;
@@ -1048,14 +1168,17 @@
         font: inherit;
         font-size: 15px;
       }
+
       .klar-search-modal__input::placeholder {
         color: var(--fg-faded);
       }
+
       .klar-search-modal__results {
         max-height: 50vh;
         overflow-y: auto;
         padding: 8px;
       }
+
       .klar-search-modal__result {
         display: flex;
         align-items: center;
@@ -1065,34 +1188,41 @@
         cursor: pointer;
         transition: background-color var(--dur) var(--ease);
       }
+
       .klar-search-modal__result:hover {
         background: var(--bg-hover);
       }
+
       .klar-search-modal__result-icon {
         width: 16px;
         height: 16px;
         color: var(--fg-faded);
         flex-shrink: 0;
       }
+
       .klar-search-modal__result-text {
         flex: 1;
         min-width: 0;
       }
+
       .klar-search-modal__result-title {
         font-size: 14px;
         color: var(--fg);
         font-weight: 500;
       }
+
       .klar-search-modal__result-section {
         font-size: 12px;
         color: var(--fg-faded);
       }
+
       .klar-search-modal__empty {
         padding: 24px;
         text-align: center;
         color: var(--fg-faded);
         font-size: 13.5px;
       }
+
       .klar-search-modal__footer {
         display: flex;
         gap: 16px;
@@ -1102,6 +1232,7 @@
         font-size: 11.5px;
         color: var(--fg-faded);
       }
+
       .klar-search-modal__footer kbd {
         margin-right: 4px;
       }
@@ -1128,6 +1259,7 @@
           transform var(--dur) var(--ease);
         z-index: 2000;
       }
+
       .klar-toast.is-visible {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
@@ -1141,23 +1273,29 @@
           opacity: 0;
           transform: translateY(8px);
         }
+
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
+
       .klar-page.is-active .klar-animate {
         animation: klar-fade-up 0.4s var(--ease) both;
       }
+
       .klar-page.is-active .klar-animate--d1 {
         animation-delay: 0.05s;
       }
+
       .klar-page.is-active .klar-animate--d2 {
         animation-delay: 0.1s;
       }
+
       .klar-page.is-active .klar-animate--d3 {
         animation-delay: 0.15s;
       }
+
       @media (prefers-reduced-motion: reduce) {
         .klar-page.is-active .klar-animate {
           animation: none;
@@ -1178,6 +1316,7 @@
         .klar-toc {
           display: none;
         }
+
         .klar-content {
           padding: 40px 56px 80px;
         }
@@ -1188,16 +1327,20 @@
           padding: 0 16px;
           gap: 8px;
         }
+
         .klar-nav__menu-btn {
           display: inline-flex;
         }
+
         .klar-nav__logo {
           min-width: 0;
           padding-right: 0;
         }
+
         .klar-nav__center {
           display: none;
         }
+
         .klar-sidebar {
           transform: translateX(-100%);
           transition: transform 200ms var(--ease);
@@ -1205,28 +1348,36 @@
           border-right: 1px solid var(--border);
           box-shadow: var(--shadow);
         }
+
         .klar-sidebar.is-open {
           transform: translateX(0);
         }
+
         .klar-sidebar-overlay {
           display: block;
         }
+
         .klar-main {
           margin-left: 0;
         }
+
         .klar-content {
           padding: 28px 20px 80px;
           gap: 0;
         }
+
         .klar-article h1 {
           font-size: 30px;
         }
+
         .klar-article__description {
           font-size: 16px;
         }
+
         .klar-features {
           grid-template-columns: 1fr;
         }
+
         .klar-article-nav {
           grid-template-columns: 1fr;
         }
@@ -1238,20 +1389,9 @@
      NAVIGATION
      ════════════════════════════════════ -->
     <nav class="klar-nav" role="navigation" aria-label="Main navigation">
-      <button
-        class="klar-nav__menu-btn"
-        id="klarMenuBtn"
-        aria-label="Toggle menu"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          width="20"
-          height="20"
-        >
+      <button class="klar-nav__menu-btn" id="klarMenuBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20"
+          height="20">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -1259,84 +1399,46 @@
       </button>
       <!-- <img src="images/klar-logo.png" />-->
       <a href="#" class="klar-nav__logo" data-nav="page-getting-started">
-        <span class="klar-nav__logo-mark"
-          ><svg viewBox="0 0 16 16" fill="currentColor">
-            <path
-              fill="currentColor"
-              fill-rule="evenodd"
+        <span class="klar-nav__logo-mark"><svg viewBox="0 0 16 16" fill="currentColor">
+            <path fill="currentColor" fill-rule="evenodd"
               d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
-              clip-rule="evenodd"
-            /></svg
-        ></span>
+              clip-rule="evenodd" />
+          </svg></span>
         <span style="font-family: Helvetica; font-size: 19px">KLAR</span>
         <span class="klar-nav__version">v0.9</span>
       </a>
 
       <div class="klar-nav__center">
         <div class="klar-nav__search">
-          <svg
-            class="klar-nav__search-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+          <svg class="klar-nav__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <circle cx="11" cy="11" r="8"></circle>
             <path d="M21 21l-4.35-4.35"></path>
           </svg>
-          <input
-            type="text"
-            class="klar-nav__search-input"
-            placeholder="Search documentation..."
-            id="klarSearchInput"
-            readonly=""
-            aria-label="Search documentation"
-          />
+          <input type="text" class="klar-nav__search-input" placeholder="Search documentation..." id="klarSearchInput"
+            readonly="" aria-label="Search documentation" />
           <span class="klar-nav__search-kbd">⌘K</span>
         </div>
       </div>
 
       <div class="klar-nav__actions">
-        <a
-          href="https://github.com"
-          class="klar-nav__btn"
-          aria-label="GitHub"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://github.com" class="klar-nav__btn" aria-label="GitHub" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path
-              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
-            ></path>
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+            </path>
           </svg>
         </a>
-        <button
-          class="klar-theme-toggle"
-          id="klarThemeToggle"
-          aria-label="Toggle theme"
-        >
-          <svg
-            class="klar-icon-sun"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+        <button class="klar-theme-toggle" id="klarThemeToggle" aria-label="Toggle theme">
+          <svg class="klar-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <circle cx="12" cy="12" r="5"></circle>
             <path
-              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-            ></path>
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+            </path>
           </svg>
-          <svg
-            class="klar-icon-moon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+          <svg class="klar-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
           </svg>
         </button>
@@ -1346,32 +1448,16 @@
     <!-- ════════════════════════════════════
      SEARCH MODAL
      ════════════════════════════════════ -->
-    <div
-      class="klar-search-modal"
-      id="klarSearchModal"
-      role="dialog"
-      aria-label="Search"
-    >
+    <div class="klar-search-modal" id="klarSearchModal" role="dialog" aria-label="Search">
       <div class="klar-search-modal__backdrop" id="klarSearchBackdrop"></div>
       <div class="klar-search-modal__container">
         <div class="klar-search-modal__input-wrap">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <circle cx="11" cy="11" r="8"></circle>
             <path d="M21 21l-4.35-4.35"></path>
           </svg>
-          <input
-            type="text"
-            class="klar-search-modal__input"
-            placeholder="Search docs..."
-            id="klarSearchModalInput"
-            autocomplete="off"
-          />
+          <input type="text" class="klar-search-modal__input" placeholder="Search docs..." id="klarSearchModalInput"
+            autocomplete="off" />
         </div>
         <div class="klar-search-modal__results" id="klarSearchResults"></div>
         <div class="klar-search-modal__footer">
@@ -1392,119 +1478,48 @@
      ════════════════════════════════════ -->
     <div class="klar-layout">
       <!-- Sidebar -->
-      <aside
-        class="klar-sidebar"
-        id="klarSidebar"
-        role="navigation"
-        aria-label="Documentation navigation"
-      >
+      <aside class="klar-sidebar" id="klarSidebar" role="navigation" aria-label="Documentation navigation">
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Getting Started</div>
           <div class="klar-sidebar__links">
-            <a
-              href="#"
-              class="klar-sidebar__link is-active"
-              data-nav="page-getting-started"
-              >Introduction</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-setup"
-              >Setup &amp; Login</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-quick-start"
-              >Quick Start</a
-            >
+            <a href="#" class="klar-sidebar__link is-active" data-nav="page-getting-started">Introduction</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-setup">Setup &amp; Login</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-quick-start">Quick Start</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Editing</div>
           <div class="klar-sidebar__links">
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-visual-editing"
-              >Visual Editing</a
-            >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-structured-panel"
-              >Structured Panel</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-code-editor"
-              >Code Editor</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-ai-assistant"
-              >AI Assistant</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="page-visual-editing">Visual Editing</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-structured-panel">Structured Panel</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-code-editor">Code Editor</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-ai-assistant">AI Assistant</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Features</div>
           <div class="klar-sidebar__links">
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-media-management"
-              >Media &amp; Icons</a
-            >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-page-management"
-              >Page Management</a
-            >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-shared-sections"
-              >Shared Sections</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-save-publish"
-              >Save &amp; Publish</a
-            >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-version-history"
-              >Version History</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-members"
-              >Members &amp; Invites</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-forms"
-              >Form Submissions</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="page-media-management">Media &amp; Icons</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-page-management">Page Management</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-shared-sections">Shared Sections</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-save-publish">Save &amp; Publish</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-version-history">Version History</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-members">Members &amp; Invites</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-forms">Form Submissions</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Configuration</div>
           <div class="klar-sidebar__links">
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-project-settings"
-              >Project Settings</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-selectors"
-              >Custom Selectors</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="page-project-settings">Project Settings</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-selectors">Custom Selectors</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Reference</div>
           <div class="klar-sidebar__links">
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-keyboard-shortcuts"
-              >Keyboard Shortcuts</a
-            >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-viewport-preview"
-              >Viewport &amp; Preview</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="page-keyboard-shortcuts">Keyboard Shortcuts</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-viewport-preview">Viewport &amp; Preview</a>
           </div>
         </div>
       </aside>
@@ -1532,13 +1547,7 @@
               <div class="klar-features klar-animate klar-animate--d1">
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <path d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5"></path>
                     </svg>
                   </div>
@@ -1550,13 +1559,7 @@
                 </div>
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <polyline points="16 18 22 12 16 6"></polyline>
                       <polyline points="8 6 2 12 8 18"></polyline>
                     </svg>
@@ -1569,16 +1572,10 @@
                 </div>
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
-                      ></path>
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22">
+                      </path>
                     </svg>
                   </div>
                   <div class="klar-feature-card__title">GitHub-Native</div>
@@ -1588,13 +1585,9 @@
                   </div>
                 </div>
               </div>
-              <div data-klar-test data-klar-blocks>
+              <div data-klar-test>
                 <h2 id="what-you-can-do">
-                  What You Can Do<a
-                    href="#what-you-can-do"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What You Can Do<a href="#what-you-can-do" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -1687,11 +1680,7 @@
                   </li>
                 </ul>
                 <h2 id="how-it-works">
-                  How It Works<a
-                    href="#how-it-works"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  How It Works<a href="#how-it-works" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Go to <strong>klar.website</strong>, sign in with Google, and
@@ -1704,17 +1693,10 @@
                   <div class="klar-code-block__header">
                     <span class="klar-code-block__lang">HTML</span>
                     <button class="klar-code-block__copy" data-copy="">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                      >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
                         <rect x="9" y="9" width="13" height="13" rx="2"></rect>
-                        <path
-                          d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"
-                        ></path>
+                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
                       </svg>
                       Copy
                     </button>
@@ -1732,13 +1714,7 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
                 </div>
                 <div class="klar-callout klar-callout--success">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -1751,15 +1727,9 @@
               </div>
               <div class="klar-article-nav">
                 <div></div>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-setup"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-setup">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Setup &amp; Login →</span
-                  >
+                  <span class="klar-article-nav__title">Setup &amp; Login →</span>
                 </a>
               </div>
             </div>
@@ -1770,9 +1740,7 @@
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a>
                   <span>›</span>
-                  <a href="#" data-nav="page-getting-started"
-                    >Getting Started</a
-                  >
+                  <a href="#" data-nav="page-getting-started">Getting Started</a>
                   <span>›</span>
                   <span>Setup &amp; Login</span>
                 </div>
@@ -1793,11 +1761,7 @@
                 </p>
 
                 <h2 id="what-you-need">
-                  What You Need<a
-                    href="#what-you-need"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What You Need<a href="#what-you-need" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -1812,33 +1776,21 @@
                 </ul>
 
                 <div class="klar-callout klar-callout--info">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M12 16v-4M12 8h.01"></path>
                   </svg>
                   <div>
                     To create a GitHub token, go to
-                    <strong
-                      >GitHub → Settings → Developer settings → Personal access
-                      tokens → Tokens (classic)</strong
-                    >, and generate a new token with <code>repo</code> and
+                    <strong>GitHub → Settings → Developer settings → Personal access
+                      tokens → Tokens (classic)</strong>, and generate a new token with <code>repo</code> and
                     <code>pages</code> scope. Your token is encrypted before
                     being stored.
                   </div>
                 </div>
 
                 <h2 id="create-project">
-                  Create a Project<a
-                    href="#create-project"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Create a Project<a href="#create-project" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   From the dashboard, click <strong>New Project</strong>. Fill
@@ -1889,16 +1841,12 @@
                   <strong>Images Folder</strong> (for the media library),
                   <strong>CSS File</strong> and <strong>JS File</strong> paths
                   (for the code editor), and more. See
-                  <a href="#" data-nav="page-project-settings"
-                    >Project Settings</a
-                  >
+                  <a href="#" data-nav="page-project-settings">Project Settings</a>
                   for all options.
                 </p>
 
                 <h2 id="dashboard">
-                  The Dashboard<a href="#dashboard" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  The Dashboard<a href="#dashboard" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Your dashboard shows all your projects. You can search
@@ -1911,19 +1859,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-getting-started"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-getting-started">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Introduction</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-quick-start"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-quick-start">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Quick Start →</span>
                 </a>
@@ -1936,9 +1876,7 @@
                 <div class="klar-article__breadcrumb">
                   <a href="#">Docs</a>
                   <span>›</span>
-                  <a href="#" data-nav="page-getting-started"
-                    >Getting Started</a
-                  >
+                  <a href="#" data-nav="page-getting-started">Getting Started</a>
                   <span>›</span>
                   <span>Quick Start</span>
                 </div>
@@ -1949,11 +1887,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="step-1">
-                  1. Sign In &amp; Create a Project<a
-                    href="#step-1"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  1. Sign In &amp; Create a Project<a href="#step-1" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Go to <strong>klar.website</strong>, sign in with Google, and
@@ -1962,9 +1896,7 @@
                 </p>
 
                 <h2 id="step-2">
-                  2. Start Editing<a href="#step-2" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  2. Start Editing<a href="#step-2" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Klar loads your page in a live preview. Hover over any element
@@ -1979,9 +1911,7 @@
                 </p>
 
                 <h2 id="step-3">
-                  3. Make Changes<a href="#step-3" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  3. Make Changes<a href="#step-3" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Edit text by typing directly in the preview. Use the
@@ -1997,11 +1927,7 @@
                 </p>
 
                 <h2 id="step-4">
-                  4. Save &amp; Publish<a
-                    href="#step-4"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  4. Save &amp; Publish<a href="#step-4" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Press <kbd>Cmd+S</kbd> (or click Save) to commit your changes
@@ -2016,13 +1942,7 @@
               </div>
 
               <div class="klar-callout klar-callout--success">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
@@ -2035,21 +1955,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-setup"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-setup">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Setup &amp; Login</span
-                  >
+                  <span class="klar-article-nav__title">← Setup &amp; Login</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-visual-editing"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-visual-editing">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Visual Editing →</span>
                 </a>
@@ -2060,8 +1970,7 @@
             <div class="klar-page" id="page-visual-editing">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>Visual Editing</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Visual Editing</span>
                 </div>
                 <h1>Visual Editing</h1>
                 <p class="klar-article__description">
@@ -2071,11 +1980,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="how-editing-works">
-                  How It Works<a
-                    href="#how-editing-works"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  How It Works<a href="#how-editing-works" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Your website loads in a live preview inside the editor. Hover
@@ -2085,11 +1990,7 @@
                 </p>
 
                 <h2 id="editable-elements">
-                  Editable Elements<a
-                    href="#editable-elements"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Editable Elements<a href="#editable-elements" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   By default, Klar makes the following element types editable:
@@ -2121,11 +2022,7 @@
                 </ul>
 
                 <h2 id="text-editing">
-                  Text Editing<a
-                    href="#text-editing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Text Editing<a href="#text-editing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click any text element to start typing directly on the page.
@@ -2143,11 +2040,7 @@
                 </p>
 
                 <h2 id="block-toolbar">
-                  Block Toolbar<a
-                    href="#block-toolbar"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Block Toolbar<a href="#block-toolbar" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   When you hover a block inside a list, grid, or content group,
@@ -2178,11 +2071,7 @@
                 </p>
 
                 <h2 id="table-editing">
-                  Table Editing<a
-                    href="#table-editing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Table Editing<a href="#table-editing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click inside any table cell to edit its contents. A cell
@@ -2192,11 +2081,7 @@
                 </p>
 
                 <h2 id="undo-redo">
-                  Undo &amp; Redo<a
-                    href="#undo-redo"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Undo &amp; Redo<a href="#undo-redo" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Press <kbd>Cmd+Z</kbd> to step backwards through your pending
@@ -2208,11 +2093,7 @@
                 </p>
 
                 <h2 id="container-editing">
-                  Container &amp; List Editing<a
-                    href="#container-editing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Container &amp; List Editing<a href="#container-editing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   For repeating elements like lists, feature grids, or card
@@ -2236,11 +2117,7 @@
                 </p>
 
                 <h2 id="sections-navigation">
-                  Sections Navigation<a
-                    href="#sections-navigation"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Sections Navigation<a href="#sections-navigation" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The left panel shows your page structure organized by sections
@@ -2248,17 +2125,11 @@
                   to scroll the preview directly to it. Sections are
                   auto-detected from your HTML structure, or you can configure a
                   custom sections selector in
-                  <a href="#" data-nav="page-project-settings"
-                    >Project Settings</a
-                  >.
+                  <a href="#" data-nav="page-project-settings">Project Settings</a>.
                 </p>
 
                 <h2 id="script-toggle">
-                  Script Toggle<a
-                    href="#script-toggle"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Script Toggle<a href="#script-toggle" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   By default, JavaScript in your page is disabled in the editor
@@ -2269,23 +2140,14 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-quick-start"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-quick-start">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Quick Start</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-structured-panel"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
+                  data-nav="page-structured-panel">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Structured Panel →</span
-                  >
+                  <span class="klar-article-nav__title">Structured Panel →</span>
                 </a>
               </div>
             </div>
@@ -2294,8 +2156,7 @@
             <div class="klar-page" id="page-structured-panel">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>Structured Panel</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Structured Panel</span>
                 </div>
                 <h1>Structured Panel</h1>
                 <p class="klar-article__description">
@@ -2305,9 +2166,7 @@
               </div>
 
               <h2 id="panel-overview">
-                Overview<a href="#panel-overview" class="klar-heading-anchor"
-                  >#</a
-                >
+                Overview<a href="#panel-overview" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The structured panel is the right sidebar. When you select an
@@ -2317,11 +2176,7 @@
               </p>
 
               <h2 id="element-fields">
-                What You Can Edit<a
-                  href="#element-fields"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                What You Can Edit<a href="#element-fields" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Depending on the element type, the panel shows different fields:
@@ -2389,9 +2244,7 @@
               </div>
 
               <h2 id="element-list">
-                Element List<a href="#element-list" class="klar-heading-anchor"
-                  >#</a
-                >
+                Element List<a href="#element-list" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 When no element is selected, the panel shows a scrollable list
@@ -2413,11 +2266,7 @@
               </p>
 
               <h2 id="edit-tracking">
-                Edit Tracking<a
-                  href="#edit-tracking"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Edit Tracking<a href="#edit-tracking" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Edited fields are highlighted with a yellow border, and the
@@ -2427,9 +2276,7 @@
               </p>
 
               <h2 id="raw-html">
-                Raw HTML Editing<a href="#raw-html" class="klar-heading-anchor"
-                  >#</a
-                >
+                Raw HTML Editing<a href="#raw-html" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Every selected element exposes a raw HTML view powered by
@@ -2451,9 +2298,7 @@
               </p>
 
               <h2 id="blocks-tab">
-                Blocks Tab<a href="#blocks-tab" class="klar-heading-anchor"
-                  >#</a
-                >
+                Blocks Tab<a href="#blocks-tab" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 When the selected element is a section or container, the blocks
@@ -2464,9 +2309,7 @@
               </p>
 
               <h2 id="link-bubble">
-                Link Bubble<a href="#link-bubble" class="klar-heading-anchor"
-                  >#</a
-                >
+                Link Bubble<a href="#link-bubble" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Editing a link href shows a small bubble above the input with a
@@ -2477,19 +2320,11 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-visual-editing"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-visual-editing">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Visual Editing</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-code-editor"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-code-editor">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Code Editor →</span>
                 </a>
@@ -2500,8 +2335,7 @@
             <div class="klar-page" id="page-code-editor">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>Code Editor</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Code Editor</span>
                 </div>
                 <h1>Code Editor</h1>
                 <p class="klar-article__description">
@@ -2511,11 +2345,7 @@
               </div>
 
               <h2 id="opening-code-editor">
-                Opening the Code Editor<a
-                  href="#opening-code-editor"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Opening the Code Editor<a href="#opening-code-editor" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Toggle the code editor from the toolbar. The editor panel can be
@@ -2524,11 +2354,7 @@
               </p>
 
               <h2 id="code-tabs">
-                HTML, CSS &amp; JS Tabs<a
-                  href="#code-tabs"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                HTML, CSS &amp; JS Tabs<a href="#code-tabs" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The code editor has separate tabs depending on your project
@@ -2555,9 +2381,7 @@
               </p>
 
               <h2 id="code-features">
-                Features<a href="#code-features" class="klar-heading-anchor"
-                  >#</a
-                >
+                Features<a href="#code-features" class="klar-heading-anchor">#</a>
               </h2>
               <ul>
                 <li>Syntax highlighting for HTML, CSS, and JavaScript</li>
@@ -2573,21 +2397,11 @@
               </ul>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-structured-panel"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-structured-panel">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Structured Panel</span
-                  >
+                  <span class="klar-article-nav__title">← Structured Panel</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-ai-assistant"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-ai-assistant">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">AI Assistant →</span>
                 </a>
@@ -2598,8 +2412,7 @@
             <div class="klar-page" id="page-ai-assistant">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>AI Assistant</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>AI Assistant</span>
                 </div>
                 <h1>AI Assistant</h1>
                 <p class="klar-article__description">
@@ -2619,11 +2432,7 @@
               </p>
 
               <h2 id="ai-capabilities">
-                What You Can Do<a
-                  href="#ai-capabilities"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                What You Can Do<a href="#ai-capabilities" class="klar-heading-anchor">#</a>
               </h2>
               <ul>
                 <li>Ask AI to generate and insert HTML snippets</li>
@@ -2634,9 +2443,7 @@
               </ul>
 
               <h2 id="ai-context">
-                Element Context<a href="#ai-context" class="klar-heading-anchor"
-                  >#</a
-                >
+                Element Context<a href="#ai-context" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 When you have an element selected in the visual editor, the AI
@@ -2646,9 +2453,7 @@
               </p>
 
               <h2 id="ai-apply">
-                Applying Changes<a href="#ai-apply" class="klar-heading-anchor"
-                  >#</a
-                >
+                Applying Changes<a href="#ai-apply" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 When the AI generates code, you'll see apply buttons for each
@@ -2664,23 +2469,14 @@
               </ul>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-code-editor"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-code-editor">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Code Editor</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-media-management"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
+                  data-nav="page-media-management">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Media &amp; Icons →</span
-                  >
+                  <span class="klar-article-nav__title">Media &amp; Icons →</span>
                 </a>
               </div>
             </div>
@@ -2689,8 +2485,7 @@
             <div class="klar-page" id="page-media-management">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Media &amp; Icons</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Media &amp; Icons</span>
                 </div>
                 <h1>Media &amp; Icons</h1>
                 <p class="klar-article__description">
@@ -2700,11 +2495,7 @@
               </div>
 
               <h2 id="media-library">
-                Media Library<a
-                  href="#media-library"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Media Library<a href="#media-library" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 When you click an image element, the structured panel shows the
@@ -2728,11 +2519,7 @@
               </p>
 
               <h2 id="assets-folder">
-                Assets Folder<a
-                  href="#assets-folder"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Assets Folder<a href="#assets-folder" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 If you configure an assets folder in project settings, you also
@@ -2741,9 +2528,7 @@
               </p>
 
               <h2 id="icon-picker">
-                Icon Picker<a href="#icon-picker" class="klar-heading-anchor"
-                  >#</a
-                >
+                Icon Picker<a href="#icon-picker" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 For SVG icons, click the icon picker button when an SVG element
@@ -2768,11 +2553,7 @@
               </p>
 
               <h2 id="background-images">
-                Background Images<a
-                  href="#background-images"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Background Images<a href="#background-images" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Elements with CSS background images can be edited through the
@@ -2783,19 +2564,11 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-ai-assistant"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-ai-assistant">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← AI Assistant</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-management"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-management">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Page Management →</span>
                 </a>
@@ -2806,8 +2579,7 @@
             <div class="klar-page" id="page-page-management">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Page Management</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Page Management</span>
                 </div>
                 <h1>Page Management</h1>
                 <p class="klar-article__description">
@@ -2817,11 +2589,7 @@
               </div>
 
               <h2 id="page-switcher">
-                Page Switcher<a
-                  href="#page-switcher"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Page Switcher<a href="#page-switcher" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The page switcher dropdown in the toolbar shows the current file
@@ -2830,9 +2598,7 @@
               </p>
 
               <h2 id="page-actions">
-                Page Actions<a href="#page-actions" class="klar-heading-anchor"
-                  >#</a
-                >
+                Page Actions<a href="#page-actions" class="klar-heading-anchor">#</a>
               </h2>
               <ul>
                 <li>
@@ -2855,9 +2621,7 @@
               </p>
 
               <h2 id="open-website">
-                Open Website<a href="#open-website" class="klar-heading-anchor"
-                  >#</a
-                >
+                Open Website<a href="#open-website" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Use the "Open website" link in the toolbar to open the live
@@ -2866,21 +2630,11 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-media-management"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-media-management">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Media &amp; Icons</span
-                  >
+                  <span class="klar-article-nav__title">← Media &amp; Icons</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-shared-sections"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-shared-sections">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Shared Sections →</span>
                 </a>
@@ -2891,8 +2645,7 @@
             <div class="klar-page" id="page-shared-sections">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Shared Sections</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Shared Sections</span>
                 </div>
                 <h1>Shared Sections</h1>
                 <p class="klar-article__description">
@@ -2902,11 +2655,7 @@
               </div>
 
               <h2 id="what-are-shared">
-                What Are Shared Sections?<a
-                  href="#what-are-shared"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                What Are Shared Sections?<a href="#what-are-shared" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Most websites have elements that appear on every page — a
@@ -2916,11 +2665,7 @@
               </p>
 
               <h2 id="setup-shared">
-                Setting Up Shared Sections<a
-                  href="#setup-shared"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Setting Up Shared Sections<a href="#setup-shared" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 In your project settings (Editor tab), enter CSS selectors for
@@ -2937,9 +2682,7 @@
               </ul>
 
               <h2 id="syncing">
-                How Syncing Works<a href="#syncing" class="klar-heading-anchor"
-                  >#</a
-                >
+                How Syncing Works<a href="#syncing" class="klar-heading-anchor">#</a>
               </h2>
               <p>There are two ways to sync shared sections:</p>
               <ul>
@@ -2961,23 +2704,13 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-page-management"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-page-management">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Page Management</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-save-publish"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-save-publish">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Save &amp; Publish →</span
-                  >
+                  <span class="klar-article-nav__title">Save &amp; Publish →</span>
                 </a>
               </div>
             </div>
@@ -2986,8 +2719,7 @@
             <div class="klar-page" id="page-save-publish">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Save &amp; Publish</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Save &amp; Publish</span>
                 </div>
                 <h1>Save &amp; Publish</h1>
                 <p class="klar-article__description">
@@ -3011,9 +2743,7 @@
               </p>
 
               <h2 id="publishing">
-                Publishing<a href="#publishing" class="klar-heading-anchor"
-                  >#</a
-                >
+                Publishing<a href="#publishing" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Click <strong>Publish</strong> (or press <kbd>Cmd+P</kbd>) to
@@ -3033,13 +2763,7 @@
               </ol>
 
               <div class="klar-callout klar-callout--info">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 16v-4M12 8h.01"></path>
                 </svg>
@@ -3052,11 +2776,7 @@
               </div>
 
               <h2 id="shared-sync-on-save">
-                Shared Section Sync<a
-                  href="#shared-sync-on-save"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Shared Section Sync<a href="#shared-sync-on-save" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 If you have shared sections configured and auto-sync enabled,
@@ -3066,19 +2786,11 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-shared-sections"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-shared-sections">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Shared Sections</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-version-history"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-version-history">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Version History →</span>
                 </a>
@@ -3089,8 +2801,7 @@
             <div class="klar-page" id="page-version-history">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Version History</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Version History</span>
                 </div>
                 <h1>Version History</h1>
                 <p class="klar-article__description">
@@ -3100,11 +2811,7 @@
               </div>
 
               <h2 id="viewing-history">
-                Viewing History<a
-                  href="#viewing-history"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Viewing History<a href="#viewing-history" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Open the version history tab in the structured panel to see a
@@ -3119,11 +2826,7 @@
               <p>Use the "Previous" button to load older commits.</p>
 
               <h2 id="restoring-version">
-                Restoring a Version<a
-                  href="#restoring-version"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Restoring a Version<a href="#restoring-version" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Click any commit to load that version of the page into the
@@ -3133,25 +2836,13 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-save-publish"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-save-publish">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Save &amp; Publish</span
-                  >
+                  <span class="klar-article-nav__title">← Save &amp; Publish</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-members"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-members">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Members &amp; Invites →</span
-                  >
+                  <span class="klar-article-nav__title">Members &amp; Invites →</span>
                 </a>
               </div>
             </div>
@@ -3160,8 +2851,8 @@
             <div class="klar-page" id="page-members">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Members &amp; Invites</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Members &amp;
+                    Invites</span>
                 </div>
                 <h1>Members &amp; Invites</h1>
                 <p class="klar-article__description">
@@ -3187,11 +2878,7 @@
               </ul>
 
               <h2 id="invite-member">
-                Inviting a Member<a
-                  href="#invite-member"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Inviting a Member<a href="#invite-member" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Open project settings and switch to the
@@ -3206,11 +2893,7 @@
               </p>
 
               <h2 id="accept-invite">
-                Accepting an Invite<a
-                  href="#accept-invite"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Accepting an Invite<a href="#accept-invite" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The recipient opens the invite URL and signs in with the Google
@@ -3219,11 +2902,7 @@
               </p>
 
               <h2 id="manage-members">
-                Managing Members<a
-                  href="#manage-members"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Managing Members<a href="#manage-members" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Admins can remove a member from the Members tab. Two safety
@@ -3238,23 +2917,13 @@
               </ul>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-version-history"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-version-history">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Version History</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-forms"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-forms">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Form Submissions →</span
-                  >
+                  <span class="klar-article-nav__title">Form Submissions →</span>
                 </a>
               </div>
             </div>
@@ -3263,8 +2932,7 @@
             <div class="klar-page" id="page-forms">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Form Submissions</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Form Submissions</span>
                 </div>
                 <h1>Form Submissions</h1>
                 <p class="klar-article__description">
@@ -3274,9 +2942,7 @@
               </div>
 
               <h2 id="form-overview">
-                Overview<a href="#form-overview" class="klar-heading-anchor"
-                  >#</a
-                >
+                Overview<a href="#form-overview" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Every project gets a unique, tokenized submission URL of the
@@ -3287,11 +2953,7 @@
               </p>
 
               <h2 id="form-snippet">
-                Connecting a Form<a
-                  href="#form-snippet"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Connecting a Form<a href="#form-snippet" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The Forms tab in project settings shows the submission URL and a
@@ -3312,11 +2974,7 @@
               </div>
 
               <h2 id="form-defenses">
-                Anti-Abuse Defenses<a
-                  href="#form-defenses"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Anti-Abuse Defenses<a href="#form-defenses" class="klar-heading-anchor">#</a>
               </h2>
               <ul>
                 <li>
@@ -3353,11 +3011,7 @@
               </p>
 
               <h2 id="form-token">
-                Rotating the Token<a
-                  href="#form-token"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Rotating the Token<a href="#form-token" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 If the submission URL leaks or starts receiving abuse you can't
@@ -3367,25 +3021,14 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-members"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-members">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Members &amp; Invites</span
-                  >
+                  <span class="klar-article-nav__title">← Members &amp; Invites</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-project-settings"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
+                  data-nav="page-project-settings">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Project Settings →</span
-                  >
+                  <span class="klar-article-nav__title">Project Settings →</span>
                 </a>
               </div>
             </div>
@@ -3394,8 +3037,8 @@
             <div class="klar-page" id="page-project-settings">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Configuration</span
-                  ><span>›</span><span>Project Settings</span>
+                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Project
+                    Settings</span>
                 </div>
                 <h1>Project Settings</h1>
                 <p class="klar-article__description">
@@ -3405,11 +3048,7 @@
               </div>
 
               <h2 id="opening-settings">
-                Opening Settings<a
-                  href="#opening-settings"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Opening Settings<a href="#opening-settings" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Click the gear icon in the toolbar to open the settings modal.
@@ -3422,9 +3061,7 @@
               </p>
 
               <h2 id="github-tab">
-                GitHub Tab<a href="#github-tab" class="klar-heading-anchor"
-                  >#</a
-                >
+                GitHub Tab<a href="#github-tab" class="klar-heading-anchor">#</a>
               </h2>
               <div class="klar-table-wrap">
                 <table class="klar-table">
@@ -3494,9 +3131,7 @@
               </div>
 
               <h2 id="editor-tab">
-                Editor Tab<a href="#editor-tab" class="klar-heading-anchor"
-                  >#</a
-                >
+                Editor Tab<a href="#editor-tab" class="klar-heading-anchor">#</a>
               </h2>
               <div class="klar-table-wrap">
                 <table class="klar-table">
@@ -3527,9 +3162,7 @@
                       <td>
                         Selectors for sections that appear on all pages (e.g.,
                         <code>nav, footer</code>). See
-                        <a href="#" data-nav="shared-sections"
-                          >Shared Sections</a
-                        >.
+                        <a href="#" data-nav="shared-sections">Shared Sections</a>.
                       </td>
                     </tr>
                     <tr>
@@ -3558,9 +3191,7 @@
               </div>
 
               <h2 id="members-tab">
-                Members Tab<a href="#members-tab" class="klar-heading-anchor"
-                  >#</a
-                >
+                Members Tab<a href="#members-tab" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Invite collaborators to a project by email. Each member is
@@ -3582,11 +3213,7 @@
               </p>
 
               <h2 id="publishing-tab">
-                Publishing Tab<a
-                  href="#publishing-tab"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Publishing Tab<a href="#publishing-tab" class="klar-heading-anchor">#</a>
               </h2>
               <div class="klar-table-wrap">
                 <table class="klar-table">
@@ -3610,11 +3237,7 @@
               </div>
 
               <h2 id="page-overrides">
-                Per-Page Overrides<a
-                  href="#page-overrides"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Per-Page Overrides<a href="#page-overrides" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Editor settings (<strong>Editable Elements</strong>,
@@ -3630,9 +3253,7 @@
               </p>
 
               <h2 id="danger-zone">
-                Danger Zone<a href="#danger-zone" class="klar-heading-anchor"
-                  >#</a
-                >
+                Danger Zone<a href="#danger-zone" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The danger zone tab lets you delete the project entirely. This
@@ -3641,25 +3262,13 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-forms"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-forms">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Form Submissions</span
-                  >
+                  <span class="klar-article-nav__title">← Form Submissions</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-selectors"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-selectors">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Custom Selectors →</span
-                  >
+                  <span class="klar-article-nav__title">Custom Selectors →</span>
                 </a>
               </div>
             </div>
@@ -3668,8 +3277,8 @@
             <div class="klar-page" id="page-selectors">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Configuration</span
-                  ><span>›</span><span>Custom Selectors</span>
+                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Custom
+                    Selectors</span>
                 </div>
                 <h1>Custom Selectors</h1>
                 <p class="klar-article__description">
@@ -3679,11 +3288,7 @@
               </div>
 
               <h2 id="editable-scope">
-                Editable Selectors<a
-                  href="#editable-scope"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Editable Selectors<a href="#editable-scope" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 By default, Klar makes all standard text elements editable
@@ -3711,11 +3316,7 @@
               </div>
 
               <h2 id="selector-syntax">
-                Selector Syntax<a
-                  href="#selector-syntax"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Selector Syntax<a href="#selector-syntax" class="klar-heading-anchor">#</a>
               </h2>
               <div class="klar-table-wrap">
                 <table class="klar-table">
@@ -3754,11 +3355,7 @@
               </div>
 
               <h2 id="data-attributes">
-                HTML Data Attributes<a
-                  href="#data-attributes"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                HTML Data Attributes<a href="#data-attributes" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 You can also mark elements directly in your HTML without
@@ -3780,25 +3377,14 @@
               </ul>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-project-settings"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-project-settings">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Project Settings</span
-                  >
+                  <span class="klar-article-nav__title">← Project Settings</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-keyboard-shortcuts"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
+                  data-nav="page-keyboard-shortcuts">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Keyboard Shortcuts →</span
-                  >
+                  <span class="klar-article-nav__title">Keyboard Shortcuts →</span>
                 </a>
               </div>
             </div>
@@ -3807,8 +3393,7 @@
             <div class="klar-page" id="page-keyboard-shortcuts">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Reference</span
-                  ><span>›</span><span>Keyboard Shortcuts</span>
+                  <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Keyboard Shortcuts</span>
                 </div>
                 <h1>Keyboard Shortcuts</h1>
                 <p class="klar-article__description">
@@ -3817,9 +3402,7 @@
               </div>
 
               <h2 id="global-shortcuts">
-                Global<a href="#global-shortcuts" class="klar-heading-anchor"
-                  >#</a
-                >
+                Global<a href="#global-shortcuts" class="klar-heading-anchor">#</a>
               </h2>
               <div class="klar-table-wrap">
                 <table class="klar-table">
@@ -3859,11 +3442,7 @@
               </div>
 
               <h2 id="editing-shortcuts">
-                Visual Editor<a
-                  href="#editing-shortcuts"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Visual Editor<a href="#editing-shortcuts" class="klar-heading-anchor">#</a>
               </h2>
               <div class="klar-table-wrap">
                 <table class="klar-table">
@@ -3902,13 +3481,7 @@
               </div>
 
               <div class="klar-callout klar-callout--info">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 16v-4M12 8h.01"></path>
                 </svg>
@@ -3919,25 +3492,14 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-selectors"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-selectors">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Custom Selectors</span
-                  >
+                  <span class="klar-article-nav__title">← Custom Selectors</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-viewport-preview"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
+                  data-nav="page-viewport-preview">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Viewport &amp; Preview →</span
-                  >
+                  <span class="klar-article-nav__title">Viewport &amp; Preview →</span>
                 </a>
               </div>
             </div>
@@ -3946,8 +3508,8 @@
             <div class="klar-page" id="page-viewport-preview">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Reference</span
-                  ><span>›</span><span>Viewport &amp; Preview</span>
+                  <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Viewport &amp;
+                    Preview</span>
                 </div>
                 <h1>Viewport &amp; Preview</h1>
                 <p class="klar-article__description">
@@ -3957,11 +3519,7 @@
               </div>
 
               <h2 id="viewport-sizes">
-                Viewport Sizes<a
-                  href="#viewport-sizes"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Viewport Sizes<a href="#viewport-sizes" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 The toolbar provides preset viewport sizes to test responsive
@@ -3997,11 +3555,7 @@
               </div>
 
               <h2 id="responsive-mode">
-                Responsive Mode<a
-                  href="#responsive-mode"
-                  class="klar-heading-anchor"
-                  >#</a
-                >
+                Responsive Mode<a href="#responsive-mode" class="klar-heading-anchor">#</a>
               </h2>
               <p>
                 Toggle responsive mode to freely resize the preview by dragging
@@ -4011,9 +3565,7 @@
               </p>
 
               <h2 id="preview-mode">
-                Preview Mode<a href="#preview-mode" class="klar-heading-anchor"
-                  >#</a
-                >
+                Preview Mode<a href="#preview-mode" class="klar-heading-anchor">#</a>
               </h2>
               <p>Click the eye icon to toggle preview mode. In preview mode:</p>
               <ul>
@@ -4044,15 +3596,9 @@
               </p>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-keyboard-shortcuts"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-keyboard-shortcuts">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Keyboard Shortcuts</span
-                  >
+                  <span class="klar-article-nav__title">← Keyboard Shortcuts</span>
                 </a>
                 <div></div>
               </div>
@@ -4077,7 +3623,7 @@
      JAVASCRIPT
      ════════════════════════════════════ -->
     <script>
-      (function () {
+      (function() {
         "use strict";
 
         // ─── Theme Toggle ───
@@ -4158,16 +3704,15 @@
         document.addEventListener("keydown", (e) => {
           if ((e.metaKey || e.ctrlKey) && e.key === "k") {
             e.preventDefault();
-            searchModal.classList.contains("is-open")
-              ? closeSearch()
-              : openSearch();
+            searchModal.classList.contains("is-open") ?
+              closeSearch() :
+              openSearch();
           }
           if (e.key === "Escape") closeSearch();
         });
 
         // Search data
-        const pages = [
-          {
+        const pages = [{
             id: "page-getting-started",
             title: "Introduction",
             section: "Getting Started",
@@ -4282,8 +3827,8 @@
 
           const matches = pages.filter(
             (p) =>
-              p.title.toLowerCase().includes(q) ||
-              p.section.toLowerCase().includes(q),
+            p.title.toLowerCase().includes(q) ||
+            p.section.toLowerCase().includes(q),
           );
 
           if (matches.length === 0) {
@@ -4398,8 +3943,7 @@
                   if (link) link.classList.add("is-active");
                 }
               });
-            },
-            {
+            }, {
               rootMargin: "-80px 0px -70% 0px",
             },
           );
@@ -4423,7 +3967,8 @@
           navigator.clipboard.writeText(code.textContent).then(() => {
             copyBtn.classList.add("is-copied");
             const origHTML = copyBtn.innerHTML;
-            copyBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
+            copyBtn.innerHTML =
+              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
             setTimeout(() => {
               copyBtn.classList.remove("is-copied");
               copyBtn.innerHTML = origHTML;
