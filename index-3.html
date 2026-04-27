@@ -25,7 +25,7 @@
         --nav-h: 64px;
         --sidebar-w: 304px;
         --toc-w: 240px;
-        --content-max: 100%;
+        --content-max: 36rem;
 
         --radius-sm: 6px;
         --radius: 8px;
@@ -474,6 +474,7 @@
         flex: 1;
         min-width: 0;
         max-width: var(--content-max);
+        margin: 0 auto;
       }
       .klar-page {
         display: none;
@@ -1164,9 +1165,16 @@
       }
 
       /* ───────────────────────────────────────────────
-         Responsive
+         Responsive — breakpoints mirror Ollama/Tailwind
+         (lg 1024, xl 1280, 2xl 1536)
          ─────────────────────────────────────────────── */
-      @media (max-width: 1240px) {
+      @media (min-width: 1536px) {
+        :root {
+          --content-max: 42rem;
+        }
+      }
+
+      @media (max-width: 1279px) {
         .klar-toc {
           display: none;
         }
