@@ -15,15 +15,17 @@
          Ollama-inspired theme tokens
          ─────────────────────────────────────────────── */
       :root {
-        --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, "Helvetica Neue", Arial, sans-serif;
-        --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
-          Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --font-sans:
+          "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        --font-mono:
+          "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+          Consolas, "Liberation Mono", "Courier New", monospace;
 
         --nav-h: 64px;
-        --sidebar-w: 280px;
-        --toc-w: 224px;
-        --content-max: 720px;
+        --sidebar-w: 304px;
+        --toc-w: 240px;
+        --content-max: 100%;
 
         --radius-sm: 6px;
         --radius: 8px;
@@ -464,9 +466,9 @@
       }
       .klar-content {
         display: flex;
-        gap: 56px;
-        padding: 48px 56px 96px;
-        max-width: 1280px;
+        gap: 64px;
+        padding: 48px 64px 96px;
+        max-width: 100%;
       }
       .klar-article {
         flex: 1;
@@ -1141,12 +1143,12 @@
       /* ───────────────────────────────────────────────
          Responsive
          ─────────────────────────────────────────────── */
-      @media (max-width: 1180px) {
+      @media (max-width: 1240px) {
         .klar-toc {
           display: none;
         }
         .klar-content {
-          padding: 40px 48px 80px;
+          padding: 40px 56px 80px;
         }
       }
 
@@ -1435,16 +1437,10 @@
               data-nav="page-version-history"
               >Version History</a
             >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-members"
+            <a href="#" class="klar-sidebar__link" data-nav="page-members"
               >Members &amp; Invites</a
             >
-            <a
-              href="#"
-              class="klar-sidebar__link"
-              data-nav="page-forms"
+            <a href="#" class="klar-sidebar__link" data-nav="page-forms"
               >Form Submissions</a
             >
           </div>
@@ -1621,9 +1617,9 @@
                     your page with natural language
                   </li>
                   <li>
-                    <strong>Undo and redo</strong> — step backwards and
-                    forwards through your pending edits with
-                    <kbd>Cmd+Z</kbd> / <kbd>Cmd+Shift+Z</kbd>
+                    <strong>Undo and redo</strong> — step backwards and forwards
+                    through your pending edits with <kbd>Cmd+Z</kbd> /
+                    <kbd>Cmd+Shift+Z</kbd>
                   </li>
                   <li>
                     <strong>Multi-page management</strong> — create, duplicate,
@@ -2109,10 +2105,10 @@
                   line break inside the field.
                 </p>
                 <p>
-                  Paragraphs and content blocks open a TipTap-powered rich
-                  text editor for bold, italic, headings, lists, and links.
-                  Pasted content is sanitized so styling from the source is
-                  stripped out and the result stays clean.
+                  Paragraphs and content blocks open a TipTap-powered rich text
+                  editor for bold, italic, headings, lists, and links. Pasted
+                  content is sanitized so styling from the source is stripped
+                  out and the result stays clean.
                 </p>
 
                 <h2 id="block-toolbar">
@@ -2123,9 +2119,9 @@
                   >
                 </h2>
                 <p>
-                  When you hover a block inside a list, grid, or content
-                  group, a small floating toolbar appears next to it. From the
-                  toolbar you can:
+                  When you hover a block inside a list, grid, or content group,
+                  a small floating toolbar appears next to it. From the toolbar
+                  you can:
                 </p>
                 <ul>
                   <li><strong>Add</strong> — insert a new empty block</li>
@@ -2134,8 +2130,8 @@
                     including any connected partner element
                   </li>
                   <li>
-                    <strong>Move up / Move down</strong> — reorder blocks
-                    inside their container
+                    <strong>Move up / Move down</strong> — reorder blocks inside
+                    their container
                   </li>
                   <li>
                     <strong>Save as template</strong> — store the block's HTML
@@ -2146,8 +2142,8 @@
                   </li>
                 </ul>
                 <p>
-                  The toolbar follows the hovered block and adapts its
-                  position for both vertical lists and horizontal rows.
+                  The toolbar follows the hovered block and adapts its position
+                  for both vertical lists and horizontal rows.
                 </p>
 
                 <h2 id="table-editing">
@@ -2165,17 +2161,19 @@
                 </p>
 
                 <h2 id="undo-redo">
-                  Undo &amp; Redo<a href="#undo-redo" class="klar-heading-anchor"
+                  Undo &amp; Redo<a
+                    href="#undo-redo"
+                    class="klar-heading-anchor"
                     >#</a
                   >
                 </h2>
                 <p>
-                  Press <kbd>Cmd+Z</kbd> to step backwards through your
-                  pending edits and <kbd>Cmd+Shift+Z</kbd> (or <kbd>Cmd+Y</kbd>)
-                  to step forwards again. Undo also covers structural changes
-                  like add, duplicate, reorder, and delete inside the block
-                  toolbar — the iframe is kept in sync so the preview always
-                  matches the underlying edit state.
+                  Press <kbd>Cmd+Z</kbd> to step backwards through your pending
+                  edits and <kbd>Cmd+Shift+Z</kbd> (or <kbd>Cmd+Y</kbd>) to step
+                  forwards again. Undo also covers structural changes like add,
+                  duplicate, reorder, and delete inside the block toolbar — the
+                  iframe is kept in sync so the preview always matches the
+                  underlying edit state.
                 </p>
 
                 <h2 id="container-editing">
@@ -2405,10 +2403,9 @@
               <p>
                 Every selected element exposes a raw HTML view powered by
                 CodeMirror. Open it to edit the element's
-                <code>outerHTML</code> directly, with HTML syntax
-                highlighting. Useful for replacing an SVG icon with custom
-                markup or for surgical fixes that don't fit the structured
-                fields.
+                <code>outerHTML</code> directly, with HTML syntax highlighting.
+                Useful for replacing an SVG icon with custom markup or for
+                surgical fixes that don't fit the structured fields.
               </p>
 
               <h2 id="pick-mode">
@@ -2418,19 +2415,21 @@
                 Some settings (like the sections selector) accept a CSS
                 selector. Click the <strong>Pick</strong> button next to the
                 field and then click any element on the page — Klar copies the
-                element's selector into the field for you, so you don't have
-                to write it by hand.
+                element's selector into the field for you, so you don't have to
+                write it by hand.
               </p>
 
               <h2 id="blocks-tab">
-                Blocks Tab<a href="#blocks-tab" class="klar-heading-anchor">#</a>
+                Blocks Tab<a href="#blocks-tab" class="klar-heading-anchor"
+                  >#</a
+                >
               </h2>
               <p>
-                When the selected element is a section or container, the
-                blocks tab lists every child block as a draggable row. Expand
-                a row to edit its text fields, drag the handle to reorder,
-                duplicate or delete from the inline action icons, or save the
-                block as a reusable template for this project.
+                When the selected element is a section or container, the blocks
+                tab lists every child block as a draggable row. Expand a row to
+                edit its text fields, drag the handle to reorder, duplicate or
+                delete from the inline action icons, or save the block as a
+                reusable template for this project.
               </p>
 
               <h2 id="link-bubble">
@@ -2439,11 +2438,11 @@
                 >
               </h2>
               <p>
-                Editing a link href shows a small bubble above the input with
-                a <strong>Pick</strong> button to choose another page or
-                anchor in your repo. The picker lists HTML files in your
-                project plus any in-page <code>id</code> targets, so internal
-                links stay correct after you rename or move pages.
+                Editing a link href shows a small bubble above the input with a
+                <strong>Pick</strong> button to choose another page or anchor in
+                your repo. The picker lists HTML files in your project plus any
+                in-page <code>id</code> targets, so internal links stay correct
+                after you rename or move pages.
               </p>
 
               <div class="klar-article-nav">
@@ -3143,9 +3142,7 @@
               <h2 id="member-roles">
                 Roles<a href="#member-roles" class="klar-heading-anchor">#</a>
               </h2>
-              <p>
-                Each member of a project has one of two roles:
-              </p>
+              <p>Each member of a project has one of two roles:</p>
               <ul>
                 <li>
                   <strong>Admin</strong> — can edit content, manage members,
@@ -3153,8 +3150,8 @@
                   project owner is always an admin and can't be removed.
                 </li>
                 <li>
-                  <strong>Editor</strong> — can edit and save content but
-                  can't manage members or change project-level settings.
+                  <strong>Editor</strong> — can edit and save content but can't
+                  manage members or change project-level settings.
                 </li>
               </ul>
 
@@ -3167,16 +3164,14 @@
               </h2>
               <p>
                 Open project settings and switch to the
-                <strong>Members</strong> tab. Type the invitee's email
-                address, choose a role, and click <strong>Invite</strong>.
-                Klar generates a tokenized invite URL for that email address
-                only.
+                <strong>Members</strong> tab. Type the invitee's email address,
+                choose a role, and click <strong>Invite</strong>. Klar generates
+                a tokenized invite URL for that email address only.
               </p>
               <p>
                 If SMTP is configured, the invite link is sent automatically
-                from the Klar mail address. If SMTP isn't configured, the
-                invite URL is shown in the panel so you can copy and share it
-                manually.
+                from the Klar mail address. If SMTP isn't configured, the invite
+                URL is shown in the panel so you can copy and share it manually.
               </p>
 
               <h2 id="accept-invite">
@@ -3187,9 +3182,9 @@
                 >
               </h2>
               <p>
-                The recipient opens the invite URL and signs in with the
-                Google account that matches the invited email address. After
-                accepting, the project shows up in their dashboard.
+                The recipient opens the invite URL and signs in with the Google
+                account that matches the invited email address. After accepting,
+                the project shows up in their dashboard.
               </p>
 
               <h2 id="manage-members">
@@ -3206,8 +3201,8 @@
               <ul>
                 <li>You can't remove yourself.</li>
                 <li>
-                  You can't remove the last remaining admin — promote
-                  someone else first if you want to leave.
+                  You can't remove the last remaining admin — promote someone
+                  else first if you want to leave.
                 </li>
               </ul>
 
@@ -3242,8 +3237,8 @@
                 </div>
                 <h1>Form Submissions</h1>
                 <p class="klar-article__description">
-                  Accept contact-form posts from your live site straight into
-                  a Klar inbox.
+                  Accept contact-form posts from your live site straight into a
+                  Klar inbox.
                 </p>
               </div>
 
@@ -3255,9 +3250,9 @@
               <p>
                 Every project gets a unique, tokenized submission URL of the
                 form
-                <code>POST /api/forms/&lt;form-token&gt;/submit</code>. Point
-                an HTML <code>&lt;form&gt;</code> on your customer site at
-                that URL and the submitted fields land in your Klar inbox.
+                <code>POST /api/forms/&lt;form-token&gt;/submit</code>. Point an
+                HTML <code>&lt;form&gt;</code> on your customer site at that URL
+                and the submitted fields land in your Klar inbox.
               </p>
 
               <h2 id="form-snippet">
@@ -3268,8 +3263,8 @@
                 >
               </h2>
               <p>
-                The Forms tab in project settings shows the submission URL and
-                a ready-made HTML snippet you can paste into your site:
+                The Forms tab in project settings shows the submission URL and a
+                ready-made HTML snippet you can paste into your site:
               </p>
               <div class="klar-code-block">
                 <div class="klar-code-block__header">
@@ -3296,14 +3291,14 @@
                 <li>
                   <strong>Origin allowlist</strong> — submissions are only
                   accepted from the project's <code>websiteUrl</code>, the
-                  matching GitHub Pages host, and any extra origins you list
-                  in <strong>Additional Origins</strong>.
+                  matching GitHub Pages host, and any extra origins you list in
+                  <strong>Additional Origins</strong>.
                 </li>
                 <li>
                   <strong>Honeypot fields</strong> — any input whose
                   <code>name</code> starts with an underscore (for example
-                  <code>_gotcha</code>) is treated as a honeypot. If a bot
-                  fills it in, the submission is silently dropped.
+                  <code>_gotcha</code>) is treated as a honeypot. If a bot fills
+                  it in, the submission is silently dropped.
                 </li>
                 <li>
                   <strong>Rate limit</strong> — capped at 20 submissions per
@@ -3320,10 +3315,10 @@
               </h2>
               <p>
                 Submissions are stored in Klar and listed in the Forms tab.
-                Click a row to expand it, mark it as read, or delete it.
-                Unread submissions are highlighted. If SMTP is configured,
-                the project owner also receives an email for each submission
-                with the sender's email set as Reply-To.
+                Click a row to expand it, mark it as read, or delete it. Unread
+                submissions are highlighted. If SMTP is configured, the project
+                owner also receives an email for each submission with the
+                sender's email set as Reply-To.
               </p>
 
               <h2 id="form-token">
@@ -3334,10 +3329,10 @@
                 >
               </h2>
               <p>
-                If the submission URL leaks or starts receiving abuse you
-                can't filter, click <strong>Regenerate</strong> in the Forms
-                tab. The old URL stops accepting submissions immediately —
-                update the form on your site with the new URL afterwards.
+                If the submission URL leaks or starts receiving abuse you can't
+                filter, click <strong>Regenerate</strong> in the Forms tab. The
+                old URL stops accepting submissions immediately — update the
+                form on your site with the new URL afterwards.
               </p>
 
               <div class="klar-article-nav">
@@ -3390,9 +3385,9 @@
                 Settings are organized into tabs: <strong>General</strong>,
                 <strong>GitHub</strong>, <strong>Members</strong>,
                 <strong>Forms</strong>, <strong>Publishing</strong>,
-                <strong>Editor</strong>, and <strong>Danger Zone</strong>.
-                Tabs that depend on a saved project (Members, Forms) are
-                disabled until you create the project for the first time.
+                <strong>Editor</strong>, and <strong>Danger Zone</strong>. Tabs
+                that depend on a saved project (Members, Forms) are disabled
+                until you create the project for the first time.
               </p>
 
               <h2 id="github-tab">
@@ -3538,9 +3533,9 @@
               </h2>
               <p>
                 Invite collaborators to a project by email. Each member is
-                either an <strong>admin</strong> (can manage settings and
-                other members) or an <strong>editor</strong> (can edit and
-                save content). See
+                either an <strong>admin</strong> (can manage settings and other
+                members) or an <strong>editor</strong> (can edit and save
+                content). See
                 <a href="#" data-nav="page-members">Members &amp; Invites</a>.
               </p>
 
@@ -3548,10 +3543,10 @@
                 Forms Tab<a href="#forms-tab" class="klar-heading-anchor">#</a>
               </h2>
               <p>
-                Each project gets a tokenized form-submission URL you can
-                point HTML <code>&lt;form&gt;</code> elements at. Manage
-                allowed origins, regenerate the token, and read inbound
-                submissions here. See
+                Each project gets a tokenized form-submission URL you can point
+                HTML <code>&lt;form&gt;</code> elements at. Manage allowed
+                origins, regenerate the token, and read inbound submissions
+                here. See
                 <a href="#" data-nav="page-forms">Form Submissions</a>.
               </p>
 
@@ -3598,9 +3593,9 @@
                 <strong>Show Sync Action</strong>, and
                 <strong>JavaScript</strong>) inherit in this order:
                 <strong>Klar default → project value → page override</strong>.
-                When you have a specific page open, each setting shows a
-                "Set for this page" control so you can override the project
-                default for that page only without touching the others.
+                When you have a specific page open, each setting shows a "Set
+                for this page" control so you can override the project default
+                for that page only without touching the others.
               </p>
 
               <h2 id="danger-zone">
