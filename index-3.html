@@ -2144,8 +2144,7 @@
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Quick Start</span>
                 </a>
-                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="structured-panel">
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="structured-panel">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Structured Panel →</span>
                 </a>
@@ -2476,8 +2475,7 @@
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Code Editor</span>
                 </a>
-                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="media-management">
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="media-management">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Media &amp; Icons →</span>
                 </a>
@@ -3035,8 +3033,7 @@
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Members &amp; Invites</span>
                 </a>
-                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="project-settings">
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="project-settings">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Project Settings →</span>
                 </a>
@@ -3393,8 +3390,7 @@
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Project Settings</span>
                 </a>
-                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="keyboard-shortcuts">
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="keyboard-shortcuts">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Keyboard Shortcuts →</span>
                 </a>
@@ -3509,8 +3505,7 @@
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Custom Selectors</span>
                 </a>
-                <a href="#" class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="viewport-preview">
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="viewport-preview">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Viewport &amp; Preview →</span>
                 </a>
@@ -3927,6 +3922,11 @@
           const tocList = document.getElementById("klarTocList");
           if (!page || !tocList) return;
 
+          // const headings = page.querySelectorAll("h2[id], h3[id]");
+          const headingsSet = page.querySelectorAll("h2, h3");
+          headingsSet.forEach((h) => {
+            h.id = `heading-${crypto.randomUUID()}`;
+          });
           const headings = page.querySelectorAll("h2[id], h3[id]");
           tocList.innerHTML = "";
 
