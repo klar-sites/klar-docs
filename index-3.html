@@ -1052,7 +1052,7 @@
          ─────────────────────────────────────────────── */
       .klar-toc {
         position: sticky;
-        top: calc(var(--nav-h) + 32px);
+        top: calc(var(--nav-h) + 48px);
         align-self: flex-start;
         width: var(--toc-w);
         flex-shrink: 0;
@@ -3917,7 +3917,6 @@
 
         // ─── Table of Contents ───
         function updateToc(pageId) {
-          return;
           // const page = document.getElementById("" + pageId);
           const page = document.getElementById(pageId);
           const tocList = document.getElementById("klarTocList");
