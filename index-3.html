@@ -3925,7 +3925,8 @@
           // const headings = page.querySelectorAll("h2[id], h3[id]");
           const headingsSet = page.querySelectorAll("h2, h3");
           headingsSet.forEach((h) => {
-            h.id = `heading-${crypto.randomUUID()}`;
+            // h.id = `heading-${crypto.randomUUID()}`;
+            h.id = h.innerText.replace('#', '').replace(' ', '-'/g);
           });
           const headings = page.querySelectorAll("h2[id], h3[id]");
           tocList.innerHTML = "";
