@@ -3930,8 +3930,8 @@
               h.querySelector("a").remove();
             }
             const a = document.createElement("a");
-            a.href = "#" + h.innerText.trim().replace('#', '').replace(/[\n\r\s\t]+/g, '-');
-            h.appendChild(a); 
+            a.href = "#" + h.innerText.toLowerCase().trim().replace('#', '').replace(/[\n\r\s\t]+/g, '-');
+            h.appendChild(a);
           });
           const headings = page.querySelectorAll("h2[id], h3[id]");
           tocList.innerHTML = "";
@@ -3946,7 +3946,6 @@
             li.appendChild(a);
             tocList.appendChild(li);
           });
-          return;
 
           // Intersection observer for active TOC
           if (window._klarTocObserver) window._klarTocObserver.disconnect();
