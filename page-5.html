@@ -6,7 +6,9 @@
     <title>Klar — Documentation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap"
+      rel="stylesheet">
     <style>
       /* ───────────────────────────────────────────────
          Ollama-inspired theme tokens
@@ -631,7 +633,7 @@
       }
 
       /* Inline code */
-      .klar-article :not(pre) > code,
+      .klar-article :not(pre)>code,
       .klar-article p code,
       .klar-article li code,
       .klar-article td code {
@@ -928,7 +930,7 @@
         line-height: 1.55;
       }
 
-      .klar-callout > svg {
+      .klar-callout>svg {
         width: 18px;
         height: 18px;
         flex-shrink: 0;
@@ -936,7 +938,7 @@
         color: var(--fg);
       }
 
-      .klar-callout > div {
+      .klar-callout>div {
         flex: 1;
         min-width: 0;
       }
@@ -946,7 +948,7 @@
         color: inherit;
       }
 
-      .klar-callout p + p {
+      .klar-callout p+p {
         margin-top: 8px;
       }
 
@@ -962,7 +964,7 @@
         border-left-color: var(--fg);
       }
 
-      .klar-callout--info > svg {
+      .klar-callout--info>svg {
         color: var(--fg);
       }
 
@@ -973,7 +975,7 @@
         color: var(--callout-success-fg);
       }
 
-      .klar-callout--success > svg {
+      .klar-callout--success>svg {
         color: #16a34a;
       }
 
@@ -1388,27 +1390,33 @@
      ════════════════════════════════════ -->
     <nav class="klar-nav" role="navigation" aria-label="Main navigation">
       <button class="klar-nav__menu-btn" id="klarMenuBtn" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20"
+          height="20">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
       <!-- <img src="images/klar-logo.png" />-->
-      <a href="https://www.klar.website/" class="klar-nav__logo" data-nav="getting-started">
+      <a href="https://www.klar.website/" class="klar-nav__logo">
         <span class="klar-nav__logo-mark"><svg viewBox="0 0 16 16" fill="currentColor">
-            <path fill="currentColor" fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z" clip-rule="evenodd"></path></svg></span>
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
+              clip-rule="evenodd"></path>
+          </svg></span>
         <span style="font-family: Helvetica; font-size: 19px">KLAR</span>
         <span class="klar-nav__version">v0.9</span>
       </a>
 
       <div class="klar-nav__center">
         <div class="klar-nav__search">
-          <svg class="klar-nav__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <svg class="klar-nav__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <circle cx="11" cy="11" r="8"></circle>
             <path d="M21 21l-4.35-4.35"></path>
           </svg>
-          <input type="text" class="klar-nav__search-input" placeholder="Search documentation..." id="klarSearchInput" readonly="" aria-label="Search documentation">
+          <input type="text" class="klar-nav__search-input" placeholder="Search documentation..." id="klarSearchInput"
+            readonly="" aria-label="Search documentation">
           <span class="klar-nav__search-kbd">⌘K</span>
         </div>
       </div>
@@ -1416,15 +1424,21 @@
       <div class="klar-nav__actions">
         <a href="https://github.com" class="klar-nav__btn" aria-label="GitHub" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path>
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+            </path>
           </svg>
         </a>
         <button class="klar-theme-toggle" id="klarThemeToggle" aria-label="Toggle theme">
-          <svg class="klar-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <svg class="klar-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <circle cx="12" cy="12" r="5"></circle>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+            </path>
           </svg>
-          <svg class="klar-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <svg class="klar-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
           </svg>
         </button>
@@ -1442,7 +1456,8 @@
             <circle cx="11" cy="11" r="8"></circle>
             <path d="M21 21l-4.35-4.35"></path>
           </svg>
-          <input type="text" class="klar-search-modal__input" placeholder="Search docs..." id="klarSearchModalInput" autocomplete="off">
+          <input type="text" class="klar-search-modal__input" placeholder="Search docs..." id="klarSearchModalInput"
+            autocomplete="off">
         </div>
         <div class="klar-search-modal__results" id="klarSearchResults"></div>
         <div class="klar-search-modal__footer">
@@ -1573,7 +1588,9 @@
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path>
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22">
+                      </path>
                     </svg>
                   </div>
                   <div class="klar-feature-card__title">GitHub-Native</div>
@@ -1691,7 +1708,8 @@
                   <div class="klar-code-block__header">
                     <span class="klar-code-block__lang">HTML</span>
                     <button class="klar-code-block__copy" data-copy="">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
                         <rect x="9" y="9" width="13" height="13" rx="2"></rect>
                         <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
                       </svg>
@@ -2975,7 +2993,8 @@
             <div class="klar-page" id="members">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Members &amp; Invites</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Members &amp;
+                    Invites</span>
                 </div>
                 <h1>Members &amp; Invites</h1>
                 <p class="klar-article__description">
@@ -3163,7 +3182,8 @@
             <div class="klar-page" id="project-settings">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Project Settings</span>
+                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Project
+                    Settings</span>
                 </div>
                 <h1>Project Settings</h1>
                 <p class="klar-article__description">
@@ -3472,7 +3492,8 @@
             <div class="klar-page" id="selectors">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Custom Selectors</span>
+                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Custom
+                    Selectors</span>
                 </div>
                 <h1>Custom Selectors</h1>
                 <p class="klar-article__description">
@@ -3811,7 +3832,8 @@ img.hero :field(name: image, type: image)
                 <p>
                   A <strong>vocabulary</strong> is a reusable list of allowed
                   values (categories, tags, authors) configured in
-                  <a href="#" data-nav="project-settings">Project Settings → Tags</a>. Bind a field to one with <code>options(vocab: name)</code> so
+                  <a href="#" data-nav="project-settings">Project Settings → Tags</a>. Bind a field to one with
+                  <code>options(vocab: name)</code> so
                   editors pick from the list instead of free-typing. Use
                   <code>type: tags</code> for multiple values and
                   <code>type: select</code> for one — these power faceted filtering
@@ -3982,7 +4004,8 @@ img.hero :field(name: image, type: image)
             <div class="klar-page" id="sdk">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Developers</span><span>›</span><span>Content API &amp; SDK</span>
+                  <a href="#">Docs</a><span>›</span><span>Developers</span><span>›</span><span>Content API &amp;
+                    SDK</span>
                 </div>
                 <h1>Content API &amp; SDK</h1>
                 <p class="klar-article__description">
@@ -4351,7 +4374,7 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                   </svg>
                   <div>
                     Sign-in here is for <strong>identification and per-user
-                    storage</strong>, not access control — the page source stays
+                      storage</strong>, not access control — the page source stays
                     public. No Google Cloud setup is needed on your side; Klar's own
                     OAuth runs the popup.
                   </div>
@@ -4626,7 +4649,8 @@ DELETE /api/sdk/data/:key</code></pre>
             <div class="klar-page" id="viewport-preview">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Viewport &amp; Preview</span>
+                  <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Viewport &amp;
+                    Preview</span>
                 </div>
                 <h1>Viewport &amp; Preview</h1>
                 <p class="klar-article__description">
@@ -4744,7 +4768,7 @@ DELETE /api/sdk/data/:key</code></pre>
      JAVASCRIPT
      ════════════════════════════════════ -->
     <script>
-      (function () {
+      (function() {
         "use strict";
 
         // ─── Theme Toggle ───
@@ -4825,16 +4849,15 @@ DELETE /api/sdk/data/:key</code></pre>
         document.addEventListener("keydown", (e) => {
           if ((e.metaKey || e.ctrlKey) && e.key === "k") {
             e.preventDefault();
-            searchModal.classList.contains("is-open")
-              ? closeSearch()
-              : openSearch();
+            searchModal.classList.contains("is-open") ?
+              closeSearch() :
+              openSearch();
           }
           if (e.key === "Escape") closeSearch();
         });
 
         // Search data
-        const pages = [
-          {
+        const pages = [{
             id: "getting-started",
             title: "Introduction",
             section: "Getting Started",
@@ -4949,8 +4972,8 @@ DELETE /api/sdk/data/:key</code></pre>
 
           const matches = pages.filter(
             (p) =>
-              p.title.toLowerCase().includes(q) ||
-              p.section.toLowerCase().includes(q),
+            p.title.toLowerCase().includes(q) ||
+            p.section.toLowerCase().includes(q),
           );
 
           if (matches.length === 0) {
@@ -5046,10 +5069,10 @@ DELETE /api/sdk/data/:key</code></pre>
             a.href =
               "#" +
               h.innerText
-                .toLowerCase()
-                .trim()
-                .replace("#", "")
-                .replace(/[\n\r\s\t]+/g, "-");
+              .toLowerCase()
+              .trim()
+              .replace("#", "")
+              .replace(/[\n\r\s\t]+/g, "-");
             h.appendChild(a);
           });
           const headings = page.querySelectorAll("h2[id], h3[id]");
@@ -5082,8 +5105,7 @@ DELETE /api/sdk/data/:key</code></pre>
                   if (link) link.classList.add("is-active");
                 }
               });
-            },
-            {
+            }, {
               rootMargin: "-80px 0px -70% 0px",
             },
           );
@@ -5107,7 +5129,8 @@ DELETE /api/sdk/data/:key</code></pre>
           navigator.clipboard.writeText(code.textContent).then(() => {
             copyBtn.classList.add("is-copied");
             const origHTML = copyBtn.innerHTML;
-            copyBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
+            copyBtn.innerHTML =
+              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
             setTimeout(() => {
               copyBtn.classList.remove("is-copied");
               copyBtn.innerHTML = origHTML;
