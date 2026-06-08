@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <style>
       /* ───────────────────────────────────────────────
          Ollama-inspired theme tokens
@@ -634,7 +633,7 @@
       }
 
       /* Inline code */
-      .klar-article :not(pre) > code,
+      .klar-article :not(pre)>code,
       .klar-article p code,
       .klar-article li code,
       .klar-article td code {
@@ -931,7 +930,7 @@
         line-height: 1.55;
       }
 
-      .klar-callout > svg {
+      .klar-callout>svg {
         width: 18px;
         height: 18px;
         flex-shrink: 0;
@@ -939,7 +938,7 @@
         color: var(--fg);
       }
 
-      .klar-callout > div {
+      .klar-callout>div {
         flex: 1;
         min-width: 0;
       }
@@ -949,7 +948,7 @@
         color: inherit;
       }
 
-      .klar-callout p + p {
+      .klar-callout p+p {
         margin-top: 8px;
       }
 
@@ -965,7 +964,7 @@
         border-left-color: var(--fg);
       }
 
-      .klar-callout--info > svg {
+      .klar-callout--info>svg {
         color: var(--fg);
       }
 
@@ -976,7 +975,7 @@
         color: var(--callout-success-fg);
       }
 
-      .klar-callout--success > svg {
+      .klar-callout--success>svg {
         color: #16a34a;
       }
 
@@ -1390,105 +1389,56 @@
      NAVIGATION
      ════════════════════════════════════ -->
     <nav class="klar-nav" role="navigation" aria-label="Main navigation">
-      <button
-        class="klar-nav__menu-btn"
-        id="klarMenuBtn"
-        aria-label="Toggle menu"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          width="20"
-          height="20"
-        >
+      <button class="klar-nav__menu-btn" id="klarMenuBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20"
+          height="20">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
       <!-- <img src="images/klar-logo.png" />-->
-      <a href="#" class="klar-nav__logo" data-nav="getting-started">
-        <span class="klar-nav__logo-mark"
-          ><svg viewBox="0 0 16 16" fill="currentColor">
-            <path
-              fill="currentColor"
-              fill-rule="evenodd"
+      <a href="#" class="klar-nav__logo">
+        <span class="klar-nav__logo-mark"><svg viewBox="0 0 16 16" fill="currentColor">
+            <path fill="currentColor" fill-rule="evenodd"
               d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m3.844-8.791a.75.75 0 0 0-1.187-.918l-3.7 4.79l-1.65-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043z"
-              clip-rule="evenodd"
-            /></svg
-        ></span>
+              clip-rule="evenodd" />
+          </svg></span>
         <span style="font-family: Helvetica; font-size: 19px">KLAR</span>
         <span class="klar-nav__version">v0.9</span>
       </a>
 
       <div class="klar-nav__center">
         <div class="klar-nav__search">
-          <svg
-            class="klar-nav__search-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+          <svg class="klar-nav__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <circle cx="11" cy="11" r="8"></circle>
             <path d="M21 21l-4.35-4.35"></path>
           </svg>
-          <input
-            type="text"
-            class="klar-nav__search-input"
-            placeholder="Search documentation..."
-            id="klarSearchInput"
-            readonly=""
-            aria-label="Search documentation"
-          />
+          <input type="text" class="klar-nav__search-input" placeholder="Search documentation..." id="klarSearchInput"
+            readonly="" aria-label="Search documentation" />
           <span class="klar-nav__search-kbd">⌘K</span>
         </div>
       </div>
 
       <div class="klar-nav__actions">
-        <a
-          href="https://github.com"
-          class="klar-nav__btn"
-          aria-label="GitHub"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://github.com" class="klar-nav__btn" aria-label="GitHub" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path
-              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
-            ></path>
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+            </path>
           </svg>
         </a>
-        <button
-          class="klar-theme-toggle"
-          id="klarThemeToggle"
-          aria-label="Toggle theme"
-        >
-          <svg
-            class="klar-icon-sun"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+        <button class="klar-theme-toggle" id="klarThemeToggle" aria-label="Toggle theme">
+          <svg class="klar-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <circle cx="12" cy="12" r="5"></circle>
             <path
-              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-            ></path>
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+            </path>
           </svg>
-          <svg
-            class="klar-icon-moon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+          <svg class="klar-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
           </svg>
         </button>
@@ -1498,32 +1448,16 @@
     <!-- ════════════════════════════════════
      SEARCH MODAL
      ════════════════════════════════════ -->
-    <div
-      class="klar-search-modal"
-      id="klarSearchModal"
-      role="dialog"
-      aria-label="Search"
-    >
+    <div class="klar-search-modal" id="klarSearchModal" role="dialog" aria-label="Search">
       <div class="klar-search-modal__backdrop" id="klarSearchBackdrop"></div>
       <div class="klar-search-modal__container">
         <div class="klar-search-modal__input-wrap">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <circle cx="11" cy="11" r="8"></circle>
             <path d="M21 21l-4.35-4.35"></path>
           </svg>
-          <input
-            type="text"
-            class="klar-search-modal__input"
-            placeholder="Search docs..."
-            id="klarSearchModalInput"
-            autocomplete="off"
-          />
+          <input type="text" class="klar-search-modal__input" placeholder="Search docs..." id="klarSearchModalInput"
+            autocomplete="off" />
         </div>
         <div class="klar-search-modal__results" id="klarSearchResults"></div>
         <div class="klar-search-modal__footer">
@@ -1544,117 +1478,63 @@
      ════════════════════════════════════ -->
     <div class="klar-layout">
       <!-- Sidebar -->
-      <aside
-        class="klar-sidebar"
-        id="klarSidebar"
-        role="navigation"
-        aria-label="Documentation navigation"
-      >
+      <aside class="klar-sidebar" id="klarSidebar" role="navigation" aria-label="Documentation navigation">
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Getting Started</div>
           <div class="klar-sidebar__links">
-            <a
-              href="#"
-              class="klar-sidebar__link is-active"
-              data-nav="getting-started"
-              >Introduction</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="setup"
-              >Setup &amp; Login</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="quick-start"
-              >Quick Start</a
-            >
+            <a href="#" class="klar-sidebar__link is-active" data-nav="getting-started">Introduction</a>
+            <a href="#" class="klar-sidebar__link" data-nav="setup">Setup &amp; Login</a>
+            <a href="#" class="klar-sidebar__link" data-nav="quick-start">Quick Start</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Editing</div>
           <div class="klar-sidebar__links">
-            <a href="#" class="klar-sidebar__link" data-nav="visual-editing"
-              >Visual Editing</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="structured-panel"
-              >Structured Panel</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="code-editor"
-              >Code Editor</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="ai-assistant"
-              >AI Assistant</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="visual-editing">Visual Editing</a>
+            <a href="#" class="klar-sidebar__link" data-nav="structured-panel">Structured Panel</a>
+            <a href="#" class="klar-sidebar__link" data-nav="code-editor">Code Editor</a>
+            <a href="#" class="klar-sidebar__link" data-nav="ai-assistant">AI Assistant</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Features</div>
           <div class="klar-sidebar__links">
-            <a href="#" class="klar-sidebar__link" data-nav="media-management"
-              >Media &amp; Icons</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="page-management"
-              >Page Management</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="shared-sections"
-              >Shared Sections</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="save-publish"
-              >Save &amp; Publish</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="version-history"
-              >Version History</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="members"
-              >Members &amp; Invites</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="forms"
-              >Form Submissions</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="media-management">Media &amp; Icons</a>
+            <a href="#" class="klar-sidebar__link" data-nav="page-management">Page Management</a>
+            <a href="#" class="klar-sidebar__link" data-nav="shared-sections">Shared Sections</a>
+            <a href="#" class="klar-sidebar__link" data-nav="save-publish">Save &amp; Publish</a>
+            <a href="#" class="klar-sidebar__link" data-nav="version-history">Version History</a>
+            <a href="#" class="klar-sidebar__link" data-nav="members">Members &amp; Invites</a>
+            <a href="#" class="klar-sidebar__link" data-nav="forms">Form Submissions</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Configuration</div>
           <div class="klar-sidebar__links">
-            <a href="#" class="klar-sidebar__link" data-nav="project-settings"
-              >Project Settings</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="selectors"
-              >Custom Selectors</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="project-settings">Project Settings</a>
+            <a href="#" class="klar-sidebar__link" data-nav="selectors">Custom Selectors</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Content</div>
           <div class="klar-sidebar__links">
-            <a href="#" class="klar-sidebar__link" data-nav="content-fields"
-              >Content Fields</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="listing-templates"
-              >Listing Templates</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="content-fields">Content Fields</a>
+            <a href="#" class="klar-sidebar__link" data-nav="listing-templates">Listing Templates</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Developers</div>
           <div class="klar-sidebar__links">
-            <a href="#" class="klar-sidebar__link" data-nav="sdk"
-              >Content API &amp; SDK</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="content-sdk"
-              >Content SDK</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="users-sdk"
-              >Users SDK</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="sdk">Content API &amp; SDK</a>
+            <a href="#" class="klar-sidebar__link" data-nav="content-sdk">Content SDK</a>
+            <a href="#" class="klar-sidebar__link" data-nav="users-sdk">Users SDK</a>
           </div>
         </div>
         <div class="klar-sidebar__section">
           <div class="klar-sidebar__heading">Reference</div>
           <div class="klar-sidebar__links">
-            <a href="#" class="klar-sidebar__link" data-nav="keyboard-shortcuts"
-              >Keyboard Shortcuts</a
-            >
-            <a href="#" class="klar-sidebar__link" data-nav="viewport-preview"
-              >Viewport &amp; Preview</a
-            >
+            <a href="#" class="klar-sidebar__link" data-nav="keyboard-shortcuts">Keyboard Shortcuts</a>
+            <a href="#" class="klar-sidebar__link" data-nav="viewport-preview">Viewport &amp; Preview</a>
           </div>
         </div>
       </aside>
@@ -1682,13 +1562,7 @@
               <div class="klar-features klar-animate klar-animate--d1">
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <path d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5"></path>
                     </svg>
                   </div>
@@ -1700,13 +1574,7 @@
                 </div>
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <polyline points="16 18 22 12 16 6"></polyline>
                       <polyline points="8 6 2 12 8 18"></polyline>
                     </svg>
@@ -1719,16 +1587,10 @@
                 </div>
                 <div class="klar-feature-card">
                   <div class="klar-feature-card__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
-                      ></path>
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22">
+                      </path>
                     </svg>
                   </div>
                   <div class="klar-feature-card__title">GitHub-Native</div>
@@ -1740,11 +1602,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="what-you-can-do">
-                  What You Can Do<a
-                    href="#what-you-can-do"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What You Can Do<a href="#what-you-can-do" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -1837,11 +1695,7 @@
                   </li>
                 </ul>
                 <h2 id="how-it-works">
-                  How It Works<a
-                    href="#how-it-works"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  How It Works<a href="#how-it-works" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Go to <strong>klar.website</strong>, sign in with Google, and
@@ -1854,17 +1708,10 @@
                   <div class="klar-code-block__header">
                     <span class="klar-code-block__lang">HTML</span>
                     <button class="klar-code-block__copy" data-copy="">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                      >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
                         <rect x="9" y="9" width="13" height="13" rx="2"></rect>
-                        <path
-                          d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"
-                        ></path>
+                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
                       </svg>
                       Copy
                     </button>
@@ -1882,13 +1729,7 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
                 </div>
                 <div class="klar-callout klar-callout--success">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -1901,15 +1742,9 @@
               </div>
               <div class="klar-article-nav">
                 <div></div>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="setup"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="setup">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Setup &amp; Login →</span
-                  >
+                  <span class="klar-article-nav__title">Setup &amp; Login →</span>
                 </a>
               </div>
             </div>
@@ -1941,11 +1776,7 @@
                 </p>
 
                 <h2 id="what-you-need">
-                  What You Need<a
-                    href="#what-you-need"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What You Need<a href="#what-you-need" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -1960,33 +1791,21 @@
                 </ul>
 
                 <div class="klar-callout klar-callout--info">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M12 16v-4M12 8h.01"></path>
                   </svg>
                   <div>
                     To create a GitHub token, go to
-                    <strong
-                      >GitHub → Settings → Developer settings → Personal access
-                      tokens → Tokens (classic)</strong
-                    >, and generate a new token with <code>repo</code> and
+                    <strong>GitHub → Settings → Developer settings → Personal access
+                      tokens → Tokens (classic)</strong>, and generate a new token with <code>repo</code> and
                     <code>pages</code> scope. Your token is encrypted before
                     being stored.
                   </div>
                 </div>
 
                 <h2 id="create-project">
-                  Create a Project<a
-                    href="#create-project"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Create a Project<a href="#create-project" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   From the dashboard, click <strong>New Project</strong>. Fill
@@ -2042,9 +1861,7 @@
                 </p>
 
                 <h2 id="dashboard">
-                  The Dashboard<a href="#dashboard" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  The Dashboard<a href="#dashboard" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Your dashboard shows all your projects. You can search
@@ -2057,19 +1874,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="getting-started"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="getting-started">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Introduction</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="quick-start"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="quick-start">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Quick Start →</span>
                 </a>
@@ -2093,11 +1902,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="step-1">
-                  1. Sign In &amp; Create a Project<a
-                    href="#step-1"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  1. Sign In &amp; Create a Project<a href="#step-1" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Go to <strong>klar.website</strong>, sign in with Google, and
@@ -2106,9 +1911,7 @@
                 </p>
 
                 <h2 id="step-2">
-                  2. Start Editing<a href="#step-2" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  2. Start Editing<a href="#step-2" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Klar loads your page in a live preview. Hover over any element
@@ -2123,9 +1926,7 @@
                 </p>
 
                 <h2 id="step-3">
-                  3. Make Changes<a href="#step-3" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  3. Make Changes<a href="#step-3" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Edit text by typing directly in the preview. Use the
@@ -2141,11 +1942,7 @@
                 </p>
 
                 <h2 id="step-4">
-                  4. Save &amp; Publish<a
-                    href="#step-4"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  4. Save &amp; Publish<a href="#step-4" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Press <kbd>Cmd+S</kbd> (or click Save) to commit your changes
@@ -2160,13 +1957,7 @@
               </div>
 
               <div class="klar-callout klar-callout--success">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
@@ -2181,15 +1972,9 @@
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="setup">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Setup &amp; Login</span
-                  >
+                  <span class="klar-article-nav__title">← Setup &amp; Login</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="visual-editing"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="visual-editing">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Visual Editing →</span>
                 </a>
@@ -2200,8 +1985,7 @@
             <div class="klar-page" id="visual-editing">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>Visual Editing</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Visual Editing</span>
                 </div>
                 <h1>Visual Editing</h1>
                 <p class="klar-article__description">
@@ -2211,11 +1995,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="how-editing-works">
-                  How It Works<a
-                    href="#how-editing-works"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  How It Works<a href="#how-editing-works" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Your website loads in a live preview inside the editor. Hover
@@ -2225,11 +2005,7 @@
                 </p>
 
                 <h2 id="editable-elements">
-                  Editable Elements<a
-                    href="#editable-elements"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Editable Elements<a href="#editable-elements" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   By default, Klar makes the following element types editable:
@@ -2261,11 +2037,7 @@
                 </ul>
 
                 <h2 id="text-editing">
-                  Text Editing<a
-                    href="#text-editing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Text Editing<a href="#text-editing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click any text element to start typing directly on the page.
@@ -2283,11 +2055,7 @@
                 </p>
 
                 <h2 id="block-toolbar">
-                  Block Toolbar<a
-                    href="#block-toolbar"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Block Toolbar<a href="#block-toolbar" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   When you hover a block inside a list, grid, or content group,
@@ -2318,11 +2086,7 @@
                 </p>
 
                 <h2 id="table-editing">
-                  Table Editing<a
-                    href="#table-editing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Table Editing<a href="#table-editing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click inside any table cell to edit its contents. A cell
@@ -2332,11 +2096,7 @@
                 </p>
 
                 <h2 id="undo-redo">
-                  Undo &amp; Redo<a
-                    href="#undo-redo"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Undo &amp; Redo<a href="#undo-redo" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Press <kbd>Cmd+Z</kbd> to step backwards through your pending
@@ -2348,11 +2108,7 @@
                 </p>
 
                 <h2 id="container-editing">
-                  Container &amp; List Editing<a
-                    href="#container-editing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Container &amp; List Editing<a href="#container-editing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   For repeating elements like lists, feature grids, or card
@@ -2376,11 +2132,7 @@
                 </p>
 
                 <h2 id="sections-navigation">
-                  Sections Navigation<a
-                    href="#sections-navigation"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Sections Navigation<a href="#sections-navigation" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The left panel shows your page structure organized by sections
@@ -2392,11 +2144,7 @@
                 </p>
 
                 <h2 id="script-toggle">
-                  Script Toggle<a
-                    href="#script-toggle"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Script Toggle<a href="#script-toggle" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   By default, JavaScript in your page is disabled in the editor
@@ -2407,23 +2155,13 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="quick-start"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="quick-start">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Quick Start</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="structured-panel"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="structured-panel">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Structured Panel →</span
-                  >
+                  <span class="klar-article-nav__title">Structured Panel →</span>
                 </a>
               </div>
             </div>
@@ -2432,8 +2170,7 @@
             <div class="klar-page" id="structured-panel">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>Structured Panel</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Structured Panel</span>
                 </div>
                 <h1>Structured Panel</h1>
                 <p class="klar-article__description">
@@ -2443,9 +2180,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="panel-overview">
-                  Overview<a href="#panel-overview" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Overview<a href="#panel-overview" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The structured panel is the right sidebar. When you select an
@@ -2455,11 +2190,7 @@
                 </p>
 
                 <h2 id="element-fields">
-                  What You Can Edit<a
-                    href="#element-fields"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What You Can Edit<a href="#element-fields" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Depending on the element type, the panel shows different
@@ -2528,11 +2259,7 @@
                 </div>
 
                 <h2 id="element-list">
-                  Element List<a
-                    href="#element-list"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Element List<a href="#element-list" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   When no element is selected, the panel shows a scrollable list
@@ -2554,11 +2281,7 @@
                 </p>
 
                 <h2 id="edit-tracking">
-                  Edit Tracking<a
-                    href="#edit-tracking"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Edit Tracking<a href="#edit-tracking" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Edited fields are highlighted with a yellow border, and the
@@ -2568,11 +2291,7 @@
                 </p>
 
                 <h2 id="raw-html">
-                  Raw HTML Editing<a
-                    href="#raw-html"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Raw HTML Editing<a href="#raw-html" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Every selected element exposes a raw HTML view powered by
@@ -2584,9 +2303,7 @@
                 </p>
 
                 <h2 id="pick-mode">
-                  Pick Mode<a href="#pick-mode" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Pick Mode<a href="#pick-mode" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Some settings (like the sections selector) accept a CSS
@@ -2597,9 +2314,7 @@
                 </p>
 
                 <h2 id="blocks-tab">
-                  Blocks Tab<a href="#blocks-tab" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Blocks Tab<a href="#blocks-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   When the selected element is a section or container, the
@@ -2610,9 +2325,7 @@
                 </p>
 
                 <h2 id="link-bubble">
-                  Link Bubble<a href="#link-bubble" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Link Bubble<a href="#link-bubble" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Editing a link href shows a small bubble above the input with
@@ -2630,19 +2343,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="visual-editing"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="visual-editing">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Visual Editing</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="code-editor"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="code-editor">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Code Editor →</span>
                 </a>
@@ -2653,8 +2358,7 @@
             <div class="klar-page" id="code-editor">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>Code Editor</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>Code Editor</span>
                 </div>
                 <h1>Code Editor</h1>
                 <p class="klar-article__description">
@@ -2664,11 +2368,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="opening-code-editor">
-                  Opening the Code Editor<a
-                    href="#opening-code-editor"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Opening the Code Editor<a href="#opening-code-editor" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Toggle the code editor from the toolbar. The editor panel can
@@ -2677,11 +2377,7 @@
                 </p>
 
                 <h2 id="code-tabs">
-                  HTML, CSS &amp; JS Tabs<a
-                    href="#code-tabs"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  HTML, CSS &amp; JS Tabs<a href="#code-tabs" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The code editor has separate tabs depending on your project
@@ -2708,9 +2404,7 @@
                 </p>
 
                 <h2 id="code-features">
-                  Features<a href="#code-features" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Features<a href="#code-features" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>Syntax highlighting for HTML, CSS, and JavaScript</li>
@@ -2728,21 +2422,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="structured-panel"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="structured-panel">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Structured Panel</span
-                  >
+                  <span class="klar-article-nav__title">← Structured Panel</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="ai-assistant"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="ai-assistant">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">AI Assistant →</span>
                 </a>
@@ -2753,8 +2437,7 @@
             <div class="klar-page" id="ai-assistant">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Editing</span
-                  ><span>›</span><span>AI Assistant</span>
+                  <a href="#">Docs</a><span>›</span><span>Editing</span><span>›</span><span>AI Assistant</span>
                 </div>
                 <h1>AI Assistant</h1>
                 <p class="klar-article__description">
@@ -2764,9 +2447,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="ai-overview">
-                  Overview<a href="#ai-overview" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Overview<a href="#ai-overview" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The AI chat panel lets you describe changes in plain English
@@ -2834,11 +2515,7 @@
                 </div>
 
                 <h2 id="ai-edit">
-                  Editing a selected element<a
-                    href="#ai-edit"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Editing a selected element<a href="#ai-edit" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   In <strong>Edit</strong> mode, click any element in the visual
@@ -2851,11 +2528,7 @@
                 </p>
 
                 <h2 id="ai-diff">
-                  Reviewing &amp; applying changes<a
-                    href="#ai-diff"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Reviewing &amp; applying changes<a href="#ai-diff" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Nothing touches your page until you apply it. When the AI
@@ -2881,11 +2554,7 @@
                 </ul>
 
                 <h2 id="ai-context-files">
-                  What the AI can see<a
-                    href="#ai-context-files"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What the AI can see<a href="#ai-context-files" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Chips under the message box control the context sent with your
@@ -2898,11 +2567,7 @@
                 </p>
 
                 <h2 id="ai-design-system">
-                  Design system mode<a
-                    href="#ai-design-system"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Design system mode<a href="#ai-design-system" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Turn on <strong>DS</strong> to have the AI reuse your
@@ -2916,23 +2581,13 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="code-editor"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="code-editor">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Code Editor</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="media-management"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="media-management">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Media &amp; Icons →</span
-                  >
+                  <span class="klar-article-nav__title">Media &amp; Icons →</span>
                 </a>
               </div>
             </div>
@@ -2941,8 +2596,7 @@
             <div class="klar-page" id="media-management">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Media &amp; Icons</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Media &amp; Icons</span>
                 </div>
                 <h1>Media &amp; Icons</h1>
                 <p class="klar-article__description">
@@ -2952,11 +2606,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="media-library">
-                  Media Library<a
-                    href="#media-library"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Media Library<a href="#media-library" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   When you click an image element, the structured panel shows
@@ -2980,11 +2630,7 @@
                 </p>
 
                 <h2 id="assets-folder">
-                  Assets Folder<a
-                    href="#assets-folder"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Assets Folder<a href="#assets-folder" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   If you configure an assets folder in project settings, you
@@ -2993,9 +2639,7 @@
                 </p>
 
                 <h2 id="icon-picker">
-                  Icon Picker<a href="#icon-picker" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Icon Picker<a href="#icon-picker" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   For SVG icons, click the icon picker button when an SVG
@@ -3020,11 +2664,7 @@
                 </p>
 
                 <h2 id="background-images">
-                  Background Images<a
-                    href="#background-images"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Background Images<a href="#background-images" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Elements with CSS background images can be edited through the
@@ -3036,19 +2676,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="ai-assistant"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="ai-assistant">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← AI Assistant</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="page-management"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="page-management">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Page Management →</span>
                 </a>
@@ -3059,8 +2691,7 @@
             <div class="klar-page" id="page-management">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Page Management</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Page Management</span>
                 </div>
                 <h1>Page Management</h1>
                 <p class="klar-article__description">
@@ -3070,9 +2701,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="switcher">
-                  Page Switcher<a href="#switcher" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Page Switcher<a href="#switcher" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The page switcher dropdown in the toolbar shows the current
@@ -3081,9 +2710,7 @@
                 </p>
 
                 <h2 id="actions">
-                  Page Actions<a href="#actions" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Page Actions<a href="#actions" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -3108,9 +2735,7 @@
                 </p>
 
                 <h2 id="page-types">
-                  Page Types<a href="#page-types" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Page Types<a href="#page-types" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   A <strong>page type</strong> is a reusable template for pages
@@ -3127,26 +2752,17 @@
                 </p>
 
                 <h2 id="page-per-page-settings">
-                  Per-Page Settings<a
-                    href="#page-per-page-settings"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Per-Page Settings<a href="#page-per-page-settings" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Editor settings can be overridden for a single page without
                   touching the rest of the site — useful when one page needs a
                   different editable scope or shared-section behavior. See
-                  <a href="#" data-nav="project-settings">Per-Page Overrides</a
-                  >.
+                  <a href="#" data-nav="project-settings">Per-Page Overrides</a>.
                 </p>
 
                 <h2 id="open-website">
-                  Open Website<a
-                    href="#open-website"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Open Website<a href="#open-website" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Use the "Open website" link in the toolbar to open the live
@@ -3156,21 +2772,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="media-management"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="media-management">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Media &amp; Icons</span
-                  >
+                  <span class="klar-article-nav__title">← Media &amp; Icons</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="shared-sections"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="shared-sections">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Shared Sections →</span>
                 </a>
@@ -3181,8 +2787,7 @@
             <div class="klar-page" id="shared-sections">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Shared Sections</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Shared Sections</span>
                 </div>
                 <h1>Shared Sections</h1>
                 <p class="klar-article__description">
@@ -3192,11 +2797,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="what-are-shared">
-                  What Are Shared Sections?<a
-                    href="#what-are-shared"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  What Are Shared Sections?<a href="#what-are-shared" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Most websites have elements that appear on every page — a
@@ -3206,11 +2807,7 @@
                 </p>
 
                 <h2 id="setup-shared">
-                  Setting Up Shared Sections<a
-                    href="#setup-shared"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Setting Up Shared Sections<a href="#setup-shared" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   In your project settings (Editor tab), enter CSS selectors for
@@ -3227,11 +2824,7 @@
                 </ul>
 
                 <h2 id="syncing">
-                  How Syncing Works<a
-                    href="#syncing"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  How Syncing Works<a href="#syncing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>There are two ways to sync shared sections:</p>
                 <ul>
@@ -3254,23 +2847,13 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="page-management"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="page-management">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Page Management</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="save-publish"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="save-publish">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Save &amp; Publish →</span
-                  >
+                  <span class="klar-article-nav__title">Save &amp; Publish →</span>
                 </a>
               </div>
             </div>
@@ -3279,8 +2862,7 @@
             <div class="klar-page" id="save-publish">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Save &amp; Publish</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Save &amp; Publish</span>
                 </div>
                 <h1>Save &amp; Publish</h1>
                 <p class="klar-article__description">
@@ -3305,9 +2887,7 @@
                 </p>
 
                 <h2 id="publishing">
-                  Publishing<a href="#publishing" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Publishing<a href="#publishing" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click <strong>Publish</strong> (or press <kbd>Cmd+P</kbd>) to
@@ -3327,13 +2907,7 @@
                 </ol>
 
                 <div class="klar-callout klar-callout--info">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M12 16v-4M12 8h.01"></path>
                   </svg>
@@ -3352,11 +2926,7 @@
                 </p>
 
                 <h2 id="shared-sync-on-save">
-                  Shared Section Sync<a
-                    href="#shared-sync-on-save"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Shared Section Sync<a href="#shared-sync-on-save" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   If you have shared sections configured and auto-sync enabled,
@@ -3367,19 +2937,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="shared-sections"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="shared-sections">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Shared Sections</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="version-history"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="version-history">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Version History →</span>
                 </a>
@@ -3390,8 +2952,7 @@
             <div class="klar-page" id="version-history">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Version History</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Version History</span>
                 </div>
                 <h1>Version History</h1>
                 <p class="klar-article__description">
@@ -3401,11 +2962,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="viewing-history">
-                  Viewing History<a
-                    href="#viewing-history"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Viewing History<a href="#viewing-history" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Open the version history tab in the structured panel to see a
@@ -3420,11 +2977,7 @@
                 <p>Use the "Previous" button to load older commits.</p>
 
                 <h2 id="restoring-version">
-                  Restoring a Version<a
-                    href="#restoring-version"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Restoring a Version<a href="#restoring-version" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click any commit to load that version of the page into the
@@ -3435,25 +2988,13 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="save-publish"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="save-publish">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Save &amp; Publish</span
-                  >
+                  <span class="klar-article-nav__title">← Save &amp; Publish</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="members"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="members">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Members &amp; Invites →</span
-                  >
+                  <span class="klar-article-nav__title">Members &amp; Invites →</span>
                 </a>
               </div>
             </div>
@@ -3462,8 +3003,8 @@
             <div class="klar-page" id="members">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Members &amp; Invites</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Members &amp;
+                    Invites</span>
                 </div>
                 <h1>Members &amp; Invites</h1>
                 <p class="klar-article__description">
@@ -3489,11 +3030,7 @@
                 </ul>
 
                 <h2 id="invite-member">
-                  Inviting a Member<a
-                    href="#invite-member"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Inviting a Member<a href="#invite-member" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Open project settings and switch to the
@@ -3510,11 +3047,7 @@
                 </p>
 
                 <h2 id="accept-invite">
-                  Accepting an Invite<a
-                    href="#accept-invite"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Accepting an Invite<a href="#accept-invite" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The recipient opens the invite URL and signs in with the
@@ -3523,11 +3056,7 @@
                 </p>
 
                 <h2 id="manage-members">
-                  Managing Members<a
-                    href="#manage-members"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Managing Members<a href="#manage-members" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Admins can remove a member from the Members tab. Two safety
@@ -3543,23 +3072,13 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="version-history"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="version-history">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Version History</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="forms"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="forms">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Form Submissions →</span
-                  >
+                  <span class="klar-article-nav__title">Form Submissions →</span>
                 </a>
               </div>
             </div>
@@ -3568,8 +3087,7 @@
             <div class="klar-page" id="forms">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Features</span
-                  ><span>›</span><span>Form Submissions</span>
+                  <a href="#">Docs</a><span>›</span><span>Features</span><span>›</span><span>Form Submissions</span>
                 </div>
                 <h1>Form Submissions</h1>
                 <p class="klar-article__description">
@@ -3579,9 +3097,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="form-overview">
-                  Overview<a href="#form-overview" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Overview<a href="#form-overview" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Every project gets a unique, tokenized submission URL of the
@@ -3592,11 +3108,7 @@
                 </p>
 
                 <h2 id="form-snippet">
-                  Connecting a Form<a
-                    href="#form-snippet"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Connecting a Form<a href="#form-snippet" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The Forms tab in project settings shows the submission URL and
@@ -3617,11 +3129,7 @@
                 </div>
 
                 <h2 id="form-defenses">
-                  Anti-Abuse Defenses<a
-                    href="#form-defenses"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Anti-Abuse Defenses<a href="#form-defenses" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -3658,11 +3166,7 @@
                 </p>
 
                 <h2 id="form-token">
-                  Rotating the Token<a
-                    href="#form-token"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Rotating the Token<a href="#form-token" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   If the submission URL leaks or starts receiving abuse you
@@ -3675,19 +3179,11 @@
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="members">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Members &amp; Invites</span
-                  >
+                  <span class="klar-article-nav__title">← Members &amp; Invites</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="project-settings"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="project-settings">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Project Settings →</span
-                  >
+                  <span class="klar-article-nav__title">Project Settings →</span>
                 </a>
               </div>
             </div>
@@ -3696,8 +3192,8 @@
             <div class="klar-page" id="project-settings">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Configuration</span
-                  ><span>›</span><span>Project Settings</span>
+                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Project
+                    Settings</span>
                 </div>
                 <h1>Project Settings</h1>
                 <p class="klar-article__description">
@@ -3707,11 +3203,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="opening-settings">
-                  Opening Settings<a
-                    href="#opening-settings"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Opening Settings<a href="#opening-settings" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click the gear icon in the toolbar to open the settings modal.
@@ -3725,9 +3217,7 @@
                 </p>
 
                 <h2 id="general-tab">
-                  General Tab<a href="#general-tab" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  General Tab<a href="#general-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Page metadata that's written into the
@@ -3752,17 +3242,14 @@
                       <tr>
                         <td><strong>Meta description</strong></td>
                         <td>
-                          The search-result snippet (<code
-                            >meta name="description"</code
-                          >) — aim for about 150–160 characters
+                          The search-result snippet (<code>meta name="description"</code>) — aim for about 150–160
+                          characters
                         </td>
                       </tr>
                       <tr>
                         <td><strong>Favicon</strong></td>
                         <td>
-                          URL or path to the icon shown in browser tabs (<code
-                            >link rel="icon"</code
-                          >)
+                          URL or path to the icon shown in browser tabs (<code>link rel="icon"</code>)
                         </td>
                       </tr>
                     </tbody>
@@ -3775,9 +3262,7 @@
                 </p>
 
                 <h2 id="github-tab">
-                  GitHub Tab<a href="#github-tab" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  GitHub Tab<a href="#github-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -3847,9 +3332,7 @@
                 </div>
 
                 <h2 id="editor-tab">
-                  Editor Tab<a href="#editor-tab" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Editor Tab<a href="#editor-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -3880,9 +3363,7 @@
                         <td>
                           Selectors for sections that appear on all pages (e.g.,
                           <code>nav, footer</code>). See
-                          <a href="#" data-nav="shared-sections"
-                            >Shared Sections</a
-                          >.
+                          <a href="#" data-nav="shared-sections">Shared Sections</a>.
                         </td>
                       </tr>
                       <tr>
@@ -3911,9 +3392,7 @@
                 </div>
 
                 <h2 id="members-tab">
-                  Members Tab<a href="#members-tab" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Members Tab<a href="#members-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Invite collaborators to a project by email. Each member is
@@ -3924,9 +3403,7 @@
                 </p>
 
                 <h2 id="forms-tab">
-                  Forms Tab<a href="#forms-tab" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Forms Tab<a href="#forms-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Each project gets a tokenized form-submission URL you can
@@ -3951,11 +3428,7 @@
                 </p>
 
                 <h2 id="publishing-tab">
-                  Publishing Tab<a
-                    href="#publishing-tab"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Publishing Tab<a href="#publishing-tab" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -3987,11 +3460,7 @@
                 </div>
 
                 <h2 id="overrides">
-                  Per-Page Overrides<a
-                    href="#overrides"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Per-Page Overrides<a href="#overrides" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Editor settings (<strong>Editable Elements</strong>,
@@ -4007,9 +3476,7 @@
                 </p>
 
                 <h2 id="danger-zone">
-                  Danger Zone<a href="#danger-zone" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Danger Zone<a href="#danger-zone" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The danger zone tab lets you delete the project entirely. This
@@ -4021,19 +3488,11 @@
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="forms">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Form Submissions</span
-                  >
+                  <span class="klar-article-nav__title">← Form Submissions</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="selectors"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="selectors">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Custom Selectors →</span
-                  >
+                  <span class="klar-article-nav__title">Custom Selectors →</span>
                 </a>
               </div>
             </div>
@@ -4042,8 +3501,8 @@
             <div class="klar-page" id="selectors">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Configuration</span
-                  ><span>›</span><span>Custom Selectors</span>
+                  <a href="#">Docs</a><span>›</span><span>Configuration</span><span>›</span><span>Custom
+                    Selectors</span>
                 </div>
                 <h1>Custom Selectors</h1>
                 <p class="klar-article__description">
@@ -4053,11 +3512,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="editable-scope">
-                  Editable Selectors<a
-                    href="#editable-scope"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Editable Selectors<a href="#editable-scope" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   By default, Klar makes all standard text elements editable
@@ -4085,11 +3540,7 @@
                 </div>
 
                 <h2 id="selector-syntax">
-                  Selector Syntax<a
-                    href="#selector-syntax"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Selector Syntax<a href="#selector-syntax" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4129,11 +3580,7 @@
                 </div>
 
                 <h2 id="data-attributes">
-                  HTML Data Attributes<a
-                    href="#data-attributes"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  HTML Data Attributes<a href="#data-attributes" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   You can also mark elements directly in your HTML without
@@ -4155,11 +3602,7 @@
                 </ul>
 
                 <h2 id="field-rules">
-                  Content Fields<a
-                    href="#field-rules"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Content Fields<a href="#field-rules" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Editable selectors do more than mark text editable — adding a
@@ -4172,11 +3615,7 @@
                 </p>
 
                 <h2 id="selector-modifiers">
-                  Quick reference<a
-                    href="#selector-modifiers"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Quick reference<a href="#selector-modifiers" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4215,21 +3654,11 @@
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="project-settings"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="project-settings">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Project Settings</span
-                  >
+                  <span class="klar-article-nav__title">← Project Settings</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="content-fields"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="content-fields">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Content Fields →</span>
                 </a>
@@ -4240,8 +3669,7 @@
             <div class="klar-page" id="content-fields">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Content</span
-                  ><span>›</span><span>Content Fields</span>
+                  <a href="#">Docs</a><span>›</span><span>Content</span><span>›</span><span>Content Fields</span>
                 </div>
                 <h1>Content Fields</h1>
                 <p class="klar-article__description">
@@ -4252,9 +3680,7 @@
               </div>
               <div data-klar-test>
                 <h2 id="fields-overview">
-                  Overview<a href="#fields-overview" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Overview<a href="#fields-overview" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   A <strong>field</strong> is a named piece of content attached
@@ -4271,11 +3697,7 @@
                 </p>
 
                 <h2 id="fields-declare">
-                  Declaring a field<a
-                    href="#fields-declare"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Declaring a field<a href="#fields-declare" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Write a CSS selector, then <code>:field(...)</code> with at
@@ -4302,9 +3724,7 @@ img.hero :field(name: image, type: image)
                 </p>
 
                 <h2 id="fields-types">
-                  Field types<a href="#fields-types" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Field types<a href="#fields-types" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4365,9 +3785,7 @@ img.hero :field(name: image, type: image)
                 </p>
 
                 <h2 id="fields-options">
-                  Options<a href="#fields-options" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Options<a href="#fields-options" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Extra settings tune how a field looks and behaves. Top-level
@@ -4432,18 +3850,12 @@ img.hero :field(name: image, type: image)
                 </div>
 
                 <h2 id="fields-vocab">
-                  Tags &amp; vocabularies<a
-                    href="#fields-vocab"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Tags &amp; vocabularies<a href="#fields-vocab" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   A <strong>vocabulary</strong> is a reusable list of allowed
                   values (categories, tags, authors) configured in
-                  <a href="#" data-nav="project-settings"
-                    >Project Settings → Tags</a
-                  >. Bind a field to one with
+                  <a href="#" data-nav="project-settings">Project Settings → Tags</a>. Bind a field to one with
                   <code>options(vocab: name)</code> so editors pick from the
                   list instead of free-typing. Use <code>type: tags</code> for
                   multiple values and <code>type: select</code> for one — these
@@ -4451,11 +3863,7 @@ img.hero :field(name: image, type: image)
                 </p>
 
                 <h2 id="fields-data-only">
-                  Data-only fields<a
-                    href="#fields-data-only"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Data-only fields<a href="#fields-data-only" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   A field doesn't need an element on the page. Omit the selector
@@ -4470,11 +3878,7 @@ img.hero :field(name: image, type: image)
                 </div>
 
                 <h2 id="fields-edit-all">
-                  Editing fields<a
-                    href="#fields-edit-all"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Editing fields<a href="#fields-edit-all" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Element-bound fields can be edited inline on the page, and the
@@ -4488,19 +3892,11 @@ img.hero :field(name: image, type: image)
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="selectors">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Custom Selectors</span
-                  >
+                  <span class="klar-article-nav__title">← Custom Selectors</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="listing-templates"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="listing-templates">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Listing Templates →</span
-                  >
+                  <span class="klar-article-nav__title">Listing Templates →</span>
                 </a>
               </div>
             </div>
@@ -4509,8 +3905,7 @@ img.hero :field(name: image, type: image)
             <div class="klar-page" id="listing-templates">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Content</span
-                  ><span>›</span><span>Listing Templates</span>
+                  <a href="#">Docs</a><span>›</span><span>Content</span><span>›</span><span>Listing Templates</span>
                 </div>
                 <h1>Listing Templates</h1>
                 <p class="klar-article__description">
@@ -4520,11 +3915,7 @@ img.hero :field(name: image, type: image)
               </div>
               <div data-klar-test>
                 <h2 id="listing-overview">
-                  Overview<a
-                    href="#listing-overview"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Overview<a href="#listing-overview" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   A <code>&lt;template data-for data-query&gt;</code> block
@@ -4536,9 +3927,7 @@ img.hero :field(name: image, type: image)
                 </p>
 
                 <h2 id="listing-example">
-                  Example<a href="#listing-example" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Example<a href="#listing-example" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4560,17 +3949,12 @@ img.hero :field(name: image, type: image)
                   The body is a <strong>Liquid</strong> template with the
                   matched pages available as <code>items</code>. You get the
                   full loop toolkit — <code>{% for %}</code>,
-                  <code>forloop.index</code
-                  >/<code>first</code>/<code>last</code>,
+                  <code>forloop.index</code>/<code>first</code>/<code>last</code>,
                   <code>{% cycle %}</code>, and nested loops.
                 </p>
 
                 <h2 id="listing-queries">
-                  Query verbs<a
-                    href="#listing-queries"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Query verbs<a href="#listing-queries" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4605,9 +3989,7 @@ img.hero :field(name: image, type: image)
                 </div>
 
                 <h2 id="listing-filter">
-                  Filtering<a href="#listing-filter" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Filtering<a href="#listing-filter" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Narrow a list by field values with <code>where</code> — for
@@ -4622,11 +4004,7 @@ img.hero :field(name: image, type: image)
                 </div>
 
                 <h2 id="listing-render">
-                  When listings update<a
-                    href="#listing-render"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  When listings update<a href="#listing-render" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Listings re-render every time you save the page they live on,
@@ -4636,23 +4014,13 @@ img.hero :field(name: image, type: image)
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="content-fields"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="content-fields">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Content Fields</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="sdk"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="sdk">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Content API &amp; SDK →</span
-                  >
+                  <span class="klar-article-nav__title">Content API &amp; SDK →</span>
                 </a>
               </div>
             </div>
@@ -4661,8 +4029,8 @@ img.hero :field(name: image, type: image)
             <div class="klar-page" id="sdk">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Developers</span
-                  ><span>›</span><span>Content API &amp; SDK</span>
+                  <a href="#">Docs</a><span>›</span><span>Developers</span><span>›</span><span>Content API &amp;
+                    SDK</span>
                 </div>
                 <h1>Content API &amp; SDK</h1>
                 <p class="klar-article__description">
@@ -4673,9 +4041,7 @@ img.hero :field(name: image, type: image)
               </div>
               <div data-klar-test>
                 <h2 id="sdk-overview">
-                  Overview<a href="#sdk-overview" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Overview<a href="#sdk-overview" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Two ES modules are served straight from your Klar host — no
@@ -4687,11 +4053,7 @@ img.hero :field(name: image, type: image)
                 </p>
 
                 <h2 id="sdk-content">
-                  Reading content<a
-                    href="#sdk-content"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Reading content<a href="#sdk-content" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4709,19 +4071,14 @@ document.querySelector('#list').innerHTML =
                 <p>
                   <code>list()</code>, <code>facets()</code> and
                   <code>vocabularies()</code> mirror the
-                  <a href="#" data-nav="listing-templates"
-                    >listing query verbs</a
-                  >, and <code>render()</code> fills a template with each item.
+                  <a href="#" data-nav="listing-templates">listing query verbs</a>, and <code>render()</code> fills a
+                  template with each item.
                   A <code>content-static.js</code> variant reads a pre-built
                   JSON file for fully static sites.
                 </p>
 
                 <h2 id="sdk-users">
-                  Sign-in &amp; per-user data<a
-                    href="#sdk-users"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Sign-in &amp; per-user data<a href="#sdk-users" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Let visitors sign in with Google — through a Klar-hosted
@@ -4747,11 +4104,7 @@ const favs = await user.data.get('favorites');</code></pre>
                 </p>
 
                 <h2 id="sdk-reference">
-                  Full reference<a
-                    href="#sdk-reference"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Full reference<a href="#sdk-reference" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The complete API — every option, return shape, and the static
@@ -4762,21 +4115,11 @@ const favs = await user.data.get('favorites');</code></pre>
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="listing-templates"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="listing-templates">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Listing Templates</span
-                  >
+                  <span class="klar-article-nav__title">← Listing Templates</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="content-sdk"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="content-sdk">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Content SDK →</span>
                 </a>
@@ -4787,8 +4130,7 @@ const favs = await user.data.get('favorites');</code></pre>
             <div class="klar-page" id="content-sdk">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Developers</span
-                  ><span>›</span><span>Content SDK</span>
+                  <a href="#">Docs</a><span>›</span><span>Developers</span><span>›</span><span>Content SDK</span>
                 </div>
                 <h1>Content SDK</h1>
                 <p class="klar-article__description">
@@ -4799,11 +4141,7 @@ const favs = await user.data.get('favorites');</code></pre>
               </div>
               <div data-klar-test>
                 <h2 id="content-sdk-quickstart">
-                  Quick start<a
-                    href="#content-sdk-quickstart"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Quick start<a href="#content-sdk-quickstart" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4825,11 +4163,7 @@ const vocab   = await klar.vocabularies('blog-post');</code></pre>
                 </p>
 
                 <h2 id="content-sdk-create">
-                  createKlarClient(config)<a
-                    href="#content-sdk-create"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  createKlarClient(config)<a href="#content-sdk-create" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4871,11 +4205,7 @@ const vocab   = await klar.vocabularies('blog-post');</code></pre>
                 </p>
 
                 <h2 id="content-sdk-list">
-                  list(pageType, options)<a
-                    href="#content-sdk-list"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  list(pageType, options)<a href="#content-sdk-list" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4942,11 +4272,7 @@ await klar.list('blog-post', { where: { tags: { has: 'css' }, status: { eq: 'liv
                 </div>
 
                 <h2 id="content-sdk-facets">
-                  facets &amp; vocabularies<a
-                    href="#content-sdk-facets"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  facets &amp; vocabularies<a href="#content-sdk-facets" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   <code>facets(pageType, field, options)</code> returns distinct
@@ -4958,11 +4284,7 @@ await klar.list('blog-post', { where: { tags: { has: 'css' }, status: { eq: 'liv
                 </p>
 
                 <h2 id="content-sdk-item">
-                  ContentItem shape<a
-                    href="#content-sdk-item"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  ContentItem shape<a href="#content-sdk-item" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4981,11 +4303,7 @@ await klar.list('blog-post', { where: { tags: { has: 'css' }, status: { eq: 'liv
                 </div>
 
                 <h2 id="content-sdk-render">
-                  render &amp; insert<a
-                    href="#content-sdk-render"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  render &amp; insert<a href="#content-sdk-render" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   <code>render(data, template)</code> fills
@@ -5010,11 +4328,7 @@ klar.insert('#list', 'replace', klar.render(posts, `
                 </div>
 
                 <h2 id="content-sdk-cdn">
-                  Asset &amp; URL resolution<a
-                    href="#content-sdk-cdn"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Asset &amp; URL resolution<a href="#content-sdk-cdn" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Path-field values on <code>content</code> are rewritten
@@ -5026,11 +4340,7 @@ klar.insert('#list', 'replace', klar.render(posts, `
                 </p>
 
                 <h2 id="content-sdk-extras">
-                  One-shot, errors &amp; static<a
-                    href="#content-sdk-extras"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  One-shot, errors &amp; static<a href="#content-sdk-extras" class="klar-heading-anchor">#</a>
                 </h2>
                 <ul>
                   <li>
@@ -5038,9 +4348,7 @@ klar.insert('#list', 'replace', klar.render(posts, `
                     one-shot list without keeping a client around.
                   </li>
                   <li>
-                    Failed requests throw <code>KlarApiError</code> (<code
-                      >{ status, message }</code
-                    >).
+                    Failed requests throw <code>KlarApiError</code> (<code>{ status, message }</code>).
                   </li>
                   <li>
                     <code>content-static.js</code> — the same API, backed by a
@@ -5049,11 +4357,7 @@ klar.insert('#list', 'replace', klar.render(posts, `
                 </ul>
 
                 <h2 id="content-sdk-endpoints">
-                  Raw endpoints<a
-                    href="#content-sdk-endpoints"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Raw endpoints<a href="#content-sdk-endpoints" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -5068,15 +4372,9 @@ GET /api/vocabularies?projectId&amp;page_type                                   
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="sdk">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Content API &amp; SDK</span
-                  >
+                  <span class="klar-article-nav__title">← Content API &amp; SDK</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="users-sdk"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="users-sdk">
                   <span class="klar-article-nav__label">Next</span>
                   <span class="klar-article-nav__title">Users SDK →</span>
                 </a>
@@ -5087,8 +4385,7 @@ GET /api/vocabularies?projectId&amp;page_type                                   
             <div class="klar-page" id="users-sdk">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Developers</span
-                  ><span>›</span><span>Users SDK</span>
+                  <a href="#">Docs</a><span>›</span><span>Developers</span><span>›</span><span>Users SDK</span>
                 </div>
                 <h1>Users SDK</h1>
                 <p class="klar-article__description">
@@ -5099,13 +4396,7 @@ GET /api/vocabularies?projectId&amp;page_type                                   
               </div>
               <div data-klar-test>
                 <div class="klar-callout klar-callout--info">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M12 16v-4M12 8h.01"></path>
                   </svg>
@@ -5119,11 +4410,7 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                 </div>
 
                 <h2 id="users-sdk-quickstart">
-                  Quick start<a
-                    href="#users-sdk-quickstart"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Quick start<a href="#users-sdk-quickstart" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -5146,11 +4433,7 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                 </div>
 
                 <h2 id="users-sdk-create">
-                  createKlarUser(opts)<a
-                    href="#users-sdk-create"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  createKlarUser(opts)<a href="#users-sdk-create" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -5236,11 +4519,7 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                 </p>
 
                 <h2 id="users-sdk-data">
-                  Per-user data — user.data<a
-                    href="#users-sdk-data"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Per-user data — user.data<a href="#users-sdk-data" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Key-value storage scoped to
@@ -5263,11 +4542,8 @@ await user.data.delete('favorites');</code></pre>
                 </p>
 
                 <h2 id="users-sdk-collections">
-                  Shared collections — user.collection()<a
-                    href="#users-sdk-collections"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Shared collections — user.collection()<a href="#users-sdk-collections"
+                    class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Where <code>user.data</code> is private to each user, a
@@ -5332,20 +4608,14 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                 </p>
 
                 <h2 id="users-sdk-admin">
-                  Admin access — user.admin<a
-                    href="#users-sdk-admin"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Admin access — user.admin<a href="#users-sdk-admin" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The <strong>project owner</strong> can read and manage
                   everything their site has collected — and build their own
                   admin dashboard from this SDK. You're recognised as the admin
                   automatically when you sign in with the
-                  <strong
-                    >same Google account that owns the Klar project</strong
-                  >
+                  <strong>same Google account that owns the Klar project</strong>
                   (no extra setup, no separate login). Everyone else gets a 403.
                 </p>
                 <div class="klar-code-block">
@@ -5382,11 +4652,7 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                 </p>
 
                 <h2 id="users-sdk-automations">
-                  Email automations<a
-                    href="#users-sdk-automations"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Email automations<a href="#users-sdk-automations" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Send a templated email <strong>on a data event</strong> (a
@@ -5433,20 +4699,14 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   has no address from sign-in, so the recipient is a phone field
                   on the record (<code>to: 'field:phone'</code>) and the message
                   is a single Liquid <code>text</code>. Klar sends via
-                  <a href="https://46elks.com" target="_blank" rel="noopener"
-                    >46elks</a
-                  >
+                  <a href="https://46elks.com" target="_blank" rel="noopener">46elks</a>
                   (sends worldwide): set your own credentials in
                   <em>Settings → SMS</em> (each project owns its sender id, e.g.
                   <code>Klar</code>). With no credentials it's a no-op.
                 </p>
 
                 <h2 id="users-sdk-endpoints">
-                  Raw endpoints<a
-                    href="#users-sdk-endpoints"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Raw endpoints<a href="#users-sdk-endpoints" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -5487,23 +4747,13 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="content-sdk"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="content-sdk">
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Content SDK</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="keyboard-shortcuts"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="keyboard-shortcuts">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Keyboard Shortcuts →</span
-                  >
+                  <span class="klar-article-nav__title">Keyboard Shortcuts →</span>
                 </a>
               </div>
             </div>
@@ -5512,8 +4762,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
             <div class="klar-page" id="keyboard-shortcuts">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Reference</span
-                  ><span>›</span><span>Keyboard Shortcuts</span>
+                  <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Keyboard Shortcuts</span>
                 </div>
                 <h1>Keyboard Shortcuts</h1>
                 <p class="klar-article__description">
@@ -5522,9 +4771,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
               </div>
               <div data-klar-test>
                 <h2 id="global-shortcuts">
-                  Global<a href="#global-shortcuts" class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Global<a href="#global-shortcuts" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -5564,11 +4811,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                 </div>
 
                 <h2 id="editing-shortcuts">
-                  Visual Editor<a
-                    href="#editing-shortcuts"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Visual Editor<a href="#editing-shortcuts" class="klar-heading-anchor">#</a>
                 </h2>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -5607,13 +4850,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                 </div>
 
                 <div class="klar-callout klar-callout--info">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M12 16v-4M12 8h.01"></path>
                   </svg>
@@ -5629,15 +4866,9 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                   <span class="klar-article-nav__label">Previous</span>
                   <span class="klar-article-nav__title">← Users SDK</span>
                 </a>
-                <a
-                  href="#"
-                  class="klar-article-nav__link klar-article-nav__link--next"
-                  data-nav="viewport-preview"
-                >
+                <a href="#" class="klar-article-nav__link klar-article-nav__link--next" data-nav="viewport-preview">
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Viewport &amp; Preview →</span
-                  >
+                  <span class="klar-article-nav__title">Viewport &amp; Preview →</span>
                 </a>
               </div>
             </div>
@@ -5646,8 +4877,8 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
             <div class="klar-page" id="viewport-preview">
               <div class="klar-article__header">
                 <div class="klar-article__breadcrumb">
-                  <a href="#">Docs</a><span>›</span><span>Reference</span
-                  ><span>›</span><span>Viewport &amp; Preview</span>
+                  <a href="#">Docs</a><span>›</span><span>Reference</span><span>›</span><span>Viewport &amp;
+                    Preview</span>
                 </div>
                 <h1>Viewport &amp; Preview</h1>
                 <p class="klar-article__description">
@@ -5657,11 +4888,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
               </div>
               <div data-klar-test>
                 <h2 id="viewport-sizes">
-                  Viewport Sizes<a
-                    href="#viewport-sizes"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Viewport Sizes<a href="#viewport-sizes" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   The toolbar provides preset viewport sizes to test responsive
@@ -5697,11 +4924,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                 </div>
 
                 <h2 id="responsive-mode">
-                  Responsive Mode<a
-                    href="#responsive-mode"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Responsive Mode<a href="#responsive-mode" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Toggle responsive mode to freely resize the preview by
@@ -5711,11 +4934,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                 </p>
 
                 <h2 id="preview-mode">
-                  Preview Mode<a
-                    href="#preview-mode"
-                    class="klar-heading-anchor"
-                    >#</a
-                  >
+                  Preview Mode<a href="#preview-mode" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
                   Click the eye icon to toggle preview mode. In preview mode:
@@ -5750,15 +4969,9 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
               </div>
 
               <div class="klar-article-nav">
-                <a
-                  href="#"
-                  class="klar-article-nav__link"
-                  data-nav="keyboard-shortcuts"
-                >
+                <a href="#" class="klar-article-nav__link" data-nav="keyboard-shortcuts">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Keyboard Shortcuts</span
-                  >
+                  <span class="klar-article-nav__title">← Keyboard Shortcuts</span>
                 </a>
                 <div></div>
               </div>
@@ -5783,7 +4996,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
      JAVASCRIPT
      ════════════════════════════════════ -->
     <script>
-      (function () {
+      (function() {
         "use strict";
 
         // ─── Theme Toggle ───
@@ -5864,16 +5077,15 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
         document.addEventListener("keydown", (e) => {
           if ((e.metaKey || e.ctrlKey) && e.key === "k") {
             e.preventDefault();
-            searchModal.classList.contains("is-open")
-              ? closeSearch()
-              : openSearch();
+            searchModal.classList.contains("is-open") ?
+              closeSearch() :
+              openSearch();
           }
           if (e.key === "Escape") closeSearch();
         });
 
         // Search data
-        const pages = [
-          {
+        const pages = [{
             id: "getting-started",
             title: "Introduction",
             section: "Getting Started",
@@ -5988,8 +5200,8 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
 
           const matches = pages.filter(
             (p) =>
-              p.title.toLowerCase().includes(q) ||
-              p.section.toLowerCase().includes(q),
+            p.title.toLowerCase().includes(q) ||
+            p.section.toLowerCase().includes(q),
           );
 
           if (matches.length === 0) {
@@ -6085,10 +5297,10 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
             a.href =
               "#" +
               h.innerText
-                .toLowerCase()
-                .trim()
-                .replace("#", "")
-                .replace(/[\n\r\s\t]+/g, "-");
+              .toLowerCase()
+              .trim()
+              .replace("#", "")
+              .replace(/[\n\r\s\t]+/g, "-");
             h.appendChild(a);
           });
           const headings = page.querySelectorAll("h2[id], h3[id]");
@@ -6121,8 +5333,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                   if (link) link.classList.add("is-active");
                 }
               });
-            },
-            {
+            }, {
               rootMargin: "-80px 0px -70% 0px",
             },
           );
@@ -6146,7 +5357,8 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
           navigator.clipboard.writeText(code.textContent).then(() => {
             copyBtn.classList.add("is-copied");
             const origHTML = copyBtn.innerHTML;
-            copyBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
+            copyBtn.innerHTML =
+              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
             setTimeout(() => {
               copyBtn.classList.remove("is-copied");
               copyBtn.innerHTML = origHTML;
