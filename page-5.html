@@ -5305,6 +5305,53 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   login and your site sign-in must use the same one.
                 </p>
 
+                <h2 id="users-sdk-automations">
+                  Email automations<a
+                    href="#users-sdk-automations"
+                    class="klar-heading-anchor"
+                    >#</a
+                  >
+                </h2>
+                <p>
+                  Send a templated email <strong>on a data event</strong> (a
+                  booking is created → confirmation) or <strong>on a
+                  schedule</strong> (daily → remind tomorrow's bookers). Like
+                  collections, an app declares its automations and
+                  self-provisions them.
+                </p>
+                <div class="klar-code-block">
+                  <div class="klar-code-block__header">
+                    <span class="klar-code-block__lang">JavaScript</span>
+                  </div>
+                  <pre><code>await user.admin.ensureAutomations({
+  confirm: {
+    collection: 'bookings', on: 'create', to: 'owner',
+    subject: 'Confirmed — {{ data.resourceName }}',
+    body: '&lt;p&gt;See you {{ data.start | date: "%b %-d" }}.&lt;/p&gt;',
+  },
+  remind: {
+    collection: 'bookings',
+    schedule: { every: 'day', atHour: 9 },           <span class="klar-hl-comment">// hourly | daily | weekly (UTC)</span>
+    window: { dateField: 'start', withinHours: 24 }, <span class="klar-hl-comment">// next 24h</span>
+    where: { status: 'confirmed' }, to: 'owner',
+    subject: 'Reminder', body: '…',
+  },
+});</code></pre>
+                </div>
+                <p>
+                  <strong>Trigger</strong> (<code>on</code>):
+                  create/update/delete. <strong>Schedule</strong>: presets
+                  (<code>every</code> hour/day/week + <code>atHour</code>), with
+                  an optional <code>window</code> to target records by a date
+                  field. <strong>Recipients</strong> are <code>owner</code> (the
+                  record's owner) or <code>projectOwner</code> only — never an
+                  arbitrary address. <code>subject</code>/<code>body</code> are
+                  Liquid; a scheduled reminder fires once per record. Manage with
+                  <code>listAutomations()</code>,
+                  <code>setAutomationEnabled()</code>,
+                  <code>deleteAutomation()</code>. Requires SMTP on the Klar host.
+                </p>
+
                 <h2 id="users-sdk-endpoints">
                   Raw endpoints<a
                     href="#users-sdk-endpoints"
@@ -5342,7 +5389,11 @@ PUT    /api/sdk/admin/users/:id/data/:key      body { value } → { ok }
 DELETE /api/sdk/admin/users/:id/data/:key      → { deleted }
 GET    /api/sdk/admin/collections/:name        → { items }   (all owners)
 PATCH  /api/sdk/admin/collections/:name/:id    body { data } → { item }
-DELETE /api/sdk/admin/collections/:name/:id    → { deleted }</code></pre>
+DELETE /api/sdk/admin/collections/:name/:id    → { deleted }
+GET    /api/sdk/admin/automations              → { automations }
+POST   /api/sdk/admin/automations              body { automations } → { name:{created} }
+PATCH  /api/sdk/admin/automations/:name        body { enabled } → { ok }
+DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                 </div>
               </div>
 
