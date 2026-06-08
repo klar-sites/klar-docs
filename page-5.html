@@ -5351,6 +5351,16 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   <code>setAutomationEnabled()</code>,
                   <code>deleteAutomation()</code>. Requires SMTP on the Klar host.
                 </p>
+                <p>
+                  Set <code>channel: 'sms'</code> to send a text instead. SMS has
+                  no address from sign-in, so the recipient is a phone field on
+                  the record (<code>to: 'field:phone'</code>) and the message is a
+                  single Liquid <code>text</code>. Klar sends via
+                  <a href="https://46elks.com" target="_blank" rel="noopener">46elks</a>:
+                  set your own credentials in <em>Settings → SMS</em> (each
+                  project owns its sender id, e.g. <code>Klar</code>). With no
+                  credentials it's a no-op.
+                </p>
 
                 <h2 id="users-sdk-endpoints">
                   Raw endpoints<a
