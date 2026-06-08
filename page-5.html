@@ -2615,12 +2615,15 @@
                   >
                 </h2>
                 <p>
-                  Editing a link href shows a small bubble above the input with a
-                  <strong>Pick</strong> button to choose another page or anchor in
-                  your repo, plus a <strong>Choose file</strong> button to point
-                  the link at a file from your media library. The picker lists the
-                  HTML files in your project and any in-page <code>id</code>
-                  targets; picked pages are inserted as root-relative paths (e.g.
+                  Editing a link href shows a small bubble above the input with
+                  a
+                  <strong>Pick</strong> button to choose another page or anchor
+                  in your repo, plus a <strong>Choose file</strong> button to
+                  point the link at a file from your media library. The picker
+                  lists the HTML files in your project and any in-page
+                  <code>id</code>
+                  targets; picked pages are inserted as root-relative paths
+                  (e.g.
                   <code>/blog/post.html</code>) so internal links keep working
                   after you rename or move pages.
                 </p>
@@ -2767,18 +2770,18 @@
                 </h2>
                 <p>
                   The AI chat panel lets you describe changes in plain English
-                  and have them applied to your page. Toggle it from the toolbar;
-                  like the code editor it can dock on the left, right, or bottom.
-                  You bring your own AI provider key (added in settings), so you
-                  pick the model and stay in control of cost.
+                  and have them applied to your page. Toggle it from the
+                  toolbar; like the code editor it can dock on the left, right,
+                  or bottom. You bring your own AI provider key (added in
+                  settings), so you pick the model and stay in control of cost.
                 </p>
 
                 <h2 id="ai-modes">
                   Modes<a href="#ai-modes" class="klar-heading-anchor">#</a>
                 </h2>
                 <p>
-                  Choose a mode under the message box — it tells the AI what kind
-                  of change you want:
+                  Choose a mode under the message box — it tells the AI what
+                  kind of change you want:
                 </p>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -2818,7 +2821,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><strong>Site</strong> / <strong>Site Strict</strong></td>
+                        <td>
+                          <strong>Site</strong> / <strong>Site Strict</strong>
+                        </td>
                         <td>
                           Generate a complete multi-page website from a brief
                           (Strict also builds a reusable design system).
@@ -2839,10 +2844,10 @@
                   In <strong>Edit</strong> mode, click any element in the visual
                   editor and the AI gets its context — ask "make this heading
                   larger" or "change this button to blue" and it knows which
-                  element you mean. This works on normal HTML
-                  <em>and</em> on elements rendered at runtime by JavaScript or
-                  React: for those there's no static HTML to swap, so the AI finds
-                  the code that generates the element and edits that instead.
+                  element you mean. This works on normal HTML <em>and</em> on
+                  elements rendered at runtime by JavaScript or React: for those
+                  there's no static HTML to swap, so the AI finds the code that
+                  generates the element and edits that instead.
                 </p>
 
                 <h2 id="ai-diff">
@@ -2855,7 +2860,8 @@
                 <p>
                   Nothing touches your page until you apply it. When the AI
                   produces code you'll see apply buttons — and for whole-page
-                  changes (Modify page, and Edit on a runtime element) you can open
+                  changes (Modify page, and Edit on a runtime element) you can
+                  open
                   <strong>View diff</strong> to see a before/after of the entire
                   page first.
                 </p>
@@ -2865,10 +2871,12 @@
                     apply the change
                   </li>
                   <li>
-                    <strong>View diff</strong> — review the full before/after first
+                    <strong>View diff</strong> — review the full before/after
+                    first
                   </li>
                   <li>
-                    <strong>Apply CSS / JS</strong> — apply style or script changes
+                    <strong>Apply CSS / JS</strong> — apply style or script
+                    changes
                   </li>
                 </ul>
 
@@ -2883,10 +2891,10 @@
                   Chips under the message box control the context sent with your
                   prompt — the page <strong>HTML</strong>, your project
                   <strong>CSS</strong> and <strong>JS</strong>, other
-                  <strong>Site</strong> files, and your design system. Modes that
-                  need the page (Modify page, Edit) attach it automatically; the
-                  chips are a manual override for the other modes. A lit chip means
-                  that context is being included.
+                  <strong>Site</strong> files, and your design system. Modes
+                  that need the page (Modify page, Edit) attach it
+                  automatically; the chips are a manual override for the other
+                  modes. A lit chip means that context is being included.
                 </p>
 
                 <h2 id="ai-design-system">
@@ -2897,12 +2905,13 @@
                   >
                 </h2>
                 <p>
-                  Turn on <strong>DS</strong> to have the AI reuse your project's
-                  existing classes and tokens instead of inventing new styles. In
-                  <strong>Strict</strong> it only reuses what already exists;
-                  otherwise it can extend your <code>style.css</code> when a needed
-                  style is genuinely missing — keeping generated markup consistent
-                  with the rest of your site.
+                  Turn on <strong>DS</strong> to have the AI reuse your
+                  project's existing classes and tokens instead of inventing new
+                  styles. In <strong>Strict</strong> it only reuses what already
+                  exists; otherwise it can extend your
+                  <code>style.css</code> when a needed style is genuinely
+                  missing — keeping generated markup consistent with the rest of
+                  your site.
                 </p>
               </div>
 
@@ -3106,12 +3115,13 @@
                 <p>
                   A <strong>page type</strong> is a reusable template for pages
                   that share a structure and the same
-                  <a href="#" data-nav="content-fields">content fields</a> — blog
-                  posts, products, team members. A page type is itself an editable
-                  page (for example <code>page-types/blog-post.html</code>); when
-                  you create or duplicate a page from it, the layout and field
-                  definitions come along, and each new page stores its own field
-                  values. Those values feed
+                  <a href="#" data-nav="content-fields">content fields</a> —
+                  blog posts, products, team members. A page type is itself an
+                  editable page (for example
+                  <code>page-types/blog-post.html</code>); when you create or
+                  duplicate a page from it, the layout and field definitions
+                  come along, and each new page stores its own field values.
+                  Those values feed
                   <a href="#" data-nav="listing-templates">listing templates</a>
                   and the <a href="#" data-nav="sdk">content API</a>.
                 </p>
@@ -3127,7 +3137,8 @@
                   Editor settings can be overridden for a single page without
                   touching the rest of the site — useful when one page needs a
                   different editable scope or shared-section behavior. See
-                  <a href="#" data-nav="project-settings">Per-Page Overrides</a>.
+                  <a href="#" data-nav="project-settings">Per-Page Overrides</a
+                  >.
                 </p>
 
                 <h2 id="open-website">
@@ -3336,8 +3347,8 @@
                 <p>
                   Pages that contain
                   <a href="#" data-nav="listing-templates">listing templates</a>
-                  are re-rendered at publish, so blog indexes and card grids always
-                  reflect the latest content you've saved.
+                  are re-rendered at publish, so blog indexes and card grids
+                  always reflect the latest content you've saved.
                 </p>
 
                 <h2 id="shared-sync-on-save">
@@ -3708,9 +3719,9 @@
                   <strong>GitHub</strong>, <strong>Editor</strong>,
                   <strong>Members</strong>, <strong>Forms</strong>,
                   <strong>Tags</strong>, <strong>Publishing</strong>, and
-                  <strong>Danger Zone</strong>. Tabs that depend on a saved project
-                  (Members, Forms, Tags) are disabled until you create the project
-                  for the first time.
+                  <strong>Danger Zone</strong>. Tabs that depend on a saved
+                  project (Members, Forms, Tags) are disabled until you create
+                  the project for the first time.
                 </p>
 
                 <h2 id="general-tab">
@@ -3741,25 +3752,26 @@
                       <tr>
                         <td><strong>Meta description</strong></td>
                         <td>
-                          The search-result snippet
-                          (<code>meta name="description"</code>) — aim for about
-                          150–160 characters
+                          The search-result snippet (<code
+                            >meta name="description"</code
+                          >) — aim for about 150–160 characters
                         </td>
                       </tr>
                       <tr>
                         <td><strong>Favicon</strong></td>
                         <td>
-                          URL or path to the icon shown in browser tabs
-                          (<code>link rel="icon"</code>)
+                          URL or path to the icon shown in browser tabs (<code
+                            >link rel="icon"</code
+                          >)
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <p>
-                  Use the <strong>Project</strong> / <strong>Page</strong> toggle
-                  to set a default for the whole site or override the metadata just
-                  for the page you have open.
+                  Use the <strong>Project</strong> /
+                  <strong>Page</strong> toggle to set a default for the whole
+                  site or override the metadata just for the page you have open.
                 </p>
 
                 <h2 id="github-tab">
@@ -3929,13 +3941,13 @@
                 </h2>
                 <p>
                   Define the <strong>vocabularies</strong> — reusable lists of
-                  allowed values like categories, tags, or authors — that back your
-                  <code>tags</code> and <code>select</code>
-                  <a href="#" data-nav="content-fields">content fields</a>. Editors
-                  then pick from these lists instead of free-typing, which keeps
-                  values consistent and powers faceted filtering in
-                  <a href="#" data-nav="listing-templates">listings</a>. (Available
-                  once the project has been saved.)
+                  allowed values like categories, tags, or authors — that back
+                  your <code>tags</code> and <code>select</code>
+                  <a href="#" data-nav="content-fields">content fields</a>.
+                  Editors then pick from these lists instead of free-typing,
+                  which keeps values consistent and powers faceted filtering in
+                  <a href="#" data-nav="listing-templates">listings</a>.
+                  (Available once the project has been saved.)
                 </p>
 
                 <h2 id="publishing-tab">
@@ -3965,8 +3977,9 @@
                       <tr>
                         <td><strong>Production Branch</strong></td>
                         <td>
-                          The branch Klar treats as your site's production source.
-                          Leave blank to use the repository's default branch.
+                          The branch Klar treats as your site's production
+                          source. Leave blank to use the repository's default
+                          branch.
                         </td>
                       </tr>
                     </tbody>
@@ -4142,18 +4155,20 @@
                 </ul>
 
                 <h2 id="field-rules">
-                  Content Fields<a href="#field-rules" class="klar-heading-anchor"
+                  Content Fields<a
+                    href="#field-rules"
+                    class="klar-heading-anchor"
                     >#</a
                   >
                 </h2>
                 <p>
                   Editable selectors do more than mark text editable — adding a
-                  <code>:field(...)</code> rule turns a matched element into named,
-                  structured content (a title, image, tag list, date, and more)
-                  that's saved per page. This is how you model blog posts,
+                  <code>:field(...)</code> rule turns a matched element into
+                  named, structured content (a title, image, tag list, date, and
+                  more) that's saved per page. This is how you model blog posts,
                   products, and other page types. See
-                  <a href="#" data-nav="content-fields">Content Fields</a> for the
-                  full syntax, types, and options.
+                  <a href="#" data-nav="content-fields">Content Fields</a> for
+                  the full syntax, types, and options.
                 </p>
 
                 <h2 id="selector-modifiers">
@@ -4178,7 +4193,10 @@
                       </tr>
                       <tr>
                         <td><code>[]</code></td>
-                        <td>Treat the element as a list/container for container editing</td>
+                        <td>
+                          Treat the element as a list/container for container
+                          editing
+                        </td>
                       </tr>
                       <tr>
                         <td><code>:style(prop)</code></td>
@@ -4213,9 +4231,7 @@
                   data-nav="content-fields"
                 >
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title"
-                    >Content Fields →</span
-                  >
+                  <span class="klar-article-nav__title">Content Fields →</span>
                 </a>
               </div>
             </div>
@@ -4241,16 +4257,17 @@
                   >
                 </h2>
                 <p>
-                  A <strong>field</strong> is a named piece of content attached to
-                  a page. You declare fields by adding <code>:field(...)</code>
-                  rules to your <strong>Editable Elements</strong> (Editor tab).
-                  Each field's value is saved with the page, rendered back into the
-                  page on save, and made available to
+                  A <strong>field</strong> is a named piece of content attached
+                  to a page. You declare fields by adding
+                  <code>:field(...)</code> rules to your
+                  <strong>Editable Elements</strong> (Editor tab). Each field's
+                  value is saved with the page, rendered back into the page on
+                  save, and made available to
                   <a href="#" data-nav="listing-templates">listing templates</a>
                   and the
-                  <a href="#" data-nav="sdk">content API</a>. Fields are what turn
-                  a page into a "blog post", a "product", or a "team member" rather
-                  than just markup.
+                  <a href="#" data-nav="sdk">content API</a>. Fields are what
+                  turn a page into a "blog post", a "product", or a "team
+                  member" rather than just markup.
                 </p>
 
                 <h2 id="fields-declare">
@@ -4261,8 +4278,9 @@
                   >
                 </h2>
                 <p>
-                  Write a CSS selector, then <code>:field(...)</code> with at least
-                  a <code>name</code> (the storage key) and a <code>type</code>:
+                  Write a CSS selector, then <code>:field(...)</code> with at
+                  least a <code>name</code> (the storage key) and a
+                  <code>type</code>:
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4342,8 +4360,8 @@ img.hero :field(name: image, type: image)
                 <p>
                   A <code>string</code> can be narrowed with a
                   <strong>format</strong> — e.g. <code>date</code>,
-                  <code>email</code>, <code>url</code>, <code>markdown</code>, or
-                  <code>html</code>.
+                  <code>email</code>, <code>url</code>, <code>markdown</code>,
+                  or <code>html</code>.
                 </p>
 
                 <h2 id="fields-options">
@@ -4352,8 +4370,9 @@ img.hero :field(name: image, type: image)
                   >
                 </h2>
                 <p>
-                  Extra settings tune how a field looks and behaves. Top-level keys
-                  control layout; an <code>options(...)</code> group holds the rest:
+                  Extra settings tune how a field looks and behaves. Top-level
+                  keys control layout; an <code>options(...)</code> group holds
+                  the rest:
                 </p>
                 <div class="klar-table-wrap">
                   <table class="klar-table">
@@ -4374,10 +4393,15 @@ img.hero :field(name: image, type: image)
                       </tr>
                       <tr>
                         <td><code>col</code></td>
-                        <td>Width in the form grid (e.g. <code>col: 6</code> = half)</td>
+                        <td>
+                          Width in the form grid (e.g. <code>col: 6</code> =
+                          half)
+                        </td>
                       </tr>
                       <tr>
-                        <td><code>section</code> / <code>sectionOrder</code></td>
+                        <td>
+                          <code>section</code> / <code>sectionOrder</code>
+                        </td>
                         <td>Group fields under a labelled section</td>
                       </tr>
                       <tr>
@@ -4386,13 +4410,16 @@ img.hero :field(name: image, type: image)
                       </tr>
                       <tr>
                         <td><code>options(vocab: …)</code></td>
-                        <td>Back a tags/select field with a project vocabulary</td>
+                        <td>
+                          Back a tags/select field with a project vocabulary
+                        </td>
                       </tr>
                       <tr>
                         <td><code>options(layout: …)</code></td>
                         <td>
                           Editor layout — e.g. <code>blocks</code>,
-                          <code>list</code>, <code>editor</code>, <code>chip</code>,
+                          <code>list</code>, <code>editor</code>,
+                          <code>chip</code>,
                           <code>radio</code>
                         </td>
                       </tr>
@@ -4416,11 +4443,11 @@ img.hero :field(name: image, type: image)
                   values (categories, tags, authors) configured in
                   <a href="#" data-nav="project-settings"
                     >Project Settings → Tags</a
-                  >. Bind a field to one with <code>options(vocab: name)</code> so
-                  editors pick from the list instead of free-typing. Use
-                  <code>type: tags</code> for multiple values and
-                  <code>type: select</code> for one — these power faceted filtering
-                  in listings.
+                  >. Bind a field to one with
+                  <code>options(vocab: name)</code> so editors pick from the
+                  list instead of free-typing. Use <code>type: tags</code> for
+                  multiple values and <code>type: select</code> for one — these
+                  power faceted filtering in listings.
                 </p>
 
                 <h2 id="fields-data-only">
@@ -4431,9 +4458,9 @@ img.hero :field(name: image, type: image)
                   >
                 </h2>
                 <p>
-                  A field doesn't need an element on the page. Omit the selector to
-                  store a value with no on-page target — handy for an excerpt, SEO
-                  description, or other metadata:
+                  A field doesn't need an element on the page. Omit the selector
+                  to store a value with no on-page target — handy for an
+                  excerpt, SEO description, or other metadata:
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4451,17 +4478,19 @@ img.hero :field(name: image, type: image)
                 </h2>
                 <p>
                   Element-bound fields can be edited inline on the page, and the
-                  right panel's <strong>Edit all fields</strong> view lists every
-                  field for the page in one form — including data-only fields that
-                  have no place on the page. Values are saved per page when you
-                  Save.
+                  right panel's <strong>Edit all fields</strong> view lists
+                  every field for the page in one form — including data-only
+                  fields that have no place on the page. Values are saved per
+                  page when you Save.
                 </p>
               </div>
 
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="selectors">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title">← Custom Selectors</span>
+                  <span class="klar-article-nav__title"
+                    >← Custom Selectors</span
+                  >
                 </a>
                 <a
                   href="#"
@@ -4469,7 +4498,9 @@ img.hero :field(name: image, type: image)
                   data-nav="listing-templates"
                 >
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title">Listing Templates →</span>
+                  <span class="klar-article-nav__title"
+                    >Listing Templates →</span
+                  >
                 </a>
               </div>
             </div>
@@ -4483,23 +4514,25 @@ img.hero :field(name: image, type: image)
                 </div>
                 <h1>Listing Templates</h1>
                 <p class="klar-article__description">
-                  Render dynamic lists — blog indexes, card grids, archives — from
-                  your page content, with no manual copy-paste.
+                  Render dynamic lists — blog indexes, card grids, archives —
+                  from your page content, with no manual copy-paste.
                 </p>
               </div>
               <div data-klar-test>
                 <h2 id="listing-overview">
-                  Overview<a href="#listing-overview" class="klar-heading-anchor"
+                  Overview<a
+                    href="#listing-overview"
+                    class="klar-heading-anchor"
                     >#</a
                   >
                 </h2>
                 <p>
-                  A <code>&lt;template data-for data-query&gt;</code> block renders
-                  a list of pages into a container on your page. Every time you
-                  save, Klar runs the query and replaces the container's children
-                  with the result. The <code>&lt;template&gt;</code> itself stays
-                  in your HTML as the source of truth, so you can keep editing the
-                  design.
+                  A <code>&lt;template data-for data-query&gt;</code> block
+                  renders a list of pages into a container on your page. Every
+                  time you save, Klar runs the query and replaces the
+                  container's children with the result. The
+                  <code>&lt;template&gt;</code> itself stays in your HTML as the
+                  source of truth, so you can keep editing the design.
                 </p>
 
                 <h2 id="listing-example">
@@ -4524,15 +4557,18 @@ img.hero :field(name: image, type: image)
 &lt;/template&gt;</code></pre>
                 </div>
                 <p>
-                  The body is a <strong>Liquid</strong> template with the matched
-                  pages available as <code>items</code>. You get the full loop
-                  toolkit — <code>{% for %}</code>,
-                  <code>forloop.index</code>/<code>first</code>/<code>last</code>,
+                  The body is a <strong>Liquid</strong> template with the
+                  matched pages available as <code>items</code>. You get the
+                  full loop toolkit — <code>{% for %}</code>,
+                  <code>forloop.index</code
+                  >/<code>first</code>/<code>last</code>,
                   <code>{% cycle %}</code>, and nested loops.
                 </p>
 
                 <h2 id="listing-queries">
-                  Query verbs<a href="#listing-queries" class="klar-heading-anchor"
+                  Query verbs<a
+                    href="#listing-queries"
+                    class="klar-heading-anchor"
                     >#</a
                   >
                 </h2>
@@ -4555,7 +4591,10 @@ img.hero :field(name: image, type: image)
                       </tr>
                       <tr>
                         <td><code>facets('type', 'field')</code></td>
-                        <td>Distinct values and counts for a field (for filter menus)</td>
+                        <td>
+                          Distinct values and counts for a field (for filter
+                          menus)
+                        </td>
                       </tr>
                       <tr>
                         <td><code>vocabularies('type')</code></td>
@@ -4590,9 +4629,9 @@ img.hero :field(name: image, type: image)
                   >
                 </h2>
                 <p>
-                  Listings re-render every time you save the page they live on, and
-                  Klar refreshes all listing pages at publish so they always show
-                  your latest content.
+                  Listings re-render every time you save the page they live on,
+                  and Klar refreshes all listing pages at publish so they always
+                  show your latest content.
                 </p>
               </div>
 
@@ -4611,7 +4650,9 @@ img.hero :field(name: image, type: image)
                   data-nav="sdk"
                 >
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title">Content API &amp; SDK →</span>
+                  <span class="klar-article-nav__title"
+                    >Content API &amp; SDK →</span
+                  >
                 </a>
               </div>
             </div>
@@ -4639,14 +4680,16 @@ img.hero :field(name: image, type: image)
                 <p>
                   Two ES modules are served straight from your Klar host — no
                   install, no build step. The <strong>Content SDK</strong> reads
-                  the content you manage in Klar; the <strong>Users SDK</strong>
-                  lets visitors of your site sign in and store their own data. Both
-                  are scoped by your <code>projectId</code> (found in Project
-                  Settings).
+                  the content you manage in Klar; the
+                  <strong>Users SDK</strong> lets visitors of your site sign in
+                  and store their own data. Both are scoped by your
+                  <code>projectId</code> (found in Project Settings).
                 </p>
 
                 <h2 id="sdk-content">
-                  Reading content<a href="#sdk-content" class="klar-heading-anchor"
+                  Reading content<a
+                    href="#sdk-content"
+                    class="klar-heading-anchor"
                     >#</a
                   >
                 </h2>
@@ -4666,10 +4709,11 @@ document.querySelector('#list').innerHTML =
                 <p>
                   <code>list()</code>, <code>facets()</code> and
                   <code>vocabularies()</code> mirror the
-                  <a href="#" data-nav="listing-templates">listing query verbs</a>,
-                  and <code>render()</code> fills a template with each item. A
-                  <code>content-static.js</code> variant reads a pre-built JSON file
-                  for fully static sites.
+                  <a href="#" data-nav="listing-templates"
+                    >listing query verbs</a
+                  >, and <code>render()</code> fills a template with each item.
+                  A <code>content-static.js</code> variant reads a pre-built
+                  JSON file for fully static sites.
                 </p>
 
                 <h2 id="sdk-users">
@@ -4680,9 +4724,9 @@ document.querySelector('#list').innerHTML =
                   >
                 </h2>
                 <p>
-                  Let visitors sign in with Google — through a Klar-hosted popup, so
-                  there's no Google setup on your side — and read or write their own
-                  data:
+                  Let visitors sign in with Google — through a Klar-hosted
+                  popup, so there's no Google setup on your side — and read or
+                  write their own data:
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4697,13 +4741,15 @@ await user.data.set('favorites', ['post-1', 'post-7']);
 const favs = await user.data.get('favorites');</code></pre>
                 </div>
                 <p>
-                  Each visitor only ever reads and writes their own data, scoped to
-                  your project. Sign-in identifies visitors and gives them personal
-                  storage — it does not lock down the page source.
+                  Each visitor only ever reads and writes their own data, scoped
+                  to your project. Sign-in identifies visitors and gives them
+                  personal storage — it does not lock down the page source.
                 </p>
 
                 <h2 id="sdk-reference">
-                  Full reference<a href="#sdk-reference" class="klar-heading-anchor"
+                  Full reference<a
+                    href="#sdk-reference"
+                    class="klar-heading-anchor"
                     >#</a
                   >
                 </h2>
@@ -4722,7 +4768,9 @@ const favs = await user.data.get('favorites');</code></pre>
                   data-nav="listing-templates"
                 >
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title">← Listing Templates</span>
+                  <span class="klar-article-nav__title"
+                    >← Listing Templates</span
+                  >
                 </a>
                 <a
                   href="#"
@@ -4744,8 +4792,8 @@ const favs = await user.data.get('favorites');</code></pre>
                 </div>
                 <h1>Content SDK</h1>
                 <p class="klar-article__description">
-                  Read your published content from any site — list pages, filter by
-                  field, resolve asset paths. Full reference for
+                  Read your published content from any site — list pages, filter
+                  by field, resolve asset paths. Full reference for
                   <code>createKlarClient</code> (<code>/sdk/content.js</code>).
                 </p>
               </div>
@@ -4801,7 +4849,9 @@ const vocab   = await klar.vocabularies('blog-post');</code></pre>
                       <tr>
                         <td><code>baseUrl</code></td>
                         <td>—</td>
-                        <td>Klar host; defaults to where the SDK was loaded from</td>
+                        <td>
+                          Klar host; defaults to where the SDK was loaded from
+                        </td>
                       </tr>
                       <tr>
                         <td><code>cdn</code></td>
@@ -4816,8 +4866,8 @@ const vocab   = await klar.vocabularies('blog-post');</code></pre>
                 </div>
                 <p>
                   Returns a client with <code>list</code>, <code>facets</code>,
-                  <code>vocabularies</code>, <code>cdn</code>, <code>render</code>,
-                  and <code>insert</code>.
+                  <code>vocabularies</code>, <code>cdn</code>,
+                  <code>render</code>, and <code>insert</code>.
                 </p>
 
                 <h2 id="content-sdk-list">
@@ -4841,8 +4891,8 @@ const vocab   = await klar.vocabularies('blog-post');</code></pre>
                         <td><code>published</code></td>
                         <td>both</td>
                         <td>
-                          <code>true</code> = published only, <code>false</code> =
-                          drafts only
+                          <code>true</code> = published only,
+                          <code>false</code> = drafts only
                         </td>
                       </tr>
                       <tr>
@@ -4877,9 +4927,10 @@ const vocab   = await klar.vocabularies('blog-post');</code></pre>
                   </table>
                 </div>
                 <p>
-                  Returns <code>ContentItem[]</code>. A <code>where</code> clause
-                  matches scalar fields by equality and array (<code>tags</code>)
-                  fields by membership; multiple keys are AND'd:
+                  Returns <code>ContentItem[]</code>. A
+                  <code>where</code> clause matches scalar fields by equality
+                  and array (<code>tags</code>) fields by membership; multiple
+                  keys are AND'd:
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -4900,8 +4951,8 @@ await klar.list('blog-post', { where: { tags: { has: 'css' }, status: { eq: 'liv
                 <p>
                   <code>facets(pageType, field, options)</code> returns distinct
                   values and counts for one field (for filter menus), sorted by
-                  count. <code>vocabularies(pageType)</code> returns the project's
-                  tag vocabularies for that page-type. Both accept
+                  count. <code>vocabularies(pageType)</code> returns the
+                  project's tag vocabularies for that page-type. Both accept
                   <code>published</code>, <code>where</code>, and
                   <code>signal</code>.
                 </p>
@@ -4938,10 +4989,11 @@ await klar.list('blog-post', { where: { tags: { has: 'css' }, status: { eq: 'liv
                 </h2>
                 <p>
                   <code>render(data, template)</code> fills
-                  <code>${dotted.path}</code> placeholders from an item (or array),
-                  walking into <code>content</code> — values are inserted
-                  un-escaped. <code>insert(selector, position, html)</code> places
-                  HTML relative to an element; positions are <code>before</code>,
+                  <code>${dotted.path}</code> placeholders from an item (or
+                  array), walking into <code>content</code> — values are
+                  inserted un-escaped.
+                  <code>insert(selector, position, html)</code> places HTML
+                  relative to an element; positions are <code>before</code>,
                   <code>after</code>, <code>prepend</code>, <code>append</code>,
                   <code>replace</code>.
                 </p>
@@ -4966,11 +5018,11 @@ klar.insert('#list', 'replace', klar.render(posts, `
                 </h2>
                 <p>
                   Path-field values on <code>content</code> are rewritten
-                  automatically by <code>list()</code> per environment: in the Klar
-                  editor → jsDelivr; on a GitHub Pages project site → prefixed with
-                  <code>/&lt;repo&gt;</code>; on a custom domain → unchanged. Use
-                  <code>client.cdn(path)</code> for ad-hoc paths. Absolute URLs and
-                  <code>data:</code> URIs always pass through.
+                  automatically by <code>list()</code> per environment: in the
+                  Klar editor → jsDelivr; on a GitHub Pages project site →
+                  prefixed with <code>/&lt;repo&gt;</code>; on a custom domain →
+                  unchanged. Use <code>client.cdn(path)</code> for ad-hoc paths.
+                  Absolute URLs and <code>data:</code> URIs always pass through.
                 </p>
 
                 <h2 id="content-sdk-extras">
@@ -4986,8 +5038,9 @@ klar.insert('#list', 'replace', klar.render(posts, `
                     one-shot list without keeping a client around.
                   </li>
                   <li>
-                    Failed requests throw <code>KlarApiError</code>
-                    (<code>{ status, message }</code>).
+                    Failed requests throw <code>KlarApiError</code> (<code
+                      >{ status, message }</code
+                    >).
                   </li>
                   <li>
                     <code>content-static.js</code> — the same API, backed by a
@@ -5015,7 +5068,9 @@ GET /api/vocabularies?projectId&amp;page_type                                   
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="sdk">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title">← Content API &amp; SDK</span>
+                  <span class="klar-article-nav__title"
+                    >← Content API &amp; SDK</span
+                  >
                 </a>
                 <a
                   href="#"
@@ -5055,10 +5110,11 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                     <path d="M12 16v-4M12 8h.01"></path>
                   </svg>
                   <div>
-                    Sign-in here is for <strong>identification and per-user
-                    storage</strong>, not access control — the page source stays
-                    public. No Google Cloud setup is needed on your side; Klar's own
-                    OAuth runs the popup.
+                    Sign-in here is for
+                    <strong>identification and per-user storage</strong>, not
+                    access control — the page source stays public. No Google
+                    Cloud setup is needed on your side; Klar's own OAuth runs
+                    the popup.
                   </div>
                 </div>
 
@@ -5114,7 +5170,9 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                       <tr>
                         <td><code>host</code></td>
                         <td>—</td>
-                        <td>Klar host origin (defaults to the SDK's own host)</td>
+                        <td>
+                          Klar host origin (defaults to the SDK's own host)
+                        </td>
                       </tr>
                       <tr>
                         <td><code>storageKey</code></td>
@@ -5135,11 +5193,17 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                     <tbody>
                       <tr>
                         <td><code>getUser()</code></td>
-                        <td>Current signed-in user, or <code>null</code>. Synchronous.</td>
+                        <td>
+                          Current signed-in user, or <code>null</code>.
+                          Synchronous.
+                        </td>
                       </tr>
                       <tr>
                         <td><code>signIn()</code></td>
-                        <td>Opens the Google popup; resolves with the user once signed in</td>
+                        <td>
+                          Opens the Google popup; resolves with the user once
+                          signed in
+                        </td>
                       </tr>
                       <tr>
                         <td><code>signOut()</code></td>
@@ -5147,11 +5211,17 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                       </tr>
                       <tr>
                         <td><code>onChange(fn)</code></td>
-                        <td>Subscribe to sign-in / sign-out / expiry; returns an unsubscribe fn</td>
+                        <td>
+                          Subscribe to sign-in / sign-out / expiry; returns an
+                          unsubscribe fn
+                        </td>
                       </tr>
                       <tr>
                         <td><code>decodeToken()</code></td>
-                        <td>Decoded JWT claims of the current user, or <code>null</code></td>
+                        <td>
+                          Decoded JWT claims of the current user, or
+                          <code>null</code>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -5161,8 +5231,8 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                   <code>projectId</code>, <code>provider</code>,
                   <code>email</code>, <code>name</code>, <code>picture</code>,
                   <code>exp</code>, plus the raw <code>token</code>. Sessions
-                  persist in <code>localStorage</code> and auto-expire on the JWT's
-                  <code>exp</code>.
+                  persist in <code>localStorage</code> and auto-expire on the
+                  JWT's <code>exp</code>.
                 </p>
 
                 <h2 id="users-sdk-data">
@@ -5174,8 +5244,8 @@ GET /api/vocabularies?projectId&amp;page_type                                   
                 </h2>
                 <p>
                   Key-value storage scoped to
-                  <strong>(project, signed-in user)</strong>. All methods require a
-                  signed-in user (they throw otherwise).
+                  <strong>(project, signed-in user)</strong>. All methods
+                  require a signed-in user (they throw otherwise).
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -5187,8 +5257,8 @@ const keys = await user.data.list();                     <span class="klar-hl-co
 await user.data.delete('favorites');</code></pre>
                 </div>
                 <p>
-                  Constraints: keys 1–200 chars
-                  (<code>[A-Za-z0-9._-]</code>); values anything
+                  Constraints: keys 1–200 chars (<code>[A-Za-z0-9._-]</code>);
+                  values anything
                   <code>JSON.stringify</code> handles, ≤ 64&nbsp;KB.
                 </p>
 
@@ -5204,7 +5274,8 @@ await user.data.delete('favorites');</code></pre>
                   <strong>collection</strong> is shared across everyone on the
                   project — the backend for bookings, comments, RSVPs, anything
                   multiple people read and write. Each record remembers its
-                  <strong>owner</strong>, so edits and deletes stay owner-scoped.
+                  <strong>owner</strong>, so edits and deletes stay
+                  owner-scoped.
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -5252,11 +5323,12 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   </li>
                 </ul>
                 <p>
-                  A blocked write rejects with <code>err.status === 409</code>
-                  (<code>err.conflict</code> describes the rule) — catch it and
-                  ask the visitor to pick another slot. A client-side check is
-                  fine for instant feedback, but the server rule is what keeps
-                  bookings correct when people act at the same time.
+                  A blocked write rejects with
+                  <code>err.status === 409</code> (<code>err.conflict</code>
+                  describes the rule) — catch it and ask the visitor to pick
+                  another slot. A client-side check is fine for instant
+                  feedback, but the server rule is what keeps bookings correct
+                  when people act at the same time.
                 </p>
 
                 <h2 id="users-sdk-admin">
@@ -5271,7 +5343,9 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   everything their site has collected — and build their own
                   admin dashboard from this SDK. You're recognised as the admin
                   automatically when you sign in with the
-                  <strong>same Google account that owns the Klar project</strong>
+                  <strong
+                    >same Google account that owns the Klar project</strong
+                  >
                   (no extra setup, no separate login). Everyone else gets a 403.
                 </p>
                 <div class="klar-code-block">
@@ -5286,12 +5360,14 @@ await bookings.remove(id);                           <span class="klar-hl-commen
 }</code></pre>
                 </div>
                 <p>
-                  <code>isAdmin()</code> is a cosmetic check (reads your token) —
-                  use it to decide whether to render the admin UI, but it's never
-                  the security boundary: every <code>user.admin.*</code> call is
-                  re-verified on the server, so a non-admin just gets a 403.
-                  <code>getUser(id)</code> returns their <code>user.data</code>
-                  values and the records they own; <code>listRecords()</code>
+                  <code>isAdmin()</code> is a cosmetic check (reads your token)
+                  — use it to decide whether to render the admin UI, but it's
+                  never the security boundary: every
+                  <code>user.admin.*</code> call is re-verified on the server,
+                  so a non-admin just gets a 403.
+                  <code>getUser(id)</code> returns their
+                  <code>user.data</code> values and the records they own;
+                  <code>listRecords()</code>
                   returns every record in a collection regardless of owner; and
                   <code>deleteUser()</code> removes the user and their private
                   data while leaving shared records ownerless. Write methods let
@@ -5314,10 +5390,10 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                 </h2>
                 <p>
                   Send a templated email <strong>on a data event</strong> (a
-                  booking is created → confirmation) or <strong>on a
-                  schedule</strong> (daily → remind tomorrow's bookers). Like
-                  collections, an app declares its automations and
-                  self-provisions them.
+                  booking is created → confirmation) or
+                  <strong>on a schedule</strong> (daily → remind tomorrow's
+                  bookers). Like collections, an app declares its automations
+                  and self-provisions them.
                 </p>
                 <div class="klar-code-block">
                   <div class="klar-code-block__header">
@@ -5346,20 +5422,23 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   field. <strong>Recipients</strong> are <code>owner</code> (the
                   record's owner) or <code>projectOwner</code> only — never an
                   arbitrary address. <code>subject</code>/<code>body</code> are
-                  Liquid; a scheduled reminder fires once per record. Manage with
-                  <code>listAutomations()</code>,
+                  Liquid; a scheduled reminder fires once per record. Manage
+                  with <code>listAutomations()</code>,
                   <code>setAutomationEnabled()</code>,
-                  <code>deleteAutomation()</code>. Requires SMTP on the Klar host.
+                  <code>deleteAutomation()</code>. Requires SMTP on the Klar
+                  host.
                 </p>
                 <p>
-                  Set <code>channel: 'sms'</code> to send a text instead. SMS has
-                  no address from sign-in, so the recipient is a phone field on
-                  the record (<code>to: 'field:phone'</code>) and the message is a
-                  single Liquid <code>text</code>. Klar sends via
-                  <a href="https://46elks.com" target="_blank" rel="noopener">46elks</a>:
-                  set your own credentials in <em>Settings → SMS</em> (each
-                  project owns its sender id, e.g. <code>Klar</code>). With no
-                  credentials it's a no-op.
+                  Set <code>channel: 'sms'</code> to send a text instead. SMS
+                  has no address from sign-in, so the recipient is a phone field
+                  on the record (<code>to: 'field:phone'</code>) and the message
+                  is a single Liquid <code>text</code>. Klar sends via
+                  <a href="https://46elks.com" target="_blank" rel="noopener"
+                    >46elks</a
+                  >
+                  (sends worldwide): set your own credentials in
+                  <em>Settings → SMS</em> (each project owns its sender id, e.g.
+                  <code>Klar</code>). With no credentials it's a no-op.
                 </p>
 
                 <h2 id="users-sdk-endpoints">
@@ -5422,7 +5501,9 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
                   data-nav="keyboard-shortcuts"
                 >
                   <span class="klar-article-nav__label">Next</span>
-                  <span class="klar-article-nav__title">Keyboard Shortcuts →</span>
+                  <span class="klar-article-nav__title"
+                    >Keyboard Shortcuts →</span
+                  >
                 </a>
               </div>
             </div>
@@ -5546,9 +5627,7 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
               <div class="klar-article-nav">
                 <a href="#" class="klar-article-nav__link" data-nav="users-sdk">
                   <span class="klar-article-nav__label">Previous</span>
-                  <span class="klar-article-nav__title"
-                    >← Users SDK</span
-                  >
+                  <span class="klar-article-nav__title">← Users SDK</span>
                 </a>
                 <a
                   href="#"
