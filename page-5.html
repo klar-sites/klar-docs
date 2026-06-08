@@ -5294,7 +5294,11 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   values and the records they own; <code>listRecords()</code>
                   returns every record in a collection regardless of owner; and
                   <code>deleteUser()</code> removes the user and their private
-                  data while leaving shared records ownerless.
+                  data while leaving shared records ownerless. Write methods let
+                  you edit too: <code>setUserData()</code> /
+                  <code>deleteUserData()</code> change a user's stored data, and
+                  <code>updateRecord()</code> / <code>deleteRecord()</code> edit
+                  or cancel any record.
                 </p>
                 <p>
                   The only requirement is the shared Google account — your Klar
@@ -5331,10 +5335,14 @@ PATCH  /api/sdk/collections/:name/:id    body { data } → { item }   (owner-onl
 DELETE /api/sdk/collections/:name/:id    → { deleted } (owner-only)
 
 <span class="klar-hl-comment"># admin — project owner only (same Google account as the Klar login); 403 otherwise</span>
-GET    /api/sdk/admin/users               → { users, total }
-GET    /api/sdk/admin/users/:id           → { profile, data, records }
-DELETE /api/sdk/admin/users/:id           → { deleted }
-GET    /api/sdk/admin/collections/:name   → { items }   (all owners)</code></pre>
+GET    /api/sdk/admin/users                    → { users, total }
+GET    /api/sdk/admin/users/:id                → { profile, data, records }
+DELETE /api/sdk/admin/users/:id                → { deleted }
+PUT    /api/sdk/admin/users/:id/data/:key      body { value } → { ok }
+DELETE /api/sdk/admin/users/:id/data/:key      → { deleted }
+GET    /api/sdk/admin/collections/:name        → { items }   (all owners)
+PATCH  /api/sdk/admin/collections/:name/:id    body { data } → { item }
+DELETE /api/sdk/admin/collections/:name/:id    → { deleted }</code></pre>
                 </div>
               </div>
 
