@@ -5259,6 +5259,48 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   bookings correct when people act at the same time.
                 </p>
 
+                <h2 id="users-sdk-admin">
+                  Admin access — user.admin<a
+                    href="#users-sdk-admin"
+                    class="klar-heading-anchor"
+                    >#</a
+                  >
+                </h2>
+                <p>
+                  The <strong>project owner</strong> can read and manage
+                  everything their site has collected — and build their own
+                  admin dashboard from this SDK. You're recognised as the admin
+                  automatically when you sign in with the
+                  <strong>same Google account that owns the Klar project</strong>
+                  (no extra setup, no separate login). Everyone else gets a 403.
+                </p>
+                <div class="klar-code-block">
+                  <div class="klar-code-block__header">
+                    <span class="klar-code-block__lang">JavaScript</span>
+                  </div>
+                  <pre><code>if (user.isAdmin()) {                       <span class="klar-hl-comment">// gate your admin UI</span>
+  const { users } = await user.admin.listUsers({ limit: 50 });
+  const detail    = await user.admin.getUser(users[0].id);   <span class="klar-hl-comment">// { profile, data, records }</span>
+  const bookings  = await user.admin.listRecords('bookings'); <span class="klar-hl-comment">// all records, any owner</span>
+  await user.admin.deleteUser(users[0].id);                  <span class="klar-hl-comment">// GDPR delete</span>
+}</code></pre>
+                </div>
+                <p>
+                  <code>isAdmin()</code> is a cosmetic check (reads your token) —
+                  use it to decide whether to render the admin UI, but it's never
+                  the security boundary: every <code>user.admin.*</code> call is
+                  re-verified on the server, so a non-admin just gets a 403.
+                  <code>getUser(id)</code> returns their <code>user.data</code>
+                  values and the records they own; <code>listRecords()</code>
+                  returns every record in a collection regardless of owner; and
+                  <code>deleteUser()</code> removes the user and their private
+                  data while leaving shared records ownerless.
+                </p>
+                <p>
+                  The only requirement is the shared Google account — your Klar
+                  login and your site sign-in must use the same one.
+                </p>
+
                 <h2 id="users-sdk-endpoints">
                   Raw endpoints<a
                     href="#users-sdk-endpoints"
@@ -5286,7 +5328,13 @@ GET    /api/sdk/collections/:name        → { items }   (?where &amp;order &amp
 GET    /api/sdk/collections/:name/:id    → { item }
 POST   /api/sdk/collections/:name        body { data } → { item }   (409 on a rule)
 PATCH  /api/sdk/collections/:name/:id    body { data } → { item }   (owner-only)
-DELETE /api/sdk/collections/:name/:id    → { deleted } (owner-only)</code></pre>
+DELETE /api/sdk/collections/:name/:id    → { deleted } (owner-only)
+
+<span class="klar-hl-comment"># admin — project owner only (same Google account as the Klar login); 403 otherwise</span>
+GET    /api/sdk/admin/users               → { users, total }
+GET    /api/sdk/admin/users/:id           → { profile, data, records }
+DELETE /api/sdk/admin/users/:id           → { deleted }
+GET    /api/sdk/admin/collections/:name   → { items }   (all owners)</code></pre>
                 </div>
               </div>
 
