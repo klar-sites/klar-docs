@@ -5406,9 +5406,21 @@ const keys = await user.data.list();                     <span class="klar-hl-co
 await user.data.delete('favorites');</code></pre>
                 </div>
                 <p>
-                  Constraints: keys 1–200 chars (<code>[A-Za-z0-9._-]</code>);
-                  values anything
+                  Constraints: keys 1–200 chars
+                  (<code>[A-Za-z0-9._:-]</code>); values anything
                   <code>JSON.stringify</code> handles, ≤ 64&nbsp;KB.
+                </p>
+                <p>
+                  <strong>Sharing a project across apps?</strong>
+                  <code>user.data</code> is one flat namespace per
+                  <strong>(project, user)</strong>, so if a to-do app and a
+                  booking app live in the same project they'd collide on a bare
+                  <code>settings</code> key. Prefix your keys per app —
+                  <code>booking:settings</code>, <code>todo:items</code> — so
+                  each app reads only its own. The <code>:</code> is just a
+                  convention (any allowed char works); the admin list can then
+                  count and filter by that prefix — see
+                  <a href="#users-sdk-admin">Admin access</a>.
                 </p>
 
                 <h2 id="users-sdk-collections">
@@ -5529,6 +5541,43 @@ await bookings.remove(id);                           <span class="klar-hl-commen
                   The only requirement is the shared Google account — your Klar
                   login and your site sign-in must use the same one.
                 </p>
+                <p>
+                  <strong>Several apps in one project?</strong>
+                  <code>listUsers()</code> takes optional scoping so one app's
+                  admin shows only its own people and counts — no need to spin
+                  up a separate project per app. Have each app write a
+                  <strong>membership marker</strong> to <code>user.data</code> at
+                  login, then filter on it:
+                </p>
+                <div class="klar-code-block">
+                  <div class="klar-code-block__header">
+                    <span class="klar-code-block__lang">JavaScript</span>
+                  </div>
+                  <pre><code><span class="klar-hl-comment">// at login — tag this user as a member of this app (write once)</span>
+await user.data.set('app:booking', { joinedAt: Date.now() });
+
+<span class="klar-hl-comment">// in admin — list only this app's users, with app-scoped counts</span>
+const { users } = await user.admin.listUsers({
+  hasKey: 'app:booking',      <span class="klar-hl-comment">// only users who have that marker key</span>
+  keyPrefix: 'booking:',      <span class="klar-hl-comment">// count only data keys with this prefix</span>
+  collection: 'appointments', <span class="klar-hl-comment">// count only records in this collection</span>
+});</code></pre>
+                </div>
+                <p>
+                  <code>hasKey</code> filters the list to users holding a given
+                  <code>user.data</code> key; <code>keyPrefix</code> and
+                  <code>collection</code> scope each row's
+                  <code>dataKeys</code> / <code>records</code> counts to one app.
+                  All three run server-side in a single indexed query, so it
+                  stays flat whether you have 30 users or 30,000 — no per-user
+                  round-trips. (Why server-side? The list returns only summary
+                  counts, not each user's keys/records, so filtering in the
+                  client would mean an N-times <code>getUser()</code> fan-out.)
+                  Collections are already isolated by name, and
+                  <code>getUser()</code> returns one user's full data + records —
+                  so scope <em>that</em> detail view in your own UI by key prefix
+                  / collection.
+                </p>
 
                 <h2 id="users-sdk-automations">
                   Email automations<a
@@ -5620,7 +5669,7 @@ PATCH  /api/sdk/collections/:name/:id    body { data } → { item }   (owner-onl
 DELETE /api/sdk/collections/:name/:id    → { deleted } (owner-only)
 
 <span class="klar-hl-comment"># admin — project owner only (same Google account as the Klar login); 403 otherwise</span>
-GET    /api/sdk/admin/users                    → { users, total }
+GET    /api/sdk/admin/users                    → { users, total }   (?search &amp;limit &amp;offset &amp;hasKey &amp;keyPrefix &amp;collection)
 GET    /api/sdk/admin/users/:id                → { profile, data, records }
 DELETE /api/sdk/admin/users/:id                → { deleted }
 PUT    /api/sdk/admin/users/:id/data/:key      body { value } → { ok }
