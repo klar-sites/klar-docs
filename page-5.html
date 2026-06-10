@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klar — Documentation</title>
+
+    <!-- No-flash theme: apply the saved (or system) theme synchronously, before
+         first paint, so there's no light↔dark flash while the page loads. The
+         toggle script below keeps "klar-theme" in localStorage in sync. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("klar-theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
@@ -6029,11 +6047,8 @@ DELETE /api/sdk/admin/automations/:name        → { deleted }</code></pre>
           localStorage.setItem("klar-theme", theme);
         }
 
-        // Load saved theme
-        const saved = localStorage.getItem("klar-theme");
-        if (saved) setTheme(saved);
-        else if (window.matchMedia("(prefers-color-scheme: dark)").matches)
-          setTheme("dark");
+        // Initial theme is applied before first paint by the inline <head>
+        // script (no-flash); here we only wire the toggle.
 
         themeToggle.addEventListener("click", () => {
           setTheme(
