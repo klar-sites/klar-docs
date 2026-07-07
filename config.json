@@ -1,0 +1,24 @@
+{
+  "pageTypes": [],
+  "pages": [
+    {
+      "name": "index-1.html",
+      "sectionsSelector": ".klar-sidebar__links > a:config(showHidden:true,click:data-nav)"
+    },
+    {
+      "name": "index-3.html",
+      "editableElements": "body,\n[data-klar-test]:blocks,\nody:exclude(ul),\n.klar-article__header:blocks,\n#klarToc:exclude(div, ul, li, a),\np:config(splitOnEnter: true),\n.klar-sidebar__links:list(data-nav:slug),\n.klar-features[],, h2",
+      "sectionsSelector": ".klar-sidebar__links > a:config(showHidden:true,click:data-nav)"
+    },
+    {
+      "name": "index.html",
+      "editableElements": "body,\n[data-klar-test]:blocks,\nbody:exclude(ul),\n.klar-article__header:blocks,\n#klarToc:exclude(div, ul, li, a),\np:config(splitOnEnter: true),\n.klar-sidebar__links[](data-nav),\n.klar-features[]",
+      "sectionsSelector": ".klar-page:config(showHidden:true,clickConnected:data-nav)"
+    },
+    {
+      "name": "page-5.html",
+      "editableElements": "body,\n[data-klar-test]:blocks,\nody:exclude(ul),\n.klar-article__header:blocks,\n#klarToc:exclude(div, ul, li, a),\np:config(splitOnEnter: true),\n.klar-sidebar__links:list(data-nav:slug),\n.klar-features[],\nh2"
+    }
+  ],
+  "vocabularies": {}
+}
