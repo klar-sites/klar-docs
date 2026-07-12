@@ -435,7 +435,7 @@
         background: var(--bg);
         border-right: 1px solid var(--border);
         z-index: 50;
-        scrollbar-width: thin;
+        /* scrollbar-width: thin; */
       }
 
       .klar-sidebar::-webkit-scrollbar {
@@ -1399,22 +1399,6 @@
         .klar-article-nav {
           grid-template-columns: 1fr;
         }
-      }
-
-      aside::-webkit-scrollbar {
-        width: 18px;
-      }
-      aside::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      aside::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 255, 255, 0.08);
-        border: 3px solid transparent;
-        border-radius: 999px;
-        background-clip: padding-box;
-      }
-      aside::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(255, 255, 255, 0.14);
       }
     </style>
   </head>
